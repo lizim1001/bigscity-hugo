@@ -1,0 +1,15 @@
+server {
+    listen 80;
+    server_name www.bigscity.net bigscity.net;
+    root /var/www/bigscity/public;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~* \.(css|js|png|jpg|jpeg|gif|svg|webp|ico|pdf|pptx)$ {
+        expires 7d;
+        add_header Cache-Control "public";
+    }
+}

@@ -1,0 +1,94 @@
+---
+title: VecCity
+url: /veccity/
+legacy_key: 51a9b9457af89a2ad5be
+legacy_source: veccity/index.html
+---
+<div id="content_start"></div>
+
+        <div id="cc-matrix-3528261812"><div id="cc-m-12906981412" class="j-module n j-text "><h1 id="cc-m-header-11751937212" class="headline cc-m-header-inline-rte" style="line-height: 42px; min-height: 42px;" data-action="header" data-name="header">
+    <span style="font-size: 26px;"><strong><span style="color: #e36664;">VecCity: A </span></strong></span><span color="#E36664" style="color: #e36664;"><span style="font-size: 26px;">Taxonomy-guided Library for Map Entity Representation Learning</span></span>
+</h1></div><div id="cc-m-12906981512" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="font-size: 18px;"><strong><a href="https://github.com/Bigscity-VecCity/VecCity" target="_blank" title="https://github.com/Bigscity-VecCity/VecCity">GitHub</a> </strong></span><span style="font-size: 18px;"><span style="font-weight: 700 !important;">  </span></span><a href="https://dl.acm.org/doi/10.14778/3742728.3742749" target="_blank" title="https://dl.acm.org/doi/10.14778/3742728.3742749"><span style="font-size: 18px;"><b>Paper</b></span></a>
+</p></div><div id="cc-m-12906981612" class="j-module n j-text "><p style="text-align: justify;">
+     
+</p>
+
+<p>
+    <span style="font-size: 22px;"><strong>1. Introduction</strong></span>
+</p></div><div id="cc-m-12906981712" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="color: #1f2328; font-family: -apple-system, 'system-ui', 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; font-size: 16px; text-align: start; background-color: #ffffff;">
+    <i>VecCity</i> is an open-sourced and standardized benchmark compatible with various datasets and baseline models. </span>
+</p></div><div id="cc-m-12906981812" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="font-size: 22px;"><strong>2. The VecCity</strong></span> <span style="font-size: 22px;"><strong>Library</strong></span>
+</p></div><div id="cc-m-12906981912" class="j-module n j-text "><p style="text-align: justify;">
+    The overall framework of VecCity. For a given dataset, we first construct atomic files from multi-sourced city data by extracting and mapping entities (e.g., POIs, road segments, land parcels,
+    etc.) and auxiliary data into corresponding atomic files. MapRL models encodes various entities in a unified configuration, which facilitates joint processing for various downstream tasks.
+</p></div><div id="cc-m-12906982012" class="j-module n j-imageSubtitle "><figure class="cc-imagewrapper cc-m-image-align-3">
+<img sizes="(min-width: 598px) 598px, 100vw" id="cc-m-imagesubtitle-image-12906982012" src="../image.jimcdn.com/app/cms/image/transf/none/path/saf8fe3b8eb300165/image/i1cf0e599a8e55628/version/1759030924/image.jpg" alt="" class="" data-src-width="2079" data-src-height="1536" data-src="image.jimcdn.com/app/cms/image/transf/none/path/saf8fe3b8eb300165/image/i1cf0e599a8e55628/version/1759030924/image.jpg" data-image-id="8621525012"/>    
+
+</figure>
+
+<div class="cc-clear"></div>
+<script id="cc-m-reg-12906982012">// <![CDATA[
+
+    window.regModule("module_imageSubtitle", {"data":{"imageExists":true,"hyperlink":"","hyperlink_target":"","hyperlinkAsString":"","pinterest":"0","id":12906982012,"widthEqualsContent":"0","resizeWidth":"598","resizeHeight":442},"id":12906982012});
+// ]]>
+</script></div><div id="cc-m-12906982112" class="j-module n j-text "><p style="text-align: center;">
+    <span style="font-size: 18px;"><strong>Overview of the Vec</strong></span><span style="font-size: 18px;"><strong>City library</strong></span>
+</p></div><div id="cc-m-12906982212" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="font-size: 16px;">The main features of LibCity can be summarized in three aspects:</span>
+</p>
+
+<ul>
+    <li>
+        <span style="font-size: 16px;"><strong>Unified</strong>: LibCity builds a systematic pipeline to implement, use and evaluate traffic prediction models in a unified platform. We design
+        basic spatial-temporal data storage, unified model instantiation interfaces, and standardized evaluation procedure.</span>
+    </li>
+
+    <li>
+        <span style="font-size: 16px;"><span style="font-size: 16px;"><strong>Comprehensive</strong>: 42 models covering four traffic prediction tasks have been reproduced to form a comprehensive
+        model warehouse. Meanwhile, LibCity collects 29 commonly used datasets of different sources and implements a series of commonly used evaluation metrics and strategies for performance
+        evaluation.</span></span>
+    </li>
+
+    <li>
+        <span style="font-size: 16px;"><span><b>Extensible</b></span><span>: LibCity enables a modular design of different components, allowing users to flexibly insert customized components
+        into the library. Therefore, new researchers can easily develop new models with the support of LibCity.</span></span>
+    </li>
+</ul></div><div id="cc-m-12906982312" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="font-size: 16px;">The reproduced traffic prediction models are categorized in the below table.</span>
+</p></div><div id="cc-m-12906982412" class="j-module n j-imageSubtitle "><figure class="cc-imagewrapper cc-m-image-align-1 cc-m-width-maxed">
+<img sizes="(min-width: 750px) 750px, 100vw" id="cc-m-imagesubtitle-image-12906982412" src="../image.jimcdn.com/app/cms/image/transf/none/path/saf8fe3b8eb300165/image/i2264bd74e563e846/version/1759030611/image.png" alt="" class="" data-src-width="1268" data-src-height="355" data-src="image.jimcdn.com/app/cms/image/transf/none/path/saf8fe3b8eb300165/image/i2264bd74e563e846/version/1759030611/image.png" data-image-id="8621525112"/>    
+
+</figure>
+
+<div class="cc-clear"></div>
+<script id="cc-m-reg-12906982412">// <![CDATA[
+
+    window.regModule("module_imageSubtitle", {"data":{"imageExists":true,"hyperlink":"","hyperlink_target":"","hyperlinkAsString":"","pinterest":"0","id":12906982412,"widthEqualsContent":"1","resizeWidth":"750","resizeHeight":210},"id":12906982412});
+// ]]>
+</script></div><div id="cc-m-12906982512" class="j-module n j-text "><p style="text-align: center;">
+    <span style="font-size: 18px;"><strong>The implemented models in LibCity</strong></span>
+</p></div><div id="cc-m-12906982612" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="font-size: 22px;"><strong>3. Contact Us</strong></span>
+</p></div><div id="cc-m-12906982712" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="font-size: 16px;">VecCity is mainly developed and maintained by Beihang Interest Group on SmartCity (BIGSCITY). Welcome to visit and use our <a href="https://github.com/Bigscity-VecCity/VecCity" target="_blank" title="https://github.com/Bigscity-VecCity/VecCity">repository</a> for more details. Your suggestions and contributions are very
+    important to us! If you have any questions about the library, please <a href="https://github.com/Bigscity-VecCity/VecCity/issues" target="_blank" title="https://github.com/Bigscity-VecCity/VecCity/issues">raise an issue</a> in our repository.</span>
+</p></div><div id="cc-m-12906982812" class="j-module n j-text "><p style="text-align: justify;">
+    <span style="font-size: 22px;"><strong>4. Cite</strong></span>
+</p></div><div id="cc-m-12906982912" class="j-module n j-text "><p>
+    <span style="font-size: 18px;"><span style="font-weight: 700 !important;">If you find VecCity</span></span><span style="font-size: 18px;"><b> useful for your research or development, please
+    cite the following <a href="https://dl.acm.org/doi/10.14778/3742728.3742749" target="_blank" title="https://dl.acm.org/doi/10.14778/3742728.3742749">paper</a>.</b></span>
+</p></div><div id="cc-m-12906983012" class="j-module n j-text "><div class="csl-entry" style="box-sizing: border-box;">
+    <div class="csl-right-inline" style="box-sizing: border-box;">
+        @article{10.14778/3742728.3742749, author = {Zhang, Wentao and Wang, Jingyuan and Yang, Yifan and U, Leong Hou}, title = {VecCity: A Taxonomy-Guided Library for Map Entity Representation
+        Learning}, year = {2025}, issue_date = {April 2025}, publisher = {VLDB Endowment}, volume = {18}, number = {8}, issn = {2150-8097}, url = {https://doi.org/10.14778/3742728.3742749}, doi =
+        {10.14778/3742728.3742749}, journal = {Proc. VLDB Endow.}, month = sep, pages = {2575–2588}, numpages = {14} }
+    </div>
+</div></div><div id="cc-m-12906983112" class="j-module n j-text "><p>
+    Wentao Zhang, Jingyuan Wang, Yifan Yang, and Leong Hou U. 2025. VecCity: A Taxonomy-Guided Library for Map Entity Representation Learning. Proc. VLDB Endow. 18, 8 (April 2025), 2575–2588.
+    https://doi.org/10.14778/3742728.3742749
+</p></div></div>
+
+        

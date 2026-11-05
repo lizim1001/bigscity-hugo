@@ -1,0 +1,1252 @@
+[
+  {
+    "source": "application-fields/index.html",
+    "url": "/application-fields/",
+    "body_sha256": "3b7e61343efa6880b328aded170d1c7c4fad90e3805a2021d18fbf7a86bd19cf"
+  },
+  {
+    "source": "contact-us/index.html",
+    "url": "/contact-us/",
+    "body_sha256": "8cc7bff454f6740013f44c5212f6df990b41bc527f7b3edb7b804facc4fb05d9"
+  },
+  {
+    "source": "index.html",
+    "url": "/",
+    "body_sha256": "adc34f7f938243ea9a108ae66b7505c4f0d8da035d95effa9ff100535bb33364"
+  },
+  {
+    "source": "interpretable-ml/index.html",
+    "url": "/interpretable-ml/",
+    "body_sha256": "d96bf87b60844a3016c6623e05708f868f7d87954ea005672c7fd0979b5c0348"
+  },
+  {
+    "source": "interpretable-ml/svm-based-deep-net-1/index.html",
+    "url": "/interpretable-ml/svm-based-deep-net-1/",
+    "body_sha256": "dfe122acd74de04effb44c14f84a5b477741a3264c4c3a9e60aa5822b6d19d4b"
+  },
+  {
+    "source": "interpretable-ml/traffic-prediction/index.html",
+    "url": "/interpretable-ml/traffic-prediction/",
+    "body_sha256": "6ac6d99c030c48ff2c4e32ee87ac5034597ca728f18a55f7630d00f38fea508f"
+  },
+  {
+    "source": "interpretable-ml/wavelet-deep-net/index.html",
+    "url": "/interpretable-ml/wavelet-deep-net/",
+    "body_sha256": "8fd473dc41be27c1d2a722241105b70dacc4793a07656647914aa0ff6c0f5c0c"
+  },
+  {
+    "source": "jingyuan-wang/index.html",
+    "url": "/jingyuan-wang/",
+    "body_sha256": "62436309c55a081c8d8f83ee119b0911f65360f9080b3257d954ff415ac94bcb"
+  },
+  {
+    "source": "knowledge-fusion/index.html",
+    "url": "/knowledge-fusion/",
+    "body_sha256": "917540d1353a48ae2cda7a89f5b2848467275808301619028ed61902079decd0"
+  },
+  {
+    "source": "libcity/index.html",
+    "url": "/libcity/",
+    "body_sha256": "5f96c38598c1cc67231cc5fe1ddd5c2ce66609286e08f12b381ead93b26cfee2"
+  },
+  {
+    "source": "maps/index.html",
+    "url": "/maps/",
+    "body_sha256": "1f93b90f268e051c2230959580ada6df5a06d44b1b68b9f5089f2a954c4514db"
+  },
+  {
+    "source": "publications/a-force-directed-approach-to-seeking-route-recommendation-in-ride-on-demand-service-using-multi-source-urban-data/index.html",
+    "url": "/publications/a-force-directed-approach-to-seeking-route-recommendation-in-ride-on-demand-service-using-multi-source-urban-data/",
+    "body_sha256": "5f20939cc62412f5a9bcb654dae0b8347079c99477ac334047a8c799d8938f58"
+  },
+  {
+    "source": "publications/a-knowledge-transfer-model-for-covid-19-predicting-and-non-pharmaceutical-intervention-simulation/index.html",
+    "url": "/publications/a-knowledge-transfer-model-for-covid-19-predicting-and-non-pharmaceutical-intervention-simulation/",
+    "body_sha256": "2ed367ba606dec85fe6a0260d0307483907f56a517e7af63e4d8d1551528843f"
+  },
+  {
+    "source": "publications/a-literature-survey-on-smart-cities/index.html",
+    "url": "/publications/a-literature-survey-on-smart-cities/",
+    "body_sha256": "697fec316c4c6a3a9997edadd95f3ca9033c214f5dab426086fe1130787b4774"
+  },
+  {
+    "source": "publications/a-simple-but-quantifiable-approach-to-dynamic-price-prediction-in-ride-on-demand-services-leveraging-multi-source-urban-data/index.html",
+    "url": "/publications/a-simple-but-quantifiable-approach-to-dynamic-price-prediction-in-ride-on-demand-services-leveraging-multi-source-urban-data/",
+    "body_sha256": "2aaf63c3d0ce77791254eb87c8f6656ac8082d77947e91ae1d131caa60fb8aaf"
+  },
+  {
+    "source": "publications/airphynet-harnessing-physics-guided-neural-networks-for-air-quality-prediction/index.html",
+    "url": "/publications/airphynet-harnessing-physics-guided-neural-networks-for-air-quality-prediction/",
+    "body_sha256": "d7e05d798d2c3df8a718eabb0f17af1f35e04110ab99be4b00ee4467aa73d40f"
+  },
+  {
+    "source": "publications/alphaportfolio-for-investment-and-economically-interpretable-ai/index.html",
+    "url": "/publications/alphaportfolio-for-investment-and-economically-interpretable-ai/",
+    "body_sha256": "d4f4b2b5d59b63b2f15348d5ab763ca7dc69f98de70878286a34230ddb88a853"
+  },
+  {
+    "source": "publications/alphastock-a-buying-winners-and-selling-losers-investment-strategy-using-interpretable-deep-reinforcement-attention-networks/index.html",
+    "url": "/publications/alphastock-a-buying-winners-and-selling-losers-investment-strategy-using-interpretable-deep-reinforcement-attention-networks/",
+    "body_sha256": "0fc7f888e1b503df49274594afd95d16a3ea2a12808d7dbf1902f5f8def8c870"
+  },
+  {
+    "source": "publications/an-ai-assisted-economic-model-of-endogenous-mobility-and-infectious-diseases-the-case-of-covid-19-in-the-united-states/index.html",
+    "url": "/publications/an-ai-assisted-economic-model-of-endogenous-mobility-and-infectious-diseases-the-case-of-covid-19-in-the-united-states/",
+    "body_sha256": "d20a9f5e14bbd5b8984d51963f589b32c5a855d11f75fe69825e606178b87061"
+  },
+  {
+    "source": "publications/approximation-to-smooth-functions-by-low-rank-swish-networks/index.html",
+    "url": "/publications/approximation-to-smooth-functions-by-low-rank-swish-networks/",
+    "body_sha256": "68c86a5f0225d37725c9603e195ad1ba114f7001f9912379c5ab9c9408c25a85"
+  },
+  {
+    "source": "publications/artificial-intelligence-assisted-decision-making-a-statistical-framework/index.html",
+    "url": "/publications/artificial-intelligence-assisted-decision-making-a-statistical-framework/",
+    "body_sha256": "16ca158ae311b698ea3ea3df577df25cb6daf3de837680109e8aceb526a821d2"
+  },
+  {
+    "source": "publications/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination/index.html",
+    "url": "/publications/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination/",
+    "body_sha256": "241e143bb61d1f2087a113c4d6ef57b3e9687030247fa272fa4bbe47b362b114"
+  },
+  {
+    "source": "publications/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination-1/index.html",
+    "url": "/publications/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination-1/",
+    "body_sha256": "f84c24651bd304ad042aec74a8d86cb5985d5d72c5a63f7bbd76e8fdc86a6c1a"
+  },
+  {
+    "source": "publications/assortative-mating-on-blood-type-evidence-from-one-million-chinese-pregnancies/index.html",
+    "url": "/publications/assortative-mating-on-blood-type-evidence-from-one-million-chinese-pregnancies/",
+    "body_sha256": "4a625b0335c9b2f5343127fdb9535080eb82f8b1612be79b33f8feda8e7966df"
+  },
+  {
+    "source": "publications/big-data-analytics-for-sustainable-cities-an-information-triangulation-study-of-hazardous-materials-transportation/index.html",
+    "url": "/publications/big-data-analytics-for-sustainable-cities-an-information-triangulation-study-of-hazardous-materials-transportation/",
+    "body_sha256": "b19949aabae64d27b491998221b72c4974871cde2cf4a456311d8265d0526ac3"
+  },
+  {
+    "source": "publications/big-data-technology-in-infectious-diseases-modeling-simulation-and-prediction-after-the-covid-19-outbreak-a-survey/index.html",
+    "url": "/publications/big-data-technology-in-infectious-diseases-modeling-simulation-and-prediction-after-the-covid-19-outbreak-a-survey/",
+    "body_sha256": "87599857714840f62059cfa724b585439e46d27d8ea617bf0a241af496e4fdfc"
+  },
+  {
+    "source": "publications/bigcity-a-universal-spatiotemporal-model-for-unified-trajectory-and-traffic-state-data-analysis/index.html",
+    "url": "/publications/bigcity-a-universal-spatiotemporal-model-for-unified-trajectory-and-traffic-state-data-analysis/",
+    "body_sha256": "5b15a0fbc90aa9a05d8a8f4f17cc2be23689301245e7110c462ee8b14c5ec79b"
+  },
+  {
+    "source": "publications/bridging-traffic-state-and-trajectory-for-dynamic-road-network-and-trajectory-representation-learning/index.html",
+    "url": "/publications/bridging-traffic-state-and-trajectory-for-dynamic-road-network-and-trajectory-representation-learning/",
+    "body_sha256": "77f29971211f46d0f818324d143c0c6ad77b2b4ee7a16e5733ec8a68081da861"
+  },
+  {
+    "source": "publications/burst-sensitive-traffic-forecast-via-multi-property-personalized-fusion-in-federated-learning/index.html",
+    "url": "/publications/burst-sensitive-traffic-forecast-via-multi-property-personalized-fusion-in-federated-learning/",
+    "body_sha256": "e0826008a7e980c4902b8b79581f4a540726dcfae77bfd2a9cc93a85c3cd16ec"
+  },
+  {
+    "source": "publications/cd-cnn-a-partially-supervised-cross-domain-deep-learning-model-for-urban-resident-recognition/index.html",
+    "url": "/publications/cd-cnn-a-partially-supervised-cross-domain-deep-learning-model-for-urban-resident-recognition/",
+    "body_sha256": "c084eb5493a66fb6888c82b03ec7163812dda49fbe8c4a0c25250baaf6920e67"
+  },
+  {
+    "source": "publications/contextual-attention-modulation-towards-efficient-multi-task-adaptation-in-large-language-models/index.html",
+    "url": "/publications/contextual-attention-modulation-towards-efficient-multi-task-adaptation-in-large-language-models/",
+    "body_sha256": "6a69b52bc3e571fcac4f005df45be70338bec46b0b94c133b1239737533b1fe8"
+  },
+  {
+    "source": "publications/continuous-trajectory-generation-based-on-two-stage-gan/index.html",
+    "url": "/publications/continuous-trajectory-generation-based-on-two-stage-gan/",
+    "body_sha256": "248bfe93f98b698d5eb9f6582ac12a39901c2506d519b6501ca89d238a6090d6"
+  },
+  {
+    "source": "publications/coronavirus-disease-2019-outbreak-in-beijing-s-xinfadi-market-china-a-modeling-study-to-inform-future-resurgence-response/index.html",
+    "url": "/publications/coronavirus-disease-2019-outbreak-in-beijing-s-xinfadi-market-china-a-modeling-study-to-inform-future-resurgence-response/",
+    "body_sha256": "49d071b1e090f7d9333d1990226600bc87e61bc94041c78ecdf70c7d7f2f6d87"
+  },
+  {
+    "source": "publications/could-changing-futures-trading-rules-reduce-investor-leverage/index.html",
+    "url": "/publications/could-changing-futures-trading-rules-reduce-investor-leverage/",
+    "body_sha256": "f5029e4c356b51435273f2e5d9d10b11b984d0dfce4ba92ed1a0875e0628843c"
+  },
+  {
+    "source": "publications/coupling-implicit-and-explicit-knowledge-for-customer-volume-prediction/index.html",
+    "url": "/publications/coupling-implicit-and-explicit-knowledge-for-customer-volume-prediction/",
+    "body_sha256": "42f2f372feee45d4acaf9981381cbc9511283e6fb0271b13925ed3c9d0627eb6"
+  },
+  {
+    "source": "publications/cubic-fit-a-high-performance-and-tcp-cubic-friendly-congestion-control-algorithm/index.html",
+    "url": "/publications/cubic-fit-a-high-performance-and-tcp-cubic-friendly-congestion-control-algorithm/",
+    "body_sha256": "17fc08a3a8de60525bcac17f34764b79e02ea2b699fccb754a858ceb8211efdb"
+  },
+  {
+    "source": "publications/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation/index.html",
+    "url": "/publications/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation/",
+    "body_sha256": "721881e9c15bb14ccd459fd0226032d490298b1d1d08bf1a046cd7d4f9b8d897"
+  },
+  {
+    "source": "publications/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation-2/index.html",
+    "url": "/publications/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation-2/",
+    "body_sha256": "d8ca77fd936566717095bd27bc05a76761fbc934abc7aec8224d39cf90ce8c8b"
+  },
+  {
+    "source": "publications/data-intelligence-trends-and-challenges/index.html",
+    "url": "/publications/data-intelligence-trends-and-challenges/",
+    "body_sha256": "d0f92fde5ae3d821b4566ef9d3715ee472b67888de8d8f8888bc7811c87557aa"
+  },
+  {
+    "source": "publications/dc-vegas-a-delay-based-tcp-congestion-control-algorithm-for-datacenter-applications/index.html",
+    "url": "/publications/dc-vegas-a-delay-based-tcp-congestion-control-algorithm-for-datacenter-applications/",
+    "body_sha256": "5e9ced8c69e9e7376c702bede7a5e83fa8289371b8aced5343676e79fc01865f"
+  },
+  {
+    "source": "publications/decision-making-with-machine-learning-and-roc-curves/index.html",
+    "url": "/publications/decision-making-with-machine-learning-and-roc-curves/",
+    "body_sha256": "086fb8345863b3c7d2545ca45ff46afd58895c91a83bcedf8c3695758321f2d4"
+  },
+  {
+    "source": "publications/deep-fuzzy-cognitive-maps-for-interpretable-multivariate-time-series-prediction/index.html",
+    "url": "/publications/deep-fuzzy-cognitive-maps-for-interpretable-multivariate-time-series-prediction/",
+    "body_sha256": "54423dfccd43f083d4057f6ad02b3d3532b7221106cb65c751869f5fc8c162dd"
+  },
+  {
+    "source": "publications/deep-trajectory-recovery-with-fine-grained-calibration-using-kalman-filter/index.html",
+    "url": "/publications/deep-trajectory-recovery-with-fine-grained-calibration-using-kalman-filter/",
+    "body_sha256": "833b96b3e23f6881f6a6d294cfb4e786d266e5b289832fcee37ccdd171895e95"
+  },
+  {
+    "source": "publications/designing-for-the-future-in-the-age-of-pandemics-a-future-ready-design-research-frdr-process/index.html",
+    "url": "/publications/designing-for-the-future-in-the-age-of-pandemics-a-future-ready-design-research-frdr-process/",
+    "body_sha256": "8937baf8c971c8f68aabf2de4c6045d66fa3aa35434413603edcaf1dc3c92074"
+  },
+  {
+    "source": "publications/dgeye-probabilistic-risk-perception-and-prediction-for-urban-dangerous-goods-management/index.html",
+    "url": "/publications/dgeye-probabilistic-risk-perception-and-prediction-for-urban-dangerous-goods-management/",
+    "body_sha256": "120c685f09b4aa0692f92a0e8b425756138cc8e13dc0a88c5330dbc3ae9169a8"
+  },
+  {
+    "source": "publications/discovering-urban-spatio-temporal-structure-from-time-evolving-traffic-networks/index.html",
+    "url": "/publications/discovering-urban-spatio-temporal-structure-from-time-evolving-traffic-networks/",
+    "body_sha256": "398fcfa5705b1e939daec17bec3fddc3928d327f42ebecbf34ea5ccf5fd9bc94"
+  },
+  {
+    "source": "publications/dynamic-price-prediction-in-ride-on-demand-service-with-multi-source-urban-data/index.html",
+    "url": "/publications/dynamic-price-prediction-in-ride-on-demand-service-with-multi-source-urban-data/",
+    "body_sha256": "1dba754b5c1f29eabe413ad90f41780389e23f91c8dbb9ea087c1c1360a356fa"
+  },
+  {
+    "source": "publications/empowering-a-search-algorithms-with-neural-networks-for-personalized-route-recommendation/index.html",
+    "url": "/publications/empowering-a-search-algorithms-with-neural-networks-for-personalized-route-recommendation/",
+    "body_sha256": "e7cb270e200722506f1646533951c2ed1436ec5e1d87d067e3d3f430637d0fae"
+  },
+  {
+    "source": "publications/fine-grained-dynamic-price-prediction-in-ride-on-demand-services-models-and-evaluations/index.html",
+    "url": "/publications/fine-grained-dynamic-price-prediction-in-ride-on-demand-services-models-and-evaluations/",
+    "body_sha256": "34efc6f4d7786464aa46f87bc5141162327d768c680603173a93809cd669cdd6"
+  },
+  {
+    "source": "publications/from-risk-prediction-to-risk-traceability-a-study-on-action-design-for-big-data-enabled-urban-safety-management/index.html",
+    "url": "/publications/from-risk-prediction-to-risk-traceability-a-study-on-action-design-for-big-data-enabled-urban-safety-management/",
+    "body_sha256": "065feca074a64472657b566a22bded9237add0b92fda836f3460bc22f3d3e06b"
+  },
+  {
+    "source": "publications/full-bayesian-significance-testing-for-neural-networks/index.html",
+    "url": "/publications/full-bayesian-significance-testing-for-neural-networks/",
+    "body_sha256": "71a2b36797abcd9825e0b0940c168caa52ebc5326f0a55cdab2ad753f4acf5b5"
+  },
+  {
+    "source": "publications/full-bayesian-significance-testing-for-neural-networks-in-traffic-forecasting/index.html",
+    "url": "/publications/full-bayesian-significance-testing-for-neural-networks-in-traffic-forecasting/",
+    "body_sha256": "937d96ade9e869c06dd561b443679340a805340e8d1cd6f0c250525c66b2732e"
+  },
+  {
+    "source": "publications/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set/index.html",
+    "url": "/publications/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set/",
+    "body_sha256": "89331ee33eca6e088821081eda0ab196cfba73079ac672bfb0f66d0a425e48df"
+  },
+  {
+    "source": "publications/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set-1/index.html",
+    "url": "/publications/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set-1/",
+    "body_sha256": "b7510d370be3fe3bb829257da610ec5a33c8f217dafa28718950ee01766ec9e4"
+  },
+  {
+    "source": "publications/generative-adversarial-networks-enhanced-pre-training-for-insufficient-electronic-health-records-modeling/index.html",
+    "url": "/publications/generative-adversarial-networks-enhanced-pre-training-for-insufficient-electronic-health-records-modeling/",
+    "body_sha256": "6c4975b9ea53ca89094f81861b89540a1d3f5db807bbf750d9eb7c693945f94e"
+  },
+  {
+    "source": "publications/gtg-generalizable-trajectory-generation-model-for-urban-mobility/index.html",
+    "url": "/publications/gtg-generalizable-trajectory-generation-model-for-urban-mobility/",
+    "body_sha256": "34abcb0ebd901d25af9eed51f7615e7aa09f5c203a42fcac413d5295b182112e"
+  },
+  {
+    "source": "publications/hierarchical-frequency-decomposition-graph-neural-networks-for-road-network-representation-learning/index.html",
+    "url": "/publications/hierarchical-frequency-decomposition-graph-neural-networks-for-road-network-representation-learning/",
+    "body_sha256": "03cb38e453d12254a8d3cf6b4e7190a8ac7c52bd34956212b70dfb3116e9bb4d"
+  },
+  {
+    "source": "publications/high-temperature-and-high-humidity-reduce-the-transmission-of-covid-19/index.html",
+    "url": "/publications/high-temperature-and-high-humidity-reduce-the-transmission-of-covid-19/",
+    "body_sha256": "45c24994dbf46cf8d0e3ad501badc88ac44851453c6429bcb2cb5f9e7dcdc2ed"
+  },
+  {
+    "source": "publications/hygmap-representing-all-types-of-map-entities-via-heterogeneous-hypergraph/index.html",
+    "url": "/publications/hygmap-representing-all-types-of-map-entities-via-heterogeneous-hypergraph/",
+    "body_sha256": "f33aa5ca481ae7d3c8ec4dad5fc1930ffb2ca671b98eab961ec65af65dd72af3"
+  },
+  {
+    "source": "publications/icad-llm-one-for-all-anomaly-detection-via-in-context-learning-with-large-language-models/index.html",
+    "url": "/publications/icad-llm-one-for-all-anomaly-detection-via-in-context-learning-with-large-language-models/",
+    "body_sha256": "1f7a1db0339aad3e1c5be1b32de5401f1001aecb4ead580031f9d91a4f793c2a"
+  },
+  {
+    "source": "publications/index.html",
+    "url": "/publications/",
+    "body_sha256": "eae98b2928ff875c7e88e2723998702d2f95ca983ac8b93eb1011a968fee43cb"
+  },
+  {
+    "source": "publications/inferring-metapopulation-propagation-network-for-intra-city-epidemic-control-and-prevention/index.html",
+    "url": "/publications/inferring-metapopulation-propagation-network-for-intra-city-epidemic-control-and-prevention/",
+    "body_sha256": "fcf740aacb94ba8f54d87315e9a509ff5e91dd3a87cf5503a605206dcbe5524e"
+  },
+  {
+    "source": "publications/interpretability-is-a-kind-of-safety-an-interpreter-based-ensemble-for-adversary-defense/index.html",
+    "url": "/publications/interpretability-is-a-kind-of-safety-an-interpreter-based-ensemble-for-adversary-defense/",
+    "body_sha256": "3763bc0eb60120616ec66f47c7ce7602951796e58b2a37adb6de0a0134c4a7e9"
+  },
+  {
+    "source": "publications/interpretable-spatiotemporal-deep-learning-model-for-traffic-flow-prediction-based-on-potential-energy-fields/index.html",
+    "url": "/publications/interpretable-spatiotemporal-deep-learning-model-for-traffic-flow-prediction-based-on-potential-energy-fields/",
+    "body_sha256": "f2aa414d23b0a0830260dec0aae1e4e13af5d9d71e9ba3cac6fd3a8ed4c3e3d3"
+  },
+  {
+    "source": "publications/learnable-sparse-customization-in-heterogeneous-edge-computing/index.html",
+    "url": "/publications/learnable-sparse-customization-in-heterogeneous-edge-computing/",
+    "body_sha256": "a43058890213c844b75cb515d9bad093fc330f3a45300cf605864574b0ad361d"
+  },
+  {
+    "source": "publications/learnable-sparse-customization-in-heterogeneous-edge-computing-1/index.html",
+    "url": "/publications/learnable-sparse-customization-in-heterogeneous-edge-computing-1/",
+    "body_sha256": "1d3f245fe616e18cf334f00275602407ef9ba5c8d87856edc2af2c0a26fa5f55"
+  },
+  {
+    "source": "publications/learning-effective-road-network-representation-with-hierarchical-graph-neural-networks/index.html",
+    "url": "/publications/learning-effective-road-network-representation-with-hierarchical-graph-neural-networks/",
+    "body_sha256": "a5557e858345443e7f63ccf806de6109c55f7e4b48f876ccf4eebc343c832dc6"
+  },
+  {
+    "source": "publications/learning-to-effectively-estimate-the-travel-time-for-fastest-route-recommendation/index.html",
+    "url": "/publications/learning-to-effectively-estimate-the-travel-time-for-fastest-route-recommendation/",
+    "body_sha256": "67d8e59d4764aa4c4fc5cf037515743a4bc0ec05154a5602b0caa28763e631a7"
+  },
+  {
+    "source": "publications/learning-universal-multi-level-market-irrationality-factors-to-improve-stock-return-forecasting/index.html",
+    "url": "/publications/learning-universal-multi-level-market-irrationality-factors-to-improve-stock-return-forecasting/",
+    "body_sha256": "46f1e46e81a3ffc0688ff7df3470932448ec704989aba090f04ff8b3509ac16d"
+  },
+  {
+    "source": "publications/leverage-is-a-double-edged-sword/index.html",
+    "url": "/publications/leverage-is-a-double-edged-sword/",
+    "body_sha256": "b361b800a418d93314b2ea511938405a8eb2f0bd1091fcf467d5d2da85f4edfe"
+  },
+  {
+    "source": "publications/libcity-an-open-library-for-traffic-prediction/index.html",
+    "url": "/publications/libcity-an-open-library-for-traffic-prediction/",
+    "body_sha256": "7676823c4dc7dd91540a5f2897c7f00e0de11fe28fe26ae7a3b6aa30b35ab125"
+  },
+  {
+    "source": "publications/libepidemic-an-open-source-framework-for-modeling-infectious-disease-with-bigdata/index.html",
+    "url": "/publications/libepidemic-an-open-source-framework-for-modeling-infectious-disease-with-bigdata/",
+    "body_sha256": "70b3b7fecc65f5cd1fd738944195ded6647d4f1ad45af48d81b8551cbecfecb5"
+  },
+  {
+    "source": "publications/mamr-high-performance-mapreduce-programming-model-for-material-cloud-applications/index.html",
+    "url": "/publications/mamr-high-performance-mapreduce-programming-model-for-material-cloud-applications/",
+    "body_sha256": "cda2801115952326e5e19f84e218698e76d2ad6cf30005771d7b1443835f6fde"
+  },
+  {
+    "source": "publications/methods-and-applications-high-resolution-data-o/index.html",
+    "url": "/publications/methods-and-applications-high-resolution-data-o/",
+    "body_sha256": "975d20c8e96670ed82078f797b490ea099b98ecc67cb49dc47dd5ef997a4b59a"
+  },
+  {
+    "source": "publications/methods-and-applications-high-resolution-data-on-human-behavior-for-effective-covid-19-policy-making-wuhan-city-hubei-province-china-january-1-february-29-2020/index.html",
+    "url": "/publications/methods-and-applications-high-resolution-data-on-human-behavior-for-effective-covid-19-policy-making-wuhan-city-hubei-province-china-january-1-february-29-2020/",
+    "body_sha256": "b9697f47807a9e1eea9e64ccdc89689eca134819fec1bf5ead2440f91350ce26"
+  },
+  {
+    "source": "publications/mevar-mobility-enhanced-vehicle-trajectory-reconstruction-with-camera-sensing-network/index.html",
+    "url": "/publications/mevar-mobility-enhanced-vehicle-trajectory-reconstruction-with-camera-sensing-network/",
+    "body_sha256": "8febfdc07d0d3e0ddd13d61ea5434f272a8cde04db96149d4abe6e1bf9e0dd4d"
+  },
+  {
+    "source": "publications/multi-agent-pointer-transformer-seq-to-seq-reinforcement-learning-for-multi-vehicle-dynamic-pickup-delivery-problems/index.html",
+    "url": "/publications/multi-agent-pointer-transformer-seq-to-seq-reinforcement-learning-for-multi-vehicle-dynamic-pickup-delivery-problems/",
+    "body_sha256": "8bf285c7d5a46c61ab530fee737a0e76df4fa3e418f0dae3003b6e983cb83e6e"
+  },
+  {
+    "source": "publications/multilevel-wavelet-decomposition-network-for-interpretable-time-series-analysis/index.html",
+    "url": "/publications/multilevel-wavelet-decomposition-network-for-interpretable-time-series-analysis/",
+    "body_sha256": "8e8522816e530e28ae3b0db43ab9dc29d9565b569f25ec3cbdb0dafe8c372886"
+  },
+  {
+    "source": "publications/no-longer-sleeping-with-a-bomb-a-duet-system-for-protecting-urban-safety-from-dangerous-goods/index.html",
+    "url": "/publications/no-longer-sleeping-with-a-bomb-a-duet-system-for-protecting-urban-safety-from-dangerous-goods/",
+    "body_sha256": "3b0852cb662b5ca0e7bb651529c48a1978dd86b5e2bf5918b1cded63b73d7c79"
+  },
+  {
+    "source": "publications/orthosolver-a-neural-proper-orthogonal-decomposition-solver-for-pdes/index.html",
+    "url": "/publications/orthosolver-a-neural-proper-orthogonal-decomposition-solver-for-pdes/",
+    "body_sha256": "52e670ecf6d3d9825aae62acbecae21c8fc8cf7d425151b117f3239cb7d50b02"
+  },
+  {
+    "source": "publications/pdf-download/index.html",
+    "url": "/publications/pdf-download/",
+    "body_sha256": "079eca3a41a6026adca91e0e05e45b0105e6b314382c7d14ce6091f8b9c95002"
+  },
+  {
+    "source": "publications/pdformer-propagation-delay-aware-dynamic-long-range-transformer-for-traffic-flow-prediction/index.html",
+    "url": "/publications/pdformer-propagation-delay-aware-dynamic-long-range-transformer-for-traffic-flow-prediction/",
+    "body_sha256": "7c501f77a6416d4b1cc2703b472761e8cbf4ddd7e0f3521ff6f2b1bbc0be0ed5"
+  },
+  {
+    "source": "publications/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm/index.html",
+    "url": "/publications/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm/",
+    "body_sha256": "dcdb30c1055cd18a5a9ef11e5cf59ab23fd16ffcf946c35de2bfbe218295fa43"
+  },
+  {
+    "source": "publications/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm-1/index.html",
+    "url": "/publications/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm-1/",
+    "body_sha256": "ba38ba135e193b29f81fee833e07a68bcaee18d3ef5c22a238c12ccf49f5670b"
+  },
+  {
+    "source": "publications/poi-enhancer-an-llm-based-semantic-enhancement-framework-for-poi-representation-learning/index.html",
+    "url": "/publications/poi-enhancer-an-llm-based-semantic-enhancement-framework-for-poi-representation-learning/",
+    "body_sha256": "fbc790cb2b0cc189b337e7fee9a486e8afd47626e600d447e06cdf4ead2a1dd5"
+  },
+  {
+    "source": "publications/pre-training-of-time-aware-transformer-for-learning-robust-healthcare-representation/index.html",
+    "url": "/publications/pre-training-of-time-aware-transformer-for-learning-robust-healthcare-representation/",
+    "body_sha256": "813744245779987d117c840fd3f34c42fa82a12e71212c871afd4d40e52ed146"
+  },
+  {
+    "source": "publications/precision-cityshield-against-hazardous-chemicals-threats-via-location-mining-and-self-supervised-learning/index.html",
+    "url": "/publications/precision-cityshield-against-hazardous-chemicals-threats-via-location-mining-and-self-supervised-learning/",
+    "body_sha256": "a4342948e82a1e819dbea41b73c2b58da4e33e5601e24e52200d1c27fe26ed1f"
+  },
+  {
+    "source": "publications/predictability-of-road-traffic-and-congestion-in-urban-areas/index.html",
+    "url": "/publications/predictability-of-road-traffic-and-congestion-in-urban-areas/",
+    "body_sha256": "21d1434e53a3fb053e0048e47645b23d4bbc6296ab5579ea1911056e5339be9d"
+  },
+  {
+    "source": "publications/prodiff-prototype-guided-diffusion-for-minimal-information-trajectory-imputation/index.html",
+    "url": "/publications/prodiff-prototype-guided-diffusion-for-minimal-information-trajectory-imputation/",
+    "body_sha256": "dcd7b742628e493084d08a2015832e8e0daa0a1ff09f65d627fadce01b3e7de2"
+  },
+  {
+    "source": "publications/product-feature-grouping-for-opinion-mining/index.html",
+    "url": "/publications/product-feature-grouping-for-opinion-mining/",
+    "body_sha256": "1cf0cd78d406f98168eebfe9dd8b7d55d2ea8c9f6fb192255c827c4965985751"
+  },
+  {
+    "source": "publications/rod-revenue-seeking-strategies-analysis-and-revenue-prediction-in-ride-on-demand-service-using-multi-source-urban-data/index.html",
+    "url": "/publications/rod-revenue-seeking-strategies-analysis-and-revenue-prediction-in-ride-on-demand-service-using-multi-source-urban-data/",
+    "body_sha256": "4c8b02f0b7e9fa158aaa6a81ee3cf9dadc27fcfecbbd7759a2b32332d1c9ed6f"
+  },
+  {
+    "source": "publications/rosa-enhancing-parameter-efficient-fine-tuning-via-rope-aware-selective-adaptation-in-large-language-models/index.html",
+    "url": "/publications/rosa-enhancing-parameter-efficient-fine-tuning-via-rope-aware-selective-adaptation-in-large-language-models/",
+    "body_sha256": "c44362c9c37281fbad31a58357f6c095d0fd51272de2b3cddb24b30ee1fe342b"
+  },
+  {
+    "source": "publications/rsd-a-reinforced-siamese-network-with-domain-knowledge-for-early-diagnosis/index.html",
+    "url": "/publications/rsd-a-reinforced-siamese-network-with-domain-knowledge-for-early-diagnosis/",
+    "body_sha256": "ae442237048ba65f1578ea7c98c43208cab38ac059a0361f508b616db81f27ee"
+  },
+  {
+    "source": "publications/seeing-the-unseen-learning-basis-confounder-representations-for-robust-traffic-prediction/index.html",
+    "url": "/publications/seeing-the-unseen-learning-basis-confounder-representations-for-robust-traffic-prediction/",
+    "body_sha256": "a321df9a474c53c0dab34966000ace9b168a3560f75faed77756b9f05918cb46"
+  },
+  {
+    "source": "publications/seeking-based-on-dynamic-prices-higher-earnings-and-better-strategies-in-ride-on-demand-services/index.html",
+    "url": "/publications/seeking-based-on-dynamic-prices-higher-earnings-and-better-strategies-in-ride-on-demand-services/",
+    "body_sha256": "86c8c420c444374f376234f910be71c3d3833f0b50da1563981dfbcf977f87c9"
+  },
+  {
+    "source": "publications/seeking-in-ride-on-demand-service-a-reinforcement-learning-model-with-dynamic-price-prediction/index.html",
+    "url": "/publications/seeking-in-ride-on-demand-service-a-reinforcement-learning-model-with-dynamic-price-prediction/",
+    "body_sha256": "104b0c6da831e33be10adcab6fbbd0861424e64cc8dd6593efafac8c5d23ac33"
+  },
+  {
+    "source": "publications/self-supervised-trajectory-representation-learning-with-temporal-regularities-and-travel-semantics/index.html",
+    "url": "/publications/self-supervised-trajectory-representation-learning-with-temporal-regularities-and-travel-semantics/",
+    "body_sha256": "60174fe5624a91c812e490ab35baeb9965104775fa9f5c74751fce6870e1cd8f"
+  },
+  {
+    "source": "publications/shortening-passengers-travel-time-a-dynamic-metro-train-scheduling-approach-using-deep-reinforcement-learning/index.html",
+    "url": "/publications/shortening-passengers-travel-time-a-dynamic-metro-train-scheduling-approach-using-deep-reinforcement-learning/",
+    "body_sha256": "0bd27b1714ddca4da89584c1b050c810c302b0ff66857cdd6fa3aa9e8219db94"
+  },
+  {
+    "source": "publications/spatio-temporal-data-enhanced-vision-language-model-for-traffic-scene-understanding/index.html",
+    "url": "/publications/spatio-temporal-data-enhanced-vision-language-model-for-traffic-scene-understanding/",
+    "body_sha256": "f9111ee298e1aa7b159539ac661adbbb520d74ea2a45f48af2e4bb4b14f9ca96"
+  },
+  {
+    "source": "publications/spatio-temporal-self-supervised-learning-for-traffic-flow-prediction/index.html",
+    "url": "/publications/spatio-temporal-self-supervised-learning-for-traffic-flow-prediction/",
+    "body_sha256": "8b7aeb5b8444e20b4e0fc6a3bbf005fd304f99f61f61cf978a4ec747a148ff2f"
+  },
+  {
+    "source": "publications/statistical-tests-for-replacing-human-decision-makers-with-algorithms/index.html",
+    "url": "/publications/statistical-tests-for-replacing-human-decision-makers-with-algorithms/",
+    "body_sha256": "0e17c804780a145424c463504ad07b73d9e8e4631338f3a9bb35f4a3a7bc9da0"
+  },
+  {
+    "source": "publications/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction/index.html",
+    "url": "/publications/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction/",
+    "body_sha256": "8f983fa05819873fed9967ccc16a095718448a5f2178952ab41b98ca13cab874"
+  },
+  {
+    "source": "publications/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction-1/index.html",
+    "url": "/publications/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction-1/",
+    "body_sha256": "c2d799e3207aa771ba887a5037dcd44377aa4b80a637f1f91f8a93f3614d3fef"
+  },
+  {
+    "source": "publications/svm-based-deep-stacking-network/index.html",
+    "url": "/publications/svm-based-deep-stacking-network/",
+    "body_sha256": "8617b3ad5051f4a351ec422bdd30ce8c897b6ab2c5f3b6c0973791828298f31d"
+  },
+  {
+    "source": "publications/tcp-fit-an-improved-tcp-algorithm-for-heterogeneous-networks/index.html",
+    "url": "/publications/tcp-fit-an-improved-tcp-algorithm-for-heterogeneous-networks/",
+    "body_sha256": "7179de1d56917e0ab9fa1de737fc1afd831e531e5263eb2bf5392d70fdb231e6"
+  },
+  {
+    "source": "publications/tcp-fit-an-improved-tcp-congestion-control-algorithm-and-its-performance/index.html",
+    "url": "/publications/tcp-fit-an-improved-tcp-congestion-control-algorithm-and-its-performance/",
+    "body_sha256": "69cb0a1f8b344b23223a4eb7150b534398945363dccbce44d958b065a56b2139"
+  },
+  {
+    "source": "publications/traffic-flow-prediction-based-on-spatiotemporal-potential-energy-fields/index.html",
+    "url": "/publications/traffic-flow-prediction-based-on-spatiotemporal-potential-energy-fields/",
+    "body_sha256": "2337fb0c163891162ce8239a7e6cb3a3e902318759ce5ca55151a3ed71231562"
+  },
+  {
+    "source": "publications/traffic-speed-prediction-and-congestion-source-exploration-a-deep-learning-method/index.html",
+    "url": "/publications/traffic-speed-prediction-and-congestion-source-exploration-a-deep-learning-method/",
+    "body_sha256": "f1a3b5dd8d805eb59a930a36cf617e4877a240f08ecf7a038d7366ab19b1f036"
+  },
+  {
+    "source": "publications/transmission-dynamics-and-the-effects-of-non-ph/index.html",
+    "url": "/publications/transmission-dynamics-and-the-effects-of-non-ph/",
+    "body_sha256": "f2169d95ef406d0358ccdb9ff2359997fe6c08e6aae541e818705ea1abfb649c"
+  },
+  {
+    "source": "publications/transmission-dynamics-and-the-effects-of-non-pharmaceutical-interventions-in-the-covid-19-outbreak-resurged-in-beijing-china-a-descriptive-and-modelling-study-1/index.html",
+    "url": "/publications/transmission-dynamics-and-the-effects-of-non-pharmaceutical-interventions-in-the-covid-19-outbreak-resurged-in-beijing-china-a-descriptive-and-modelling-study-1/",
+    "body_sha256": "6260d21efbc0c9a55506804b1f736cafff4864f352e8d31cf1aa6f8c1eba86d1"
+  },
+  {
+    "source": "publications/understanding-urban-dynamics-via-context-aware-tensor-factorization-with-neighboring-regularization/index.html",
+    "url": "/publications/understanding-urban-dynamics-via-context-aware-tensor-factorization-with-neighboring-regularization/",
+    "body_sha256": "dc7879829af2a48fa6c3e178eefcbd62e56f3129ebb24db1b4dd7d330a884d39"
+  },
+  {
+    "source": "publications/veccity-a-taxonomy-guided-library-for-map-entity-representation-learning/index.html",
+    "url": "/publications/veccity-a-taxonomy-guided-library-for-map-entity-representation-learning/",
+    "body_sha256": "69dfb50b2000e97244a771509d036566a31ebb1b760e8837a1caf644dc9f6af2"
+  },
+  {
+    "source": "publications/when-a-wavelet-dtw-hybrid-attention-network-for-heterogeneous-time-series-analysis/index.html",
+    "url": "/publications/when-a-wavelet-dtw-hybrid-attention-network-for-heterogeneous-time-series-analysis/",
+    "body_sha256": "fd8785738b3113627693d15e6059e600ef232a77b69d6baee457d78a561961b0"
+  },
+  {
+    "source": "publications/when-is-the-covid-19-pandemic-over-evidence-from-the-stay-at-home-policy-execution-in-106-chinese-cities/index.html",
+    "url": "/publications/when-is-the-covid-19-pandemic-over-evidence-from-the-stay-at-home-policy-execution-in-106-chinese-cities/",
+    "body_sha256": "6e3ef37ebe9f5c37b6145ead66161f7894670bd15e81bf3a87f4b9e09a30ce4c"
+  },
+  {
+    "source": "readings/index.html",
+    "url": "/readings/",
+    "body_sha256": "3e71af9e38fed6b555dc2cc27681c34b12329a5e0abefb1e5d9806a4a713fdb1"
+  },
+  {
+    "source": "readings/sp1/index.html",
+    "url": "/readings/sp1/",
+    "body_sha256": "ecee08c8cf3f9afff1a9654ad3e1d3f22a3a17f9a12ca7ea6176aa03f6898780"
+  },
+  {
+    "source": "readings/sp1-1/index.html",
+    "url": "/readings/sp1-1/",
+    "body_sha256": "4d39cd48f43696d9064740d541e07a41f41b23233cfff21f299988231484997b"
+  },
+  {
+    "source": "readings/sp1-2/index.html",
+    "url": "/readings/sp1-2/",
+    "body_sha256": "96b639e578c0f3fc7756771d2a10c978a3027a5fa2f3c643f09a4000fbbb0b22"
+  },
+  {
+    "source": "readings/sp1-3/index.html",
+    "url": "/readings/sp1-3/",
+    "body_sha256": "6ca8f5214535a9b217e1163853ab8a7a8da0c5b715c9e674b963db2ded8450ae"
+  },
+  {
+    "source": "readings/sp1-3-2/index.html",
+    "url": "/readings/sp1-3-2/",
+    "body_sha256": "65128ede931afdc61e8b881163103e9faf61fc2ad5f62f86550a5eb45d368033"
+  },
+  {
+    "source": "readings/sp1-4/index.html",
+    "url": "/readings/sp1-4/",
+    "body_sha256": "8d81bec7abb68ac321614d5d939ac021bfd876d3a3acc8ffcd3dc04a2947b507"
+  },
+  {
+    "source": "readings/sp1-5/index.html",
+    "url": "/readings/sp1-5/",
+    "body_sha256": "e459886f3ecef804fcc48ec042515b105bca79209698d63a2777effafd70fbe7"
+  },
+  {
+    "source": "readings/sp1-6/index.html",
+    "url": "/readings/sp1-6/",
+    "body_sha256": "5675a88a2c98eaa5f26b89d15e68eee9357b142ac1dd8690219373ab8910d832"
+  },
+  {
+    "source": "readings/special-issues/index.html",
+    "url": "/readings/special-issues/",
+    "body_sha256": "1e64ba7f80e52f78286424e95d5195e34454f82ea54081b9f1334d0db1a9ef5c"
+  },
+  {
+    "source": "readings/special-issues/si1/index.html",
+    "url": "/readings/special-issues/si1/",
+    "body_sha256": "b1f41097a717c765a19793ca4cd34b8e7b84468457f8623a6a5334c08ee770bc"
+  },
+  {
+    "source": "readings/special-issues/si2/index.html",
+    "url": "/readings/special-issues/si2/",
+    "body_sha256": "759bd161cae3f70fe7071f76397293559c4a7f7c58ea84cd7f9ca4979ef4f2b7"
+  },
+  {
+    "source": "readings/special-issues/si3/index.html",
+    "url": "/readings/special-issues/si3/",
+    "body_sha256": "ce860a9796ca546ceafdaaa7616503dd44baa368731afe6feb0080529e829773"
+  },
+  {
+    "source": "readings/special-issues/si4/index.html",
+    "url": "/readings/special-issues/si4/",
+    "body_sha256": "2e6e5789346e653be3b8c61e2db8448b83077554de7a86c8c5443f85a6cbe0f4"
+  },
+  {
+    "source": "readings/special-issues/si5/index.html",
+    "url": "/readings/special-issues/si5/",
+    "body_sha256": "0e0f82ea821944c37c0bfd431cd6af318308dc022072a512cd086102558c0c80"
+  },
+  {
+    "source": "readings/special-issues/si6/index.html",
+    "url": "/readings/special-issues/si6/",
+    "body_sha256": "01969c9803aee64ea535efe8fbaad5858fc4c7cfe10a7061ba0db2437ca57406"
+  },
+  {
+    "source": "readings/special-issues/si7/index.html",
+    "url": "/readings/special-issues/si7/",
+    "body_sha256": "6a39929751eac3ff3a49d8423f10aca2163b147c44712c47f7ec28b8f1ffa542"
+  },
+  {
+    "source": "readings/special-issues/si8/index.html",
+    "url": "/readings/special-issues/si8/",
+    "body_sha256": "942e514641fc26da06f752458bd0a988275734b5a9ff2dd2add45c6be0815101"
+  },
+  {
+    "source": "readings/visualizations/index.html",
+    "url": "/readings/visualizations/",
+    "body_sha256": "69f0bc003a0f4cd6ad1556808b22d753d38f4da636b231171188f13d74a00bac"
+  },
+  {
+    "source": "seminars/2022-1/index.html",
+    "url": "/seminars/2022-1/",
+    "body_sha256": "52347060a31d04ce295835645bca5dc9adba0d36bc212f03b64580c5e76c67bf"
+  },
+  {
+    "source": "seminars/2023-1/index.html",
+    "url": "/seminars/2023-1/",
+    "body_sha256": "7a90017713b4577ecf9f2fe74fd162e65a364f49cee46e9f5c122380087fea60"
+  },
+  {
+    "source": "seminars/2024/index.html",
+    "url": "/seminars/2024/",
+    "body_sha256": "c44e32c52e8a7809a94000c5893989e45c1336fc3a8d6209b343c61616a7b972"
+  },
+  {
+    "source": "seminars/files/index.html",
+    "url": "/seminars/files/",
+    "body_sha256": "1da0328296b569463f494505a1ded77e9ef032d4dfeb1620b0f809f66720bcfe"
+  },
+  {
+    "source": "seminars/index.html",
+    "url": "/seminars/",
+    "body_sha256": "51b286d16592fd15b23196f920fbe4df3b10fa39fc23e025ab2954438e007179"
+  },
+  {
+    "source": "special-issues/business-data-analytics/index.html",
+    "url": "/special-issues/business-data-analytics/",
+    "body_sha256": "e0eb605538ceaecbc4de431f9439f25a45fe25c0ceff3a5591cbc1bc5e53ae07"
+  },
+  {
+    "source": "special-issues/index.html",
+    "url": "/special-issues/",
+    "body_sha256": "9313fcd35834e1a57f247fec66110c8ba03cc8beb62198901d324472fb1e5698"
+  },
+  {
+    "source": "special-issues/urban-computing/index.html",
+    "url": "/special-issues/urban-computing/",
+    "body_sha256": "2e27d7d989017af9de7432006cbf48e5c5f0f14298e5e3d777b7a91bce659421"
+  },
+  {
+    "source": "st-pattern-mining/index.html",
+    "url": "/st-pattern-mining/",
+    "body_sha256": "06c716047c85b66163b50d8c7b595ed58a0c6594bbc1ec6c6b9b5174d524ffba"
+  },
+  {
+    "source": "students-alumni/a-force-directed-approach-to-seeking-route-recommendation-in-ride-on-demand-service-using-multi-source-urban-data/index.html",
+    "url": "/students-alumni/a-force-directed-approach-to-seeking-route-recommendation-in-ride-on-demand-service-using-multi-source-urban-data/",
+    "body_sha256": "5f20939cc62412f5a9bcb654dae0b8347079c99477ac334047a8c799d8938f58"
+  },
+  {
+    "source": "students-alumni/a-literature-survey-on-smart-cities/a-knowledge-transfer-model-for-covid-19-predicting-and-non-pharmaceutical-intervention-simulation/index.html",
+    "url": "/students-alumni/a-literature-survey-on-smart-cities/a-knowledge-transfer-model-for-covid-19-predicting-and-non-pharmaceutical-intervention-simulation/",
+    "body_sha256": "2ed367ba606dec85fe6a0260d0307483907f56a517e7af63e4d8d1551528843f"
+  },
+  {
+    "source": "students-alumni/a-literature-survey-on-smart-cities/index.html",
+    "url": "/students-alumni/a-literature-survey-on-smart-cities/",
+    "body_sha256": "697fec316c4c6a3a9997edadd95f3ca9033c214f5dab426086fe1130787b4774"
+  },
+  {
+    "source": "students-alumni/a-simple-but-quantifiable-approach-to-dynamic-price-prediction-in-ride-on-demand-services-leveraging-multi-source-urban-data/index.html",
+    "url": "/students-alumni/a-simple-but-quantifiable-approach-to-dynamic-price-prediction-in-ride-on-demand-services-leveraging-multi-source-urban-data/",
+    "body_sha256": "2aaf63c3d0ce77791254eb87c8f6656ac8082d77947e91ae1d131caa60fb8aaf"
+  },
+  {
+    "source": "students-alumni/airphynet-harnessing-physics-guided-neural-networks-for-air-quality-prediction/index.html",
+    "url": "/students-alumni/airphynet-harnessing-physics-guided-neural-networks-for-air-quality-prediction/",
+    "body_sha256": "d7e05d798d2c3df8a718eabb0f17af1f35e04110ab99be4b00ee4467aa73d40f"
+  },
+  {
+    "source": "students-alumni/alphaportfolio-for-investment-and-economically-interpretable-ai/index.html",
+    "url": "/students-alumni/alphaportfolio-for-investment-and-economically-interpretable-ai/",
+    "body_sha256": "d4f4b2b5d59b63b2f15348d5ab763ca7dc69f98de70878286a34230ddb88a853"
+  },
+  {
+    "source": "students-alumni/alphastock-a-buying-winners-and-selling-losers-investment-strategy-using-interpretable-deep-reinforcement-attention-networks/index.html",
+    "url": "/students-alumni/alphastock-a-buying-winners-and-selling-losers-investment-strategy-using-interpretable-deep-reinforcement-attention-networks/",
+    "body_sha256": "0fc7f888e1b503df49274594afd95d16a3ea2a12808d7dbf1902f5f8def8c870"
+  },
+  {
+    "source": "students-alumni/an-ai-assisted-economic-model-of-endogenous-mobility-and-infectious-diseases-the-case-of-covid-19-in-the-united-states/index.html",
+    "url": "/students-alumni/an-ai-assisted-economic-model-of-endogenous-mobility-and-infectious-diseases-the-case-of-covid-19-in-the-united-states/",
+    "body_sha256": "d20a9f5e14bbd5b8984d51963f589b32c5a855d11f75fe69825e606178b87061"
+  },
+  {
+    "source": "students-alumni/approximation-to-smooth-functions-by-low-rank-swish-networks/index.html",
+    "url": "/students-alumni/approximation-to-smooth-functions-by-low-rank-swish-networks/",
+    "body_sha256": "68c86a5f0225d37725c9603e195ad1ba114f7001f9912379c5ab9c9408c25a85"
+  },
+  {
+    "source": "students-alumni/artificial-intelligence-assisted-decision-making-a-statistical-framework/index.html",
+    "url": "/students-alumni/artificial-intelligence-assisted-decision-making-a-statistical-framework/",
+    "body_sha256": "16ca158ae311b698ea3ea3df577df25cb6daf3de837680109e8aceb526a821d2"
+  },
+  {
+    "source": "students-alumni/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination/index.html",
+    "url": "/students-alumni/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination/",
+    "body_sha256": "241e143bb61d1f2087a113c4d6ef57b3e9687030247fa272fa4bbe47b362b114"
+  },
+  {
+    "source": "students-alumni/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination-1/index.html",
+    "url": "/students-alumni/assessing-the-asymptomatic-proportion-of-sars-cov-2-infection-with-age-in-china-before-mass-vaccination-1/",
+    "body_sha256": "f84c24651bd304ad042aec74a8d86cb5985d5d72c5a63f7bbd76e8fdc86a6c1a"
+  },
+  {
+    "source": "students-alumni/assortative-mating-on-blood-type-evidence-from-one-million-chinese-pregnancies/index.html",
+    "url": "/students-alumni/assortative-mating-on-blood-type-evidence-from-one-million-chinese-pregnancies/",
+    "body_sha256": "4a625b0335c9b2f5343127fdb9535080eb82f8b1612be79b33f8feda8e7966df"
+  },
+  {
+    "source": "students-alumni/big-data-analytics-for-sustainable-cities-an-information-triangulation-study-of-hazardous-materials-transportation/index.html",
+    "url": "/students-alumni/big-data-analytics-for-sustainable-cities-an-information-triangulation-study-of-hazardous-materials-transportation/",
+    "body_sha256": "b19949aabae64d27b491998221b72c4974871cde2cf4a456311d8265d0526ac3"
+  },
+  {
+    "source": "students-alumni/big-data-technology-in-infectious-diseases-modeling-simulation-and-prediction-after-the-covid-19-outbreak-a-survey/index.html",
+    "url": "/students-alumni/big-data-technology-in-infectious-diseases-modeling-simulation-and-prediction-after-the-covid-19-outbreak-a-survey/",
+    "body_sha256": "87599857714840f62059cfa724b585439e46d27d8ea617bf0a241af496e4fdfc"
+  },
+  {
+    "source": "students-alumni/bigcity-a-universal-spatiotemporal-model-for-unified-trajectory-and-traffic-state-data-analysis/index.html",
+    "url": "/students-alumni/bigcity-a-universal-spatiotemporal-model-for-unified-trajectory-and-traffic-state-data-analysis/",
+    "body_sha256": "5b15a0fbc90aa9a05d8a8f4f17cc2be23689301245e7110c462ee8b14c5ec79b"
+  },
+  {
+    "source": "students-alumni/bridging-traffic-state-and-trajectory-for-dynamic-road-network-and-trajectory-representation-learning/index.html",
+    "url": "/students-alumni/bridging-traffic-state-and-trajectory-for-dynamic-road-network-and-trajectory-representation-learning/",
+    "body_sha256": "77f29971211f46d0f818324d143c0c6ad77b2b4ee7a16e5733ec8a68081da861"
+  },
+  {
+    "source": "students-alumni/burst-sensitive-traffic-forecast-via-multi-property-personalized-fusion-in-federated-learning/index.html",
+    "url": "/students-alumni/burst-sensitive-traffic-forecast-via-multi-property-personalized-fusion-in-federated-learning/",
+    "body_sha256": "e0826008a7e980c4902b8b79581f4a540726dcfae77bfd2a9cc93a85c3cd16ec"
+  },
+  {
+    "source": "students-alumni/cd-cnn-a-partially-supervised-cross-domain-deep-learning-model-for-urban-resident-recognition/index.html",
+    "url": "/students-alumni/cd-cnn-a-partially-supervised-cross-domain-deep-learning-model-for-urban-resident-recognition/",
+    "body_sha256": "c084eb5493a66fb6888c82b03ec7163812dda49fbe8c4a0c25250baaf6920e67"
+  },
+  {
+    "source": "students-alumni/contextual-attention-modulation-towards-efficient-multi-task-adaptation-in-large-language-models/index.html",
+    "url": "/students-alumni/contextual-attention-modulation-towards-efficient-multi-task-adaptation-in-large-language-models/",
+    "body_sha256": "6a69b52bc3e571fcac4f005df45be70338bec46b0b94c133b1239737533b1fe8"
+  },
+  {
+    "source": "students-alumni/continuous-trajectory-generation-based-on-two-stage-gan/index.html",
+    "url": "/students-alumni/continuous-trajectory-generation-based-on-two-stage-gan/",
+    "body_sha256": "248bfe93f98b698d5eb9f6582ac12a39901c2506d519b6501ca89d238a6090d6"
+  },
+  {
+    "source": "students-alumni/coronavirus-disease-2019-outbreak-in-beijing-s-xinfadi-market-china-a-modeling-study-to-inform-future-resurgence-response/index.html",
+    "url": "/students-alumni/coronavirus-disease-2019-outbreak-in-beijing-s-xinfadi-market-china-a-modeling-study-to-inform-future-resurgence-response/",
+    "body_sha256": "49d071b1e090f7d9333d1990226600bc87e61bc94041c78ecdf70c7d7f2f6d87"
+  },
+  {
+    "source": "students-alumni/could-changing-futures-trading-rules-reduce-investor-leverage/index.html",
+    "url": "/students-alumni/could-changing-futures-trading-rules-reduce-investor-leverage/",
+    "body_sha256": "f5029e4c356b51435273f2e5d9d10b11b984d0dfce4ba92ed1a0875e0628843c"
+  },
+  {
+    "source": "students-alumni/coupling-implicit-and-explicit-knowledge-for-customer-volume-prediction/index.html",
+    "url": "/students-alumni/coupling-implicit-and-explicit-knowledge-for-customer-volume-prediction/",
+    "body_sha256": "42f2f372feee45d4acaf9981381cbc9511283e6fb0271b13925ed3c9d0627eb6"
+  },
+  {
+    "source": "students-alumni/cubic-fit-a-high-performance-and-tcp-cubic-friendly-congestion-control-algorithm/index.html",
+    "url": "/students-alumni/cubic-fit-a-high-performance-and-tcp-cubic-friendly-congestion-control-algorithm/",
+    "body_sha256": "17fc08a3a8de60525bcac17f34764b79e02ea2b699fccb754a858ceb8211efdb"
+  },
+  {
+    "source": "students-alumni/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation/index.html",
+    "url": "/students-alumni/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation/",
+    "body_sha256": "721881e9c15bb14ccd459fd0226032d490298b1d1d08bf1a046cd7d4f9b8d897"
+  },
+  {
+    "source": "students-alumni/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation-2/index.html",
+    "url": "/students-alumni/curriculum-pre-training-heterogeneous-subgraph-transformer-for-top-n-recommendation-2/",
+    "body_sha256": "d8ca77fd936566717095bd27bc05a76761fbc934abc7aec8224d39cf90ce8c8b"
+  },
+  {
+    "source": "students-alumni/data-intelligence-trends-and-challenges/index.html",
+    "url": "/students-alumni/data-intelligence-trends-and-challenges/",
+    "body_sha256": "d0f92fde5ae3d821b4566ef9d3715ee472b67888de8d8f8888bc7811c87557aa"
+  },
+  {
+    "source": "students-alumni/dc-vegas-a-delay-based-tcp-congestion-control-algorithm-for-datacenter-applications/index.html",
+    "url": "/students-alumni/dc-vegas-a-delay-based-tcp-congestion-control-algorithm-for-datacenter-applications/",
+    "body_sha256": "5e9ced8c69e9e7376c702bede7a5e83fa8289371b8aced5343676e79fc01865f"
+  },
+  {
+    "source": "students-alumni/decision-making-with-machine-learning-and-roc-curves/index.html",
+    "url": "/students-alumni/decision-making-with-machine-learning-and-roc-curves/",
+    "body_sha256": "086fb8345863b3c7d2545ca45ff46afd58895c91a83bcedf8c3695758321f2d4"
+  },
+  {
+    "source": "students-alumni/deep-fuzzy-cognitive-maps-for-interpretable-multivariate-time-series-prediction/index.html",
+    "url": "/students-alumni/deep-fuzzy-cognitive-maps-for-interpretable-multivariate-time-series-prediction/",
+    "body_sha256": "54423dfccd43f083d4057f6ad02b3d3532b7221106cb65c751869f5fc8c162dd"
+  },
+  {
+    "source": "students-alumni/deep-trajectory-recovery-with-fine-grained-calibration-using-kalman-filter/index.html",
+    "url": "/students-alumni/deep-trajectory-recovery-with-fine-grained-calibration-using-kalman-filter/",
+    "body_sha256": "833b96b3e23f6881f6a6d294cfb4e786d266e5b289832fcee37ccdd171895e95"
+  },
+  {
+    "source": "students-alumni/designing-for-the-future-in-the-age-of-pandemics-a-future-ready-design-research-frdr-process/index.html",
+    "url": "/students-alumni/designing-for-the-future-in-the-age-of-pandemics-a-future-ready-design-research-frdr-process/",
+    "body_sha256": "8937baf8c971c8f68aabf2de4c6045d66fa3aa35434413603edcaf1dc3c92074"
+  },
+  {
+    "source": "students-alumni/dgeye-probabilistic-risk-perception-and-prediction-for-urban-dangerous-goods-management/index.html",
+    "url": "/students-alumni/dgeye-probabilistic-risk-perception-and-prediction-for-urban-dangerous-goods-management/",
+    "body_sha256": "120c685f09b4aa0692f92a0e8b425756138cc8e13dc0a88c5330dbc3ae9169a8"
+  },
+  {
+    "source": "students-alumni/discovering-urban-spatio-temporal-structure-from-time-evolving-traffic-networks/index.html",
+    "url": "/students-alumni/discovering-urban-spatio-temporal-structure-from-time-evolving-traffic-networks/",
+    "body_sha256": "398fcfa5705b1e939daec17bec3fddc3928d327f42ebecbf34ea5ccf5fd9bc94"
+  },
+  {
+    "source": "students-alumni/dynamic-price-prediction-in-ride-on-demand-service-with-multi-source-urban-data/index.html",
+    "url": "/students-alumni/dynamic-price-prediction-in-ride-on-demand-service-with-multi-source-urban-data/",
+    "body_sha256": "1dba754b5c1f29eabe413ad90f41780389e23f91c8dbb9ea087c1c1360a356fa"
+  },
+  {
+    "source": "students-alumni/empowering-a-search-algorithms-with-neural-networks-for-personalized-route-recommendation/index.html",
+    "url": "/students-alumni/empowering-a-search-algorithms-with-neural-networks-for-personalized-route-recommendation/",
+    "body_sha256": "e7cb270e200722506f1646533951c2ed1436ec5e1d87d067e3d3f430637d0fae"
+  },
+  {
+    "source": "students-alumni/fine-grained-dynamic-price-prediction-in-ride-on-demand-services-models-and-evaluations/index.html",
+    "url": "/students-alumni/fine-grained-dynamic-price-prediction-in-ride-on-demand-services-models-and-evaluations/",
+    "body_sha256": "34efc6f4d7786464aa46f87bc5141162327d768c680603173a93809cd669cdd6"
+  },
+  {
+    "source": "students-alumni/from-risk-prediction-to-risk-traceability-a-study-on-action-design-for-big-data-enabled-urban-safety-management/index.html",
+    "url": "/students-alumni/from-risk-prediction-to-risk-traceability-a-study-on-action-design-for-big-data-enabled-urban-safety-management/",
+    "body_sha256": "065feca074a64472657b566a22bded9237add0b92fda836f3460bc22f3d3e06b"
+  },
+  {
+    "source": "students-alumni/full-bayesian-significance-testing-for-neural-networks/index.html",
+    "url": "/students-alumni/full-bayesian-significance-testing-for-neural-networks/",
+    "body_sha256": "71a2b36797abcd9825e0b0940c168caa52ebc5326f0a55cdab2ad753f4acf5b5"
+  },
+  {
+    "source": "students-alumni/full-bayesian-significance-testing-for-neural-networks-in-traffic-forecasting/index.html",
+    "url": "/students-alumni/full-bayesian-significance-testing-for-neural-networks-in-traffic-forecasting/",
+    "body_sha256": "937d96ade9e869c06dd561b443679340a805340e8d1cd6f0c250525c66b2732e"
+  },
+  {
+    "source": "students-alumni/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set/index.html",
+    "url": "/students-alumni/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set/",
+    "body_sha256": "89331ee33eca6e088821081eda0ab196cfba73079ac672bfb0f66d0a425e48df"
+  },
+  {
+    "source": "students-alumni/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set-1/index.html",
+    "url": "/students-alumni/gan-based-anomaly-detection-for-multivariate-time-series-using-polluted-training-set-1/",
+    "body_sha256": "b7510d370be3fe3bb829257da610ec5a33c8f217dafa28718950ee01766ec9e4"
+  },
+  {
+    "source": "students-alumni/generative-adversarial-networks-enhanced-pre-training-for-insufficient-electronic-health-records-modeling/index.html",
+    "url": "/students-alumni/generative-adversarial-networks-enhanced-pre-training-for-insufficient-electronic-health-records-modeling/",
+    "body_sha256": "6c4975b9ea53ca89094f81861b89540a1d3f5db807bbf750d9eb7c693945f94e"
+  },
+  {
+    "source": "students-alumni/gtg-generalizable-trajectory-generation-model-for-urban-mobility/index.html",
+    "url": "/students-alumni/gtg-generalizable-trajectory-generation-model-for-urban-mobility/",
+    "body_sha256": "34abcb0ebd901d25af9eed51f7615e7aa09f5c203a42fcac413d5295b182112e"
+  },
+  {
+    "source": "students-alumni/hierarchical-frequency-decomposition-graph-neural-networks-for-road-network-representation-learning/index.html",
+    "url": "/students-alumni/hierarchical-frequency-decomposition-graph-neural-networks-for-road-network-representation-learning/",
+    "body_sha256": "03cb38e453d12254a8d3cf6b4e7190a8ac7c52bd34956212b70dfb3116e9bb4d"
+  },
+  {
+    "source": "students-alumni/high-temperature-and-high-humidity-reduce-the-transmission-of-covid-19/index.html",
+    "url": "/students-alumni/high-temperature-and-high-humidity-reduce-the-transmission-of-covid-19/",
+    "body_sha256": "45c24994dbf46cf8d0e3ad501badc88ac44851453c6429bcb2cb5f9e7dcdc2ed"
+  },
+  {
+    "source": "students-alumni/hygmap-representing-all-types-of-map-entities-via-heterogeneous-hypergraph/index.html",
+    "url": "/students-alumni/hygmap-representing-all-types-of-map-entities-via-heterogeneous-hypergraph/",
+    "body_sha256": "f33aa5ca481ae7d3c8ec4dad5fc1930ffb2ca671b98eab961ec65af65dd72af3"
+  },
+  {
+    "source": "students-alumni/icad-llm-one-for-all-anomaly-detection-via-in-context-learning-with-large-language-models/index.html",
+    "url": "/students-alumni/icad-llm-one-for-all-anomaly-detection-via-in-context-learning-with-large-language-models/",
+    "body_sha256": "1f7a1db0339aad3e1c5be1b32de5401f1001aecb4ead580031f9d91a4f793c2a"
+  },
+  {
+    "source": "students-alumni/index.html",
+    "url": "/students-alumni/",
+    "body_sha256": "f3204179a438fa6aea7d0535aa975a0c6173fe9a31e649b5ac0ad97cac22e49c"
+  },
+  {
+    "source": "students-alumni/inferring-metapopulation-propagation-network-for-intra-city-epidemic-control-and-prevention/index.html",
+    "url": "/students-alumni/inferring-metapopulation-propagation-network-for-intra-city-epidemic-control-and-prevention/",
+    "body_sha256": "fcf740aacb94ba8f54d87315e9a509ff5e91dd3a87cf5503a605206dcbe5524e"
+  },
+  {
+    "source": "students-alumni/interpretability-is-a-kind-of-safety-an-interpreter-based-ensemble-for-adversary-defense/index.html",
+    "url": "/students-alumni/interpretability-is-a-kind-of-safety-an-interpreter-based-ensemble-for-adversary-defense/",
+    "body_sha256": "3763bc0eb60120616ec66f47c7ce7602951796e58b2a37adb6de0a0134c4a7e9"
+  },
+  {
+    "source": "students-alumni/interpretable-spatiotemporal-deep-learning-model-for-traffic-flow-prediction-based-on-potential-energy-fields/index.html",
+    "url": "/students-alumni/interpretable-spatiotemporal-deep-learning-model-for-traffic-flow-prediction-based-on-potential-energy-fields/",
+    "body_sha256": "f2aa414d23b0a0830260dec0aae1e4e13af5d9d71e9ba3cac6fd3a8ed4c3e3d3"
+  },
+  {
+    "source": "students-alumni/learnable-sparse-customization-in-heterogeneous-edge-computing/index.html",
+    "url": "/students-alumni/learnable-sparse-customization-in-heterogeneous-edge-computing/",
+    "body_sha256": "a43058890213c844b75cb515d9bad093fc330f3a45300cf605864574b0ad361d"
+  },
+  {
+    "source": "students-alumni/learnable-sparse-customization-in-heterogeneous-edge-computing-1/index.html",
+    "url": "/students-alumni/learnable-sparse-customization-in-heterogeneous-edge-computing-1/",
+    "body_sha256": "1d3f245fe616e18cf334f00275602407ef9ba5c8d87856edc2af2c0a26fa5f55"
+  },
+  {
+    "source": "students-alumni/learning-effective-road-network-representation-with-hierarchical-graph-neural-networks/index.html",
+    "url": "/students-alumni/learning-effective-road-network-representation-with-hierarchical-graph-neural-networks/",
+    "body_sha256": "a5557e858345443e7f63ccf806de6109c55f7e4b48f876ccf4eebc343c832dc6"
+  },
+  {
+    "source": "students-alumni/learning-to-effectively-estimate-the-travel-time-for-fastest-route-recommendation/index.html",
+    "url": "/students-alumni/learning-to-effectively-estimate-the-travel-time-for-fastest-route-recommendation/",
+    "body_sha256": "67d8e59d4764aa4c4fc5cf037515743a4bc0ec05154a5602b0caa28763e631a7"
+  },
+  {
+    "source": "students-alumni/learning-universal-multi-level-market-irrationality-factors-to-improve-stock-return-forecasting/index.html",
+    "url": "/students-alumni/learning-universal-multi-level-market-irrationality-factors-to-improve-stock-return-forecasting/",
+    "body_sha256": "46f1e46e81a3ffc0688ff7df3470932448ec704989aba090f04ff8b3509ac16d"
+  },
+  {
+    "source": "students-alumni/leverage-is-a-double-edged-sword/index.html",
+    "url": "/students-alumni/leverage-is-a-double-edged-sword/",
+    "body_sha256": "b361b800a418d93314b2ea511938405a8eb2f0bd1091fcf467d5d2da85f4edfe"
+  },
+  {
+    "source": "students-alumni/libcity-an-open-library-for-traffic-prediction/index.html",
+    "url": "/students-alumni/libcity-an-open-library-for-traffic-prediction/",
+    "body_sha256": "7676823c4dc7dd91540a5f2897c7f00e0de11fe28fe26ae7a3b6aa30b35ab125"
+  },
+  {
+    "source": "students-alumni/libepidemic-an-open-source-framework-for-modeling-infectious-disease-with-bigdata/index.html",
+    "url": "/students-alumni/libepidemic-an-open-source-framework-for-modeling-infectious-disease-with-bigdata/",
+    "body_sha256": "70b3b7fecc65f5cd1fd738944195ded6647d4f1ad45af48d81b8551cbecfecb5"
+  },
+  {
+    "source": "students-alumni/mamr-high-performance-mapreduce-programming-model-for-material-cloud-applications/index.html",
+    "url": "/students-alumni/mamr-high-performance-mapreduce-programming-model-for-material-cloud-applications/",
+    "body_sha256": "cda2801115952326e5e19f84e218698e76d2ad6cf30005771d7b1443835f6fde"
+  },
+  {
+    "source": "students-alumni/methods-and-applications-high-resolution-data-o/index.html",
+    "url": "/students-alumni/methods-and-applications-high-resolution-data-o/",
+    "body_sha256": "975d20c8e96670ed82078f797b490ea099b98ecc67cb49dc47dd5ef997a4b59a"
+  },
+  {
+    "source": "students-alumni/methods-and-applications-high-resolution-data-on-human-behavior-for-effective-covid-19-policy-making-wuhan-city-hubei-province-china-january-1-february-29-2020/index.html",
+    "url": "/students-alumni/methods-and-applications-high-resolution-data-on-human-behavior-for-effective-covid-19-policy-making-wuhan-city-hubei-province-china-january-1-february-29-2020/",
+    "body_sha256": "b9697f47807a9e1eea9e64ccdc89689eca134819fec1bf5ead2440f91350ce26"
+  },
+  {
+    "source": "students-alumni/mevar-mobility-enhanced-vehicle-trajectory-reconstruction-with-camera-sensing-network/index.html",
+    "url": "/students-alumni/mevar-mobility-enhanced-vehicle-trajectory-reconstruction-with-camera-sensing-network/",
+    "body_sha256": "8febfdc07d0d3e0ddd13d61ea5434f272a8cde04db96149d4abe6e1bf9e0dd4d"
+  },
+  {
+    "source": "students-alumni/multi-agent-pointer-transformer-seq-to-seq-reinforcement-learning-for-multi-vehicle-dynamic-pickup-delivery-problems/index.html",
+    "url": "/students-alumni/multi-agent-pointer-transformer-seq-to-seq-reinforcement-learning-for-multi-vehicle-dynamic-pickup-delivery-problems/",
+    "body_sha256": "8bf285c7d5a46c61ab530fee737a0e76df4fa3e418f0dae3003b6e983cb83e6e"
+  },
+  {
+    "source": "students-alumni/multilevel-wavelet-decomposition-network-for-interpretable-time-series-analysis/index.html",
+    "url": "/students-alumni/multilevel-wavelet-decomposition-network-for-interpretable-time-series-analysis/",
+    "body_sha256": "8e8522816e530e28ae3b0db43ab9dc29d9565b569f25ec3cbdb0dafe8c372886"
+  },
+  {
+    "source": "students-alumni/no-longer-sleeping-with-a-bomb-a-duet-system-for-protecting-urban-safety-from-dangerous-goods/index.html",
+    "url": "/students-alumni/no-longer-sleeping-with-a-bomb-a-duet-system-for-protecting-urban-safety-from-dangerous-goods/",
+    "body_sha256": "3b0852cb662b5ca0e7bb651529c48a1978dd86b5e2bf5918b1cded63b73d7c79"
+  },
+  {
+    "source": "students-alumni/orthosolver-a-neural-proper-orthogonal-decomposition-solver-for-pdes/index.html",
+    "url": "/students-alumni/orthosolver-a-neural-proper-orthogonal-decomposition-solver-for-pdes/",
+    "body_sha256": "52e670ecf6d3d9825aae62acbecae21c8fc8cf7d425151b117f3239cb7d50b02"
+  },
+  {
+    "source": "students-alumni/pdf-download/index.html",
+    "url": "/students-alumni/pdf-download/",
+    "body_sha256": "079eca3a41a6026adca91e0e05e45b0105e6b314382c7d14ce6091f8b9c95002"
+  },
+  {
+    "source": "students-alumni/pdformer-propagation-delay-aware-dynamic-long-range-transformer-for-traffic-flow-prediction/index.html",
+    "url": "/students-alumni/pdformer-propagation-delay-aware-dynamic-long-range-transformer-for-traffic-flow-prediction/",
+    "body_sha256": "7c501f77a6416d4b1cc2703b472761e8cbf4ddd7e0f3521ff6f2b1bbc0be0ed5"
+  },
+  {
+    "source": "students-alumni/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm/index.html",
+    "url": "/students-alumni/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm/",
+    "body_sha256": "dcdb30c1055cd18a5a9ef11e5cf59ab23fd16ffcf946c35de2bfbe218295fa43"
+  },
+  {
+    "source": "students-alumni/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm-1/index.html",
+    "url": "/students-alumni/personalized-route-recommendation-with-neural-network-enhanced-a-search-algorithm-1/",
+    "body_sha256": "ba38ba135e193b29f81fee833e07a68bcaee18d3ef5c22a238c12ccf49f5670b"
+  },
+  {
+    "source": "students-alumni/poi-enhancer-an-llm-based-semantic-enhancement-framework-for-poi-representation-learning/index.html",
+    "url": "/students-alumni/poi-enhancer-an-llm-based-semantic-enhancement-framework-for-poi-representation-learning/",
+    "body_sha256": "fbc790cb2b0cc189b337e7fee9a486e8afd47626e600d447e06cdf4ead2a1dd5"
+  },
+  {
+    "source": "students-alumni/pre-training-of-time-aware-transformer-for-learning-robust-healthcare-representation/index.html",
+    "url": "/students-alumni/pre-training-of-time-aware-transformer-for-learning-robust-healthcare-representation/",
+    "body_sha256": "813744245779987d117c840fd3f34c42fa82a12e71212c871afd4d40e52ed146"
+  },
+  {
+    "source": "students-alumni/precision-cityshield-against-hazardous-chemicals-threats-via-location-mining-and-self-supervised-learning/index.html",
+    "url": "/students-alumni/precision-cityshield-against-hazardous-chemicals-threats-via-location-mining-and-self-supervised-learning/",
+    "body_sha256": "a4342948e82a1e819dbea41b73c2b58da4e33e5601e24e52200d1c27fe26ed1f"
+  },
+  {
+    "source": "students-alumni/predictability-of-road-traffic-and-congestion-in-urban-areas/index.html",
+    "url": "/students-alumni/predictability-of-road-traffic-and-congestion-in-urban-areas/",
+    "body_sha256": "21d1434e53a3fb053e0048e47645b23d4bbc6296ab5579ea1911056e5339be9d"
+  },
+  {
+    "source": "students-alumni/prodiff-prototype-guided-diffusion-for-minimal-information-trajectory-imputation/index.html",
+    "url": "/students-alumni/prodiff-prototype-guided-diffusion-for-minimal-information-trajectory-imputation/",
+    "body_sha256": "dcd7b742628e493084d08a2015832e8e0daa0a1ff09f65d627fadce01b3e7de2"
+  },
+  {
+    "source": "students-alumni/product-feature-grouping-for-opinion-mining/index.html",
+    "url": "/students-alumni/product-feature-grouping-for-opinion-mining/",
+    "body_sha256": "1cf0cd78d406f98168eebfe9dd8b7d55d2ea8c9f6fb192255c827c4965985751"
+  },
+  {
+    "source": "students-alumni/rod-revenue-seeking-strategies-analysis-and-revenue-prediction-in-ride-on-demand-service-using-multi-source-urban-data/index.html",
+    "url": "/students-alumni/rod-revenue-seeking-strategies-analysis-and-revenue-prediction-in-ride-on-demand-service-using-multi-source-urban-data/",
+    "body_sha256": "4c8b02f0b7e9fa158aaa6a81ee3cf9dadc27fcfecbbd7759a2b32332d1c9ed6f"
+  },
+  {
+    "source": "students-alumni/rosa-enhancing-parameter-efficient-fine-tuning-via-rope-aware-selective-adaptation-in-large-language-models/index.html",
+    "url": "/students-alumni/rosa-enhancing-parameter-efficient-fine-tuning-via-rope-aware-selective-adaptation-in-large-language-models/",
+    "body_sha256": "c44362c9c37281fbad31a58357f6c095d0fd51272de2b3cddb24b30ee1fe342b"
+  },
+  {
+    "source": "students-alumni/rsd-a-reinforced-siamese-network-with-domain-knowledge-for-early-diagnosis/index.html",
+    "url": "/students-alumni/rsd-a-reinforced-siamese-network-with-domain-knowledge-for-early-diagnosis/",
+    "body_sha256": "ae442237048ba65f1578ea7c98c43208cab38ac059a0361f508b616db81f27ee"
+  },
+  {
+    "source": "students-alumni/seeing-the-unseen-learning-basis-confounder-representations-for-robust-traffic-prediction/index.html",
+    "url": "/students-alumni/seeing-the-unseen-learning-basis-confounder-representations-for-robust-traffic-prediction/",
+    "body_sha256": "a321df9a474c53c0dab34966000ace9b168a3560f75faed77756b9f05918cb46"
+  },
+  {
+    "source": "students-alumni/seeking-based-on-dynamic-prices-higher-earnings-and-better-strategies-in-ride-on-demand-services/index.html",
+    "url": "/students-alumni/seeking-based-on-dynamic-prices-higher-earnings-and-better-strategies-in-ride-on-demand-services/",
+    "body_sha256": "86c8c420c444374f376234f910be71c3d3833f0b50da1563981dfbcf977f87c9"
+  },
+  {
+    "source": "students-alumni/seeking-in-ride-on-demand-service-a-reinforcement-learning-model-with-dynamic-price-prediction/index.html",
+    "url": "/students-alumni/seeking-in-ride-on-demand-service-a-reinforcement-learning-model-with-dynamic-price-prediction/",
+    "body_sha256": "104b0c6da831e33be10adcab6fbbd0861424e64cc8dd6593efafac8c5d23ac33"
+  },
+  {
+    "source": "students-alumni/self-supervised-trajectory-representation-learning-with-temporal-regularities-and-travel-semantics/index.html",
+    "url": "/students-alumni/self-supervised-trajectory-representation-learning-with-temporal-regularities-and-travel-semantics/",
+    "body_sha256": "60174fe5624a91c812e490ab35baeb9965104775fa9f5c74751fce6870e1cd8f"
+  },
+  {
+    "source": "students-alumni/shortening-passengers-travel-time-a-dynamic-metro-train-scheduling-approach-using-deep-reinforcement-learning/index.html",
+    "url": "/students-alumni/shortening-passengers-travel-time-a-dynamic-metro-train-scheduling-approach-using-deep-reinforcement-learning/",
+    "body_sha256": "0bd27b1714ddca4da89584c1b050c810c302b0ff66857cdd6fa3aa9e8219db94"
+  },
+  {
+    "source": "students-alumni/spatio-temporal-data-enhanced-vision-language-model-for-traffic-scene-understanding/index.html",
+    "url": "/students-alumni/spatio-temporal-data-enhanced-vision-language-model-for-traffic-scene-understanding/",
+    "body_sha256": "f9111ee298e1aa7b159539ac661adbbb520d74ea2a45f48af2e4bb4b14f9ca96"
+  },
+  {
+    "source": "students-alumni/spatio-temporal-self-supervised-learning-for-traffic-flow-prediction/index.html",
+    "url": "/students-alumni/spatio-temporal-self-supervised-learning-for-traffic-flow-prediction/",
+    "body_sha256": "8b7aeb5b8444e20b4e0fc6a3bbf005fd304f99f61f61cf978a4ec747a148ff2f"
+  },
+  {
+    "source": "students-alumni/statistical-tests-for-replacing-human-decision-makers-with-algorithms/index.html",
+    "url": "/students-alumni/statistical-tests-for-replacing-human-decision-makers-with-algorithms/",
+    "body_sha256": "0e17c804780a145424c463504ad07b73d9e8e4631338f3a9bb35f4a3a7bc9da0"
+  },
+  {
+    "source": "students-alumni/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction/index.html",
+    "url": "/students-alumni/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction/",
+    "body_sha256": "8f983fa05819873fed9967ccc16a095718448a5f2178952ab41b98ca13cab874"
+  },
+  {
+    "source": "students-alumni/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction-1/index.html",
+    "url": "/students-alumni/stden-towards-physics-guided-neural-networks-for-traffic-flow-prediction-1/",
+    "body_sha256": "c2d799e3207aa771ba887a5037dcd44377aa4b80a637f1f91f8a93f3614d3fef"
+  },
+  {
+    "source": "students-alumni/svm-based-deep-stacking-network/index.html",
+    "url": "/students-alumni/svm-based-deep-stacking-network/",
+    "body_sha256": "8617b3ad5051f4a351ec422bdd30ce8c897b6ab2c5f3b6c0973791828298f31d"
+  },
+  {
+    "source": "students-alumni/tcp-fit-an-improved-tcp-algorithm-for-heterogeneous-networks/index.html",
+    "url": "/students-alumni/tcp-fit-an-improved-tcp-algorithm-for-heterogeneous-networks/",
+    "body_sha256": "7179de1d56917e0ab9fa1de737fc1afd831e531e5263eb2bf5392d70fdb231e6"
+  },
+  {
+    "source": "students-alumni/tcp-fit-an-improved-tcp-congestion-control-algorithm-and-its-performance/index.html",
+    "url": "/students-alumni/tcp-fit-an-improved-tcp-congestion-control-algorithm-and-its-performance/",
+    "body_sha256": "69cb0a1f8b344b23223a4eb7150b534398945363dccbce44d958b065a56b2139"
+  },
+  {
+    "source": "students-alumni/traffic-flow-prediction-based-on-spatiotemporal-potential-energy-fields/index.html",
+    "url": "/students-alumni/traffic-flow-prediction-based-on-spatiotemporal-potential-energy-fields/",
+    "body_sha256": "2337fb0c163891162ce8239a7e6cb3a3e902318759ce5ca55151a3ed71231562"
+  },
+  {
+    "source": "students-alumni/traffic-speed-prediction-and-congestion-source-exploration-a-deep-learning-method/index.html",
+    "url": "/students-alumni/traffic-speed-prediction-and-congestion-source-exploration-a-deep-learning-method/",
+    "body_sha256": "f1a3b5dd8d805eb59a930a36cf617e4877a240f08ecf7a038d7366ab19b1f036"
+  },
+  {
+    "source": "students-alumni/transmission-dynamics-and-the-effects-of-non-ph/index.html",
+    "url": "/students-alumni/transmission-dynamics-and-the-effects-of-non-ph/",
+    "body_sha256": "f2169d95ef406d0358ccdb9ff2359997fe6c08e6aae541e818705ea1abfb649c"
+  },
+  {
+    "source": "students-alumni/transmission-dynamics-and-the-effects-of-non-pharmaceutical-interventions-in-the-covid-19-outbreak-resurged-in-beijing-china-a-descriptive-and-modelling-study-1/index.html",
+    "url": "/students-alumni/transmission-dynamics-and-the-effects-of-non-pharmaceutical-interventions-in-the-covid-19-outbreak-resurged-in-beijing-china-a-descriptive-and-modelling-study-1/",
+    "body_sha256": "6260d21efbc0c9a55506804b1f736cafff4864f352e8d31cf1aa6f8c1eba86d1"
+  },
+  {
+    "source": "students-alumni/understanding-urban-dynamics-via-context-aware-tensor-factorization-with-neighboring-regularization/index.html",
+    "url": "/students-alumni/understanding-urban-dynamics-via-context-aware-tensor-factorization-with-neighboring-regularization/",
+    "body_sha256": "dc7879829af2a48fa6c3e178eefcbd62e56f3129ebb24db1b4dd7d330a884d39"
+  },
+  {
+    "source": "students-alumni/veccity-a-taxonomy-guided-library-for-map-entity-representation-learning/index.html",
+    "url": "/students-alumni/veccity-a-taxonomy-guided-library-for-map-entity-representation-learning/",
+    "body_sha256": "69dfb50b2000e97244a771509d036566a31ebb1b760e8837a1caf644dc9f6af2"
+  },
+  {
+    "source": "students-alumni/when-a-wavelet-dtw-hybrid-attention-network-for-heterogeneous-time-series-analysis/index.html",
+    "url": "/students-alumni/when-a-wavelet-dtw-hybrid-attention-network-for-heterogeneous-time-series-analysis/",
+    "body_sha256": "fd8785738b3113627693d15e6059e600ef232a77b69d6baee457d78a561961b0"
+  },
+  {
+    "source": "students-alumni/when-is-the-covid-19-pandemic-over-evidence-from-the-stay-at-home-policy-execution-in-106-chinese-cities/index.html",
+    "url": "/students-alumni/when-is-the-covid-19-pandemic-over-evidence-from-the-stay-at-home-policy-execution-in-106-chinese-cities/",
+    "body_sha256": "6e3ef37ebe9f5c37b6145ead66161f7894670bd15e81bf3a87f4b9e09a30ce4c"
+  },
+  {
+    "source": "tcp-fit-family/index.html",
+    "url": "/tcp-fit-family/",
+    "body_sha256": "ae4cc26b52cfdde96441a2116fb4e815dc143fb362bb6b69ec33150cde1f855d"
+  },
+  {
+    "source": "veccity/index.html",
+    "url": "/veccity/",
+    "body_sha256": "2063ad6757981991376f98ded2c7842ab741aec1f873f22e39979a7e7f9ca051"
+  },
+  {
+    "source": "visualizations/beijing-subways/index.html",
+    "url": "/visualizations/beijing-subways/",
+    "body_sha256": "06b56748a7e7ba01080bab90870610d681082b4b2b8c9646afd15eeacb3dbf53"
+  },
+  {
+    "source": "visualizations/beijing-vis/index.html",
+    "url": "/visualizations/beijing-vis/",
+    "body_sha256": "1f6f3e81deb30f84a835acdc4cbcad257da49e0741c857bf612d9ba68c23f406"
+  },
+  {
+    "source": "visualizations/index.html",
+    "url": "/visualizations/",
+    "body_sha256": "6fffbb634857f3868c413784aad5d520d468feb97d256e334ffcfaa2298672aa"
+  }
+]

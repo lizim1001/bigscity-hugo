@@ -1,0 +1,15 @@
+{{- $shell := index hugo.Data.legacy (.Params.legacy_key | default "default") -}}
+{{- replace $shell.prefix "__PAGE_TITLE__" (.Title | htmlEscape) | safeHTML -}}
+{{- if .Params.legacy_key -}}
+{{ .Content }}
+{{- else -}}
+<div class="j-module n j-text"><h1>{{ .Title }}</h1>{{ .Content }}</div>
+{{- end -}}
+{{- if eq .RelPermalink "/publications/" -}}
+{{- range where site.RegularPages "Section" "publications" -}}
+{{- if not .Params.legacy_key -}}
+<div class="j-module n j-text"><p>{{ with .Params.authors }}{{ . }}. {{ end }}<strong>{{ .Title }}</strong>{{ with .Params.venue }}, {{ . }}{{ end }}{{ with .Params.year }}, {{ . }}{{ end }}. <a href="{{ .RelPermalink }}">read more</a></p></div>
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- $shell.suffix | safeHTML -}}
