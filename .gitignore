@@ -1,3 +1,13 @@
-/public/
-/resources/
-/.hugo_build.lock
+public/
+resources/
+.hugo_build.lock
+*.log
+
+__pycache__/
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+dist/
+
+.local/

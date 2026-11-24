@@ -1,31 +1,57 @@
-# BIGSCity — 原版还原 Hugo 网站
+# MAIRL · Managerial AI Research Lab
 
-这是保留原实验室网站外观的 Hugo 静态项目。旧页面保留 HTML，新页面推荐 Markdown；不需要部署到 GitHub，可使用实验室服务器。
+## 用 Hugo 本地预览
 
-## 新同学和 AI 从哪里开始
+在 VS Code 打开本文件所在的 `lab-prototypes` 文件夹。在集成终端执行：
 
-先读 [文档入口](docs/README.md)。让 AI 阅读 [项目速览](docs/01-项目速览.md) 和 [AI 内容维护指南](docs/02-AI内容维护指南.md)，再复制 [任务提示词](docs/03-任务提示词.md) 中相应任务。
-
-完整操作见 [使用说明](使用说明.md)，样例及其边界见 [Markdown 样例说明](docs/04-Markdown样例说明.md)。根目录 AGENTS.md 提供自动化工具的工作入口。
-
-## 快速命令
-
-```powershell
-hugo server --disableFastRender
-hugo new content --kind publication publications/my-paper/index.md
-hugo new content achievements/_index.md
-hugo new content achievements/result-a/index.md
-python tools/nav.py add --label "成果" --url /achievements/ --dry-run
-hugo
+```bash
+hugo server
 ```
 
-上面的导航命令仅预览；确认后去掉 --dry-run。普通栏目需维护子页面链接；现有工具不创建下拉导航。Publications 当前会追加非 legacy_key 新论文。新建只是创建初始文件，还需要真实正文和资源。
+浏览器访问 <http://localhost:1313/>。Hugo 会监听模板、数据和内容改动。按 `Ctrl+C` 停止服务。
 
-## 项目边界
+如果终端找不到 Hugo，在其他 Mac 上，可用 Homebrew 安装后运行 `hugo server`：
 
-- 保留基线 250 个正式原站页以及原资源，不包含备份、temp 或 CDN 辅助错误 HTML。
-- 原站 Current Visitors/登录等残留已清理，不重新加入。
-- 修改源项目，不编辑 public；不要反复运行一次性 migrate_original.py。
-- static 资源随构建复制，public 是部署成品；只交 public 无法恢复完整可维护源项目。
-- 原站远程后端、第三方服务或缺失资源不会因 Hugo 迁移自动恢复。
-- deploy 和 GitHub workflow 是可选示例，发布需核对环境并单独授权。
+```bash
+brew install hugo
+```
+
+在同一个目录执行 `hugo` 可生成静态部署文件，默认输出到 `public/`。生产环境的域名和输出目录见 `config/production/hugo.toml`。
+
+## 网站内容
+
+- `content/_index.md` 保存首页简介。
+- `content/projects/` 和 `content/members/` 分别保存开源项目与成员资料。
+- `data/publications_database.json` 是论文库的数据源。论文列表、成员页的关联论文和全站搜索都读取这份数据。
+- `data/publication_labels.json` 保存论文分类的显示名称。
+- `layouts/` 是 Hugo 模板，`static/showcase.css` 是展示站的配色和组件样式。
+- `designs/` 中的版本用于查阅设计历史。日常预览和构建从项目根目录启动。
+
+## 成员：照片、简介和链接
+
+编辑 `content/members/<member-id>/index.md`，照片放在 `static/photos/`：
+
+```yaml
+---
+title: 真实姓名
+name_en: English Name
+member_id: your-id
+role: 博士生
+position: 真实单位
+photo: /photos/your-photo.jpg
+homepage: https://真实个人主页/
+github: https://github.com/真实账户
+scholar: https://scholar.google.com/citations?user=真实ID
+dblp: https://dblp.org/pid/真实ID.html
+email: 真实邮箱
+author_names: [论文中使用的姓名]
+order: 10
+draft: true
+---
+
+这里填写个人介绍、研究兴趣和经历。
+```
+
+照片、简介和真实链接直接出现在成员卡片；成员个人页提供完整介绍和自动汇聚的论文。空链接不会出现按钮。
+
+王静远老师的照片和简介沿用旧站本人资料，已接入现有个人主页及经核对的 DBLP。准确的个人 GitHub / Scholar 链接和学生资料按提供的信息补入。

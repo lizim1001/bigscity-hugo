@@ -1,0 +1,6 @@
+:root { --bg:#f9faf6; --surface:#f0f3eb; --ink:#27362b; --muted:#657363; --line:#dce3d5; --accent:#45654a; --accent-light:#e1eadb }
+.variant-a .project-owm .project-glyph { color:#7d6c61 }
+.variant-a .project-voltron .project-glyph { color:#677e8a }
+.variant-a .project-aior .project-glyph { color:#a07c50 }
+.variant-a .project-card { background:linear-gradient(110deg,var(--surface),var(--bg)) }
+.variant-a .intro-art { filter:contrast(1.1) }

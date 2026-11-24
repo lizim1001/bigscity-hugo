@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="publication-app wrap" aria-labelledby="publications-title">
+<header class="publication-heading"><h1 id="publications-title">论文 <span>Publications</span></h1></header><div class="publication-tools" hidden><div class="publication-toolbar"><label class="paper-search-label"><span class="search-caption">搜索论文</span><input id="paper-search" name="q" spellcheck="false" type="search" placeholder="搜索标题、作者、关键词…" autocomplete="off"></label></div><div class="author-context" hidden><span></span><button type="button" data-author-clear aria-label="清除作者筛选">×</button></div><div class="primary-filters" role="group" aria-label="一级研究分类"></div><div class="chosen-secondaries" aria-label="已选一级分类的二级方向" hidden></div><p class="publication-status sr-only" role="status" aria-live="polite"></p></div><div class="publication-results">
+{{ range sort hugo.Data.publications_database "year" "desc" }}
+<article class="publication-row" id="{{ .id }}">
+  <div><h3>{{ .title }}</h3><p class="authors">{{ range $i, $author := .author_entries }}{{ if $i }}<span class="author-comma">, </span>{{ end }}<a class="publication-author" href="{{ .url }}">{{ .label }}</a>{{ end }}</p></div>
+  <span class="venue-short" title="{{ .venue_full }}">{{ .venue }}</span>
+</article>
+{{ end }}
+</div><div class="publication-empty" hidden><h2>没有找到匹配论文</h2><p>试试其他关键词，或重置筛选条件。</p><button id="empty-reset">重置筛选</button></div><div class="publication-toast" role="status" aria-live="polite"></div>
+<dialog class="paper-detail-dialog spotlight-surface" aria-labelledby="paper-detail-title">
+<header class="paper-detail-heading"><h2 id="paper-detail-title"></h2><button type="button" data-paper-detail-close aria-label="关闭论文详情"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></header><div class="paper-detail-body"></div></dialog>
+<dialog class="citation-dialog" aria-label="复制内容"><div><h2>复制内容</h2><button data-close aria-label="关闭">×</button></div><textarea readonly aria-label="可复制文本"></textarea><p>可选择文本后复制。</p></dialog></section>
+<script id="publication-data" type="application/json">{{ hugo.Data.publications_database | jsonify | safeJS }}</script>
+<script id="publication-labels" type="application/json">{{ hugo.Data.publication_labels | jsonify | safeJS }}</script>
+{{ end }}

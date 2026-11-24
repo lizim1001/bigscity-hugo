@@ -1,28 +1,22 @@
 ---
-title: 'New publication title'
-authors: 'Author One, Author Two'
-venue: 'Conference or journal'
+title: "{{ replace .Name "-" " " | title }}"
+authors: ""
+venue: ""
 year: 2026
-draft: false
+publication_type: conference
+rankings: []
+quality_selected: false
+topic: optimization
+tags: []
+member_ids: []
+project: ""
+paper_url: ""
+code_url: ""
+coverage: []
+author_links: []
+build:
+  render: never
+  list: always
+draft: true
 ---
 
-Author One, Author Two
-
-*Conference or journal, 2026*
-
-## Abstract
-
-Write the abstract here.
-
-{{< figure src="/assets/img/libcity_framework.png" alt="Framework" >}}
-
-[Download PDF](/downloads/example.pdf)
-
-## Citation
-
-```bibtex
-@article{example2026,
-  title = {New publication title},
-  year = {2026}
-}
-```

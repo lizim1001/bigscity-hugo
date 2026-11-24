@@ -1,1 +1,1 @@
-{{ define "main" }}{{ end }}
+{{ define "main" }}<section class="page-title wrap"><p class="kicker">MAIRL / NOTES</p><h1>{{ .Title }}</h1></section><section class="wrap">{{ range .Pages }}<a class="note-index-row" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span>阅读</span></a>{{ end }}</section>{{ end }}

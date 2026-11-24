@@ -1,0 +1,106 @@
+@font-face{font-family:Manrope;src:url('./assets/manrope-variable.ttf') format('truetype');font-weight:200 800;font-style:normal;font-display:swap}
+.gallery{--polish-font:Manrope,"PingFang SC","Microsoft YaHei",sans-serif;--polish-radius:10px;font-family:var(--polish-font);font-size:16px;line-height:1.8}
+.gallery :is(input,button,textarea,select){font-family:inherit;touch-action:manipulation}
+.gallery :is(h1,h2,h3){text-wrap:pretty;letter-spacing:-.025em}
+.gallery :is(a,button,input,select,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.gallery :is(a,button){scroll-margin-block:110px 36px}
+.gallery :is(dialog,.main-nav){overscroll-behavior:contain}
+.gallery :is(.paper-detail-dialog,.lab-dialog){scroll-padding-block:24px}
+.gallery .site-header{gap:22px;padding-inline:6%;height:88px}
+.gallery .brand{font-size:27px;font-weight:750;letter-spacing:-.035em;margin-right:auto;flex:none}
+.gallery .main-nav{font-size:13px;gap:24px;line-height:1.6}
+.gallery .main-nav>a{opacity:.86;min-height:40px;display:inline-flex;align-items:center}
+.gallery .main-nav>a[aria-current=page]{opacity:1;color:var(--ink)}
+.gallery .contact-nav,.gallery .search-trigger{background:transparent;border:0;border-radius:7px;padding:8px 10px;min-height:40px;font-size:13px;line-height:1.5;white-space:nowrap;color:var(--ink)}
+.gallery .search-trigger{display:inline-flex;align-items:center;gap:8px}
+.gallery :is(.contact-nav,.search-trigger):hover{background:var(--theme-hover)}
+.gallery .search-trigger svg{width:17px;height:17px;flex:none}
+.gallery .search-trigger kbd{border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--muted);font-size:10px;line-height:1.6;font-family:inherit;white-space:nowrap}
+.gallery .theme-toggle{min-height:40px;font-size:12px;padding-inline:12px}
+.gallery .menu-toggle svg{width:19px;height:19px}
+.gallery .menu-toggle .menu-close{display:none}
+.gallery .menu-toggle[aria-expanded=true] .menu-open{display:none}
+.gallery .menu-toggle[aria-expanded=true] .menu-close{display:block}
+.gallery .starfield-hero{font-family:var(--polish-font)}
+.gallery .starfield-hero .hero-copy{padding-block:90px 105px;max-width:1280px}
+.gallery .starfield-hero .eyebrow{text-transform:none;font-size:12px;letter-spacing:.035em;margin-bottom:28px}
+.gallery .starfield-hero h1{font-size:clamp(50px,6.5vw,96px);font-weight:500;letter-spacing:-.04em;line-height:1.12;max-width:1180px;margin-bottom:30px}
+.gallery .starfield-hero .intro{font-size:16px;line-height:1.9;max-width:570px;color:var(--theme-hero-intro)}
+.gallery .starfield-hero .primary{min-width:152px;justify-content:center;padding:17px 24px;font-size:14px;font-weight:600}
+.gallery .starfield-hero .hero-footer{font-size:11px;letter-spacing:0}
+.gallery .starfield-hero .hero-footer p{max-width:none}
+.gallery .chapter-steps article{opacity:1}
+.gallery .chapter-steps h3{font-family:var(--polish-font);font-size:clamp(42px,4.7vw,70px);letter-spacing:-.035em}
+.gallery .chapter-steps p{font-size:16px;line-height:1.9;max-width:60ch}
+.gallery .chapter-steps .text-link{font-size:14px;min-height:40px;padding-block:8px}
+.gallery .chapter-head>[data-chapter-title]{font-size:17px}
+.gallery .works-review{font-family:var(--polish-font);scroll-margin-top:110px;padding-top:60px;padding-bottom:70px}
+.gallery .works-review .works-section-title{font-family:var(--polish-font);font-size:clamp(34px,4vw,52px);line-height:1.25;letter-spacing:-.025em;font-weight:600;background:none;color:var(--ink);margin-bottom:35px}
+.gallery .work-copy h2{background:none;color:var(--ink);font-size:clamp(25px,2.3vw,34px);font-weight:600;line-height:1.4;letter-spacing:-.02em;text-wrap:pretty}
+.gallery .works-review .summary{font-size:16px;line-height:1.9;margin-bottom:24px;max-width:58ch}
+.gallery .figure-open{height:440px;background:#f6f8fc;padding:18px;border-radius:12px}
+.gallery .works-review .tags{gap:8px;margin-bottom:22px}
+.gallery .works-review .tags span{font-size:12px;line-height:1.5;border-color:var(--line);padding:5px 10px;background:var(--panel);color:var(--muted);border-radius:4px}
+.gallery .works-review .resource{background:var(--accent);color:var(--bg)!important;font-size:13px;line-height:1.6;min-height:42px;padding:10px 20px;border-radius:999px;font-weight:600;box-shadow:none}
+.gallery .works-review .resource:hover{background:var(--ink);transform:translateY(-1px);box-shadow:none}
+.gallery .carousel-prev,.gallery .carousel-next{min-width:44px;justify-content:center}
+.gallery .carousel-indicators button{height:4px}
+.gallery .paper-gallery-heading .paper-gallery-title{font-size:clamp(40px,5vw,68px)}
+.gallery .paper-caption .paper-card-title{line-height:1.5}
+.gallery .paper-gallery-heading>a,.gallery .paper-gallery-note{font-size:13px}
+.gallery .publication-heading{margin-bottom:28px}
+.gallery .publication-heading h1{font-size:clamp(40px,4.6vw,60px);font-weight:500;letter-spacing:-.035em}
+.gallery .publication-heading h1 span{font-size:20px;margin-left:14px}
+.gallery .publication-toolbar{padding-block:20px 24px;gap:24px;align-items:end}
+.gallery .view-switch{align-self:end;min-height:46px;border-radius:7px}
+.gallery .view-switch button{font-size:13px;min-height:38px;padding-inline:20px}
+.gallery .paper-search-label{display:flex;flex-direction:column;gap:7px;max-width:420px}
+.gallery .search-caption{font-size:12px;color:var(--muted);line-height:1.5}
+.gallery .paper-search-label input{font-size:14px;min-height:46px;padding:11px 14px;border-radius:7px}
+.gallery .publication-app .primary-filters{gap:10px;padding-bottom:24px;scrollbar-color:var(--line) transparent;scrollbar-width:thin}
+.gallery .publication-app .primary-filters button{font-size:14px;min-height:49px;padding:11px 16px;letter-spacing:0;font-weight:500}
+.gallery .publication-app .primary-filters button span{font-size:12px;font-variant-numeric:tabular-nums;min-width:25px;height:25px;margin-left:12px}
+.gallery .publication-app .chosen-secondaries{gap:9px;padding-block:18px 23px}
+.gallery .publication-app .chosen-secondaries>span{font-size:13px;padding:9px 13px;line-height:1.6}
+.gallery .primary-heading{padding-top:4px}
+.gallery .primary-heading h2{font-size:25px;letter-spacing:-.02em;line-height:1.4}
+.gallery .publication-row{padding-block:28px;scroll-margin-top:110px}
+.gallery .publication-row h3{font-size:20px;line-height:1.5;font-weight:500;letter-spacing:-.01em;max-width:80ch;margin-bottom:12px;text-wrap:pretty}
+.gallery .publication-row .authors{font-size:13px;line-height:1.9;max-width:100ch;margin-bottom:15px}
+.gallery .publication-app .paper-chip{font-size:12px;line-height:1.5;padding:6px 12px}
+.gallery .paper-actions-v2{gap:22px;margin-top:4px}
+.gallery .paper-actions-v2 :is(a,button){min-height:38px;display:inline-flex;align-items:center;font-size:13px;padding-block:6px}
+.gallery .paper-detail-trigger{font-size:13px;min-height:40px;margin-top:5px}
+.gallery .paper-detail-dialog{width:min(880px,calc(100vw - 40px));max-height:88svh}
+.gallery .paper-detail-heading{padding:30px 34px 26px;gap:26px}
+.gallery .paper-detail-heading h2{font-size:28px;line-height:1.45}
+.gallery .paper-detail-heading button{width:44px;height:44px}
+.gallery .paper-detail-body{padding:26px 34px 32px}
+.gallery .detail-authors{font-size:14px;line-height:1.9}
+.gallery .paper-metadata{gap:18px}
+.gallery .paper-metadata dd{font-size:15px}
+.gallery .detail-resources a{min-height:44px;padding:9px 16px}
+.gallery .lab-dialog{border-radius:14px;padding:30px;scroll-padding:24px}
+.gallery .dialog-head h2{font-size:26px;letter-spacing:-.02em}
+.gallery .dialog-close{width:40px;height:40px}
+.gallery .global-search{font-size:18px;min-height:52px}
+.gallery .search-results a{padding-block:19px}
+.gallery .search-results h3{font-size:19px;line-height:1.5;letter-spacing:-.015em}
+.gallery .search-results p{font-size:14px;line-height:1.8}
+.gallery .news-heading h1{font-size:clamp(42px,4.8vw,62px);letter-spacing:-.03em}
+.gallery .news-heading p{font-size:16px}
+.gallery .research-news{grid-template-columns:145px minmax(0,1fr);gap:42px;padding-block:36px}
+.gallery .news-story h3{font-size:27px;line-height:1.5;max-width:75ch}
+.gallery .news-featured .news-story h3{font-size:40px}
+.gallery .news-related-papers a{font-size:15px;line-height:1.8}
+.gallery .news-actions{font-size:14px}
+.gallery .news-actions a{min-height:40px}
+.gallery .news-year-nav a{min-height:40px}
+.gallery .member-profile h1{line-height:1.3;letter-spacing:-.025em}
+.gallery .paper-row h3{line-height:1.5}
+.gallery .prose{font-size:16px;line-height:1.95}
+.gallery .site-footer{padding-bottom:max(32px,env(safe-area-inset-bottom))}
+@supports(content-visibility:auto){.gallery .publication-row,.gallery .research-news:not(.news-featured){content-visibility:auto;contain-intrinsic-size:auto 265px}.gallery .publication-row:target{content-visibility:visible}}
+@media(max-width:1100px){.gallery .site-header{gap:18px}.gallery .main-nav{padding:24px 6%;gap:14px 20px}.gallery .menu-toggle{display:inline-flex;align-items:center;gap:8px;min-height:42px;border-radius:6px;padding:6px 9px;font-size:12px}.gallery .main-nav>a{min-height:40px}.gallery .search-trigger kbd{display:none}}
+@media(max-width:700px){.gallery .site-header{height:72px;padding-inline:6%;gap:12px}.gallery .main-nav{top:72px}.gallery .brand{font-size:25px}.gallery .theme-toggle{min-height:42px}.gallery .starfield-hero .hero-copy{padding-block:75px 90px}.gallery .starfield-hero h1{font-size:clamp(40px,10.5vw,64px);line-height:1.15;letter-spacing:-.035em}.gallery .starfield-hero .eyebrow{font-size:10px;letter-spacing:.02em;max-width:25ch;line-height:1.7;margin-bottom:25px}.gallery .starfield-hero .intro{font-size:14px;line-height:1.95;max-width:42ch}.gallery .starfield-hero .primary{min-width:145px;font-size:13px;min-height:50px}.gallery .starfield-hero .hero-footer{font-size:10px;line-height:1.9;gap:15px}.gallery .chapter-steps h3{font-size:48px}.gallery .chapter-steps p{font-size:15px}.gallery .works-review{padding:42px 16px 50px}.gallery .works-review .works-section-title{font-size:34px;margin-bottom:24px}.gallery .work{padding-inline:25px;gap:26px}.gallery .work-copy h2{font-size:24px;line-height:1.45}.gallery .figure-open{height:300px;padding:12px;border-radius:10px}.gallery .works-review .summary{font-size:15px;line-height:1.9;margin-bottom:19px}.gallery .works-review .resource{min-height:42px;font-size:13px;padding:10px 17px}.gallery .works-review .tags span{font-size:11px}.gallery .carousel-prev,.gallery .carousel-next{min-width:32px;width:32px}.gallery .carousel-prev{left:-5px}.gallery .carousel-next{right:-5px}.gallery .publication-app{padding-top:34px}.gallery .publication-heading{margin-bottom:23px}.gallery .publication-heading h1{font-size:40px}.gallery .publication-heading h1 span{font-size:16px}.gallery .publication-toolbar{gap:18px;padding-block:18px 23px;align-items:center}.gallery .paper-search-label{order:2;width:100%;max-width:none;flex-basis:100%}.gallery .paper-search-label input{font-size:16px;min-height:48px}.gallery .publication-app .primary-filters{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding:1px;gap:9px;padding:1px 0 15px;max-width:100%;margin-bottom:3px}.gallery .publication-app .primary-filters button{flex:none;white-space:nowrap;scroll-snap-align:start;max-width:none;min-height:47px;font-size:13px;padding:10px 14px}.gallery .publication-app .chosen-secondaries{padding-block:15px 18px;gap:8px}.gallery .publication-app .chosen-secondaries>span{font-size:12px;min-height:38px;padding:8px 11px}.gallery .primary-heading h2{font-size:22px}.gallery .publication-row{padding-block:25px}.gallery .publication-row h3{font-size:18px;line-height:1.55;letter-spacing:-.01em}.gallery .publication-row .authors{font-size:13px;line-height:1.9}.gallery .publication-app .paper-chip{font-size:11px;padding:5px 10px}.gallery .paper-actions-v2{gap:20px}.gallery .paper-actions-v2 :is(a,button){font-size:12px;min-height:38px}.gallery .paper-detail-dialog{width:calc(100vw - 24px);max-height:90svh}.gallery .paper-detail-heading{padding:23px 20px;gap:14px}.gallery .paper-detail-heading h2{font-size:22px;line-height:1.5}.gallery .paper-detail-heading button{width:40px;height:40px}.gallery .paper-detail-body{padding:22px 20px 26px}.gallery .paper-metadata>div{grid-template-columns:78px minmax(0,1fr);gap:14px}.gallery .paper-metadata dd{font-size:14px}.gallery .detail-authors{font-size:13px}.gallery .lab-dialog{padding:24px 20px;width:calc(100vw - 24px)}.gallery .dialog-head h2{font-size:23px}.gallery .search-results h3{font-size:18px}.gallery .research-news{grid-template-columns:1fr;gap:18px;padding-block:28px}.gallery .news-story h3{font-size:22px}.gallery .news-featured .news-story h3{font-size:30px}.gallery .news-related-papers a{font-size:14px}.gallery .news-heading p{font-size:15px}.gallery .news-year-nav{gap:10px 20px}}
+@media(prefers-reduced-motion:reduce){.gallery *{scroll-behavior:auto!important;transition:none!important}}

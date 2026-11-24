@@ -1,0 +1,53 @@
+{{- /* Build the shared view directly from Markdown. No generated data files. */ -}}
+{{- $members := slice -}}
+{{- $memberMap := dict -}}
+{{- range sort (where site.RegularPages "Section" "members") "Params.order" -}}
+  {{- $p := .Params -}}
+  {{- $member := dict "id" $p.member_id "name" .Title "name_en" ($p.name_en | default "") "role" ($p.role | default "") "position" ($p.position | default "") "email" ($p.email | default "") "homepage" ($p.homepage | default "") "github" ($p.github | default "") "scholar" ($p.scholar | default "") "dblp" ($p.dblp | default "") "photo" ($p.photo | default "") "bio" .RawContent "url" .RelPermalink "author_names" ($p.author_names | default slice) "group" ($p.group | default "faculty") "cohort" ($p.cohort | default "") "degree" ($p.degree | default "") "research" ($p.research | default "") "organization" ($p.organization | default "") "organization_url" ($p.organization_url | default "") -}}
+  {{- $members = $members | append $member -}}
+  {{- $memberMap = merge $memberMap (dict $p.member_id $member) -}}
+{{- end -}}
+{{- $papers := slice -}}
+{{- $topicLabels := dict "cities" "城市计算" "optimization" "组合优化" "models" "世界模型" "embodied" "具身智能" "foundations" "基础方法" -}}
+{{- range sort (where site.RegularPages "Section" "publications") "Params.year" "desc" -}}
+  {{- $p := .Params -}}
+  {{- $ranks := $p.rankings | default slice -}}
+  {{- $eligible := or (in $ranks "UTD24") (in $ranks "UTD") (in $ranks "CCF A") (in $ranks "CCF-A") (and (or (in $ranks "CCF B") (in $ranks "CCF-B")) $p.quality_selected) -}}
+  {{- if and $eligible (not $p.draft) -}}
+    {{- $id := .File.ContentBaseName -}}
+    {{- $classTags := slice -}}
+    {{- range $ranks -}}{{- $rank := replace . "CCF " "CCF-" -}}{{- if eq $rank "UTD24" -}}{{- $rank = "UTD" -}}{{- end -}}{{- $classTags = $classTags | append $rank -}}{{- end -}}
+    {{- $tags := $p.tags | default slice -}}
+    {{- $themes := slice (index $topicLabels $p.topic | default $p.topic) -}}
+    {{- range $tags -}}{{- $themes = $themes | append . -}}{{- end -}}
+    {{- $people := $p.author_links | default slice -}}
+    {{- if not $people -}}
+      {{- $text := replaceRE `,\s*and\s+` "," $p.authors -}}
+      {{- $text = replace $text " and " "," -}}
+      {{- range split $text "," -}}{{- $name := trim . " " -}}{{- if $name -}}{{- $people = $people | append (dict "name" $name) -}}{{- end -}}{{- end -}}
+    {{- end -}}
+    {{- $authors := slice -}}
+    {{- range $people -}}
+      {{- $person := . -}}
+      {{- $url := printf "/publications/?author=%s" (.name | urlquery) -}}
+      {{- $matches := slice -}}
+      {{- range $p.member_ids -}}
+        {{- with index $memberMap . -}}
+          {{- $member := . -}}
+          {{- $names := slice .name .name_en -}}
+          {{- range .author_names -}}{{- $names = $names | append . -}}{{- end -}}
+          {{- $matched := false -}}
+          {{- range $names -}}{{- if eq (lower .) (lower $person.name) -}}{{- $matched = true -}}{{- end -}}{{- end -}}
+          {{- if $matched -}}{{- $matches = $matches | append $member -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if eq (len $matches) 1 -}}{{- $url = (index $matches 0).url -}}{{- end -}}
+      {{- with .member_id -}}{{- with index $memberMap . -}}{{- $url = .url -}}{{- end -}}{{- end -}}
+      {{- with .url -}}{{- $url = . -}}{{- end -}}
+      {{- $authors = $authors | append (dict "name" .name "url" $url) -}}
+    {{- end -}}
+    {{- $paper := dict "id" $id "title" .Title "authors" $p.authors "author_entries" $authors "venue" $p.venue "year" $p.year "topic" $p.topic "project" ($p.project | default "") "pdf" ($p.paper_url | default "") "code" ($p.code_url | default "") "coverage" ($p.coverage | default slice) "tags" $tags "class_tags" $classTags "themes" (uniq $themes) "member_ids" ($p.member_ids | default slice) "url" (printf "/publications/#paper-%s" $id) -}}
+    {{- $papers = $papers | append $paper -}}
+  {{- end -}}
+{{- end -}}
+{{- return (dict "papers" $papers "members" $members) -}}

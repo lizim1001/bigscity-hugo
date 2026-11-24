@@ -1,0 +1,2 @@
+{{ $catalog := partial "catalog.html" . }}
+<section class="research-section" id="research"><div class="section-heading"><h2>论文 <span>Publications</span></h2><a href="/publications/">全部论文 ↗</a></div>{{ partial "paper-browser.html" (dict "papers" $catalog.papers "home" true) }}</section>

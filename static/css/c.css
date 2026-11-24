@@ -1,0 +1,62 @@
+:root { --bg:#fcfdff; --surface:#f3f6fb; --ink:#23334b; --muted:#6c7a8b; --line:#dee5ee; --accent:#365bb6; --accent-light:#e6ecfc }
+.variant-c { padding-left:190px }
+.variant-c .wrap,.variant-c .site-footer { width:calc(100% - 76px); max-width:1240px }
+.variant-c .site-header { position:fixed; inset:0 auto 0 0; width:190px; height:100vh; display:block; padding:30px 22px; border:0; border-right:1px solid var(--line); background:var(--bg) }
+.variant-c .brand { font-size:24px; gap:9px }
+.variant-c .brand-sub { font-size:6px; letter-spacing:1px }
+.variant-c .brand-symbol { grid-template-columns:5px 5px; gap:2px }
+.variant-c .site-header nav { display:flex; flex-direction:column; align-items:stretch; gap:0; margin-top:40px; font-size:13px }
+.variant-c .site-header nav a { padding:13px 0; border-top:1px solid var(--line) }
+.variant-c .site-header nav a:last-child { border-bottom:1px solid var(--line) }
+.variant-c .sidebar-note { display:block; position:absolute; bottom:30px; left:22px; font-size:10px; line-height:2; color:var(--muted) }
+.variant-c .lab-intro { min-height:155px; padding-top:26px }
+.variant-c .lab-intro h1 { font-size:29px }
+.variant-c .intro-email { font-size:11px }
+.variant-c .project-grid { display:block; border-top:1px solid var(--line) }
+.variant-c .project-card { display:grid; grid-template-columns:30px 1fr 190px; gap:13px; align-items:center; padding:11px 14px; border:0; border-bottom:1px solid var(--line); background:transparent }
+.variant-c .project-card:hover { background:var(--surface) }
+.variant-c .project-number { position:static; grid-column:1; grid-row:1 }
+.variant-c .project-info { display:grid; grid-template-columns:110px 155px minmax(0,1fr); align-items:center; gap:15px }
+.variant-c .project-info h3 { font-size:22px; margin:0 }
+.variant-c .project-category { font-size:12px }
+.variant-c .project-tags { margin:0; gap:0 5px }
+.variant-c .project-tags span { font-size:8px }
+.variant-c .project-glyph { display:none }
+.variant-c .project-links { margin:0; padding:0; border:0; font-size:11px }
+.variant-c .home-content { grid-template-columns:minmax(0,1fr) 245px; gap:27px }
+.variant-c .home-sidebar { padding-left:21px }
+.variant-c .research-tools { flex-wrap:wrap; gap:9px }
+.variant-c .search-label { max-width:230px; width:100% }
+.variant-c .search-label input { width:100%; flex:1 }
+.variant-c .paper-row { grid-template-columns:73px minmax(0,1fr) 55px; gap:12px; padding:13px 0 }
+.variant-c .paper-main h3 { font-size:13px }
+.variant-c .paper-main p { font-size:10px }
+.variant-c .paper-topic { font-size:9px }
+.variant-c .lab-information { gap:36px }
+@media (min-width:761px) and (max-width:1200px) {
+ .variant-c .wrap,.variant-c .site-footer { width:calc(100% - 48px) }
+ .variant-c .project-card { grid-template-columns:20px minmax(0,1fr) 165px; gap:10px; padding-inline:10px }
+ .variant-c .project-info { grid-template-columns:95px minmax(0,1fr); gap:10px }
+ .variant-c .project-tags { display:none }
+ .variant-c .intro-email { display:none }
+ .variant-c .home-content { grid-template-columns:minmax(0,1fr) 215px; gap:20px }
+ .variant-c .home-sidebar { padding-left:17px }
+}
+@media (max-width:760px) {
+ .variant-c { padding-left:0 }
+ .variant-c .wrap,.variant-c .site-footer { width:calc(100% - 36px) }
+ .variant-c .site-header { position:relative; height:70px; width:calc(100% - 36px); padding:0; display:flex; border:0; border-bottom:1px solid var(--line) }
+ .variant-c .site-header nav { display:none; margin:0; font-size:12px }
+ .variant-c .site-header nav.open { display:flex }
+ .variant-c .sidebar-note { display:none }
+ .variant-c .lab-intro { min-height:0; padding:23px 0 }
+ .variant-c .lab-intro h1 { font-size:24px }
+ .variant-c .project-card { grid-template-columns:20px minmax(0,1fr); gap:9px }
+ .variant-c .project-info { grid-template-columns:83px minmax(0,1fr); gap:10px }
+ .variant-c .project-tags { display:none }
+ .variant-c .project-links { grid-column:2; justify-content:flex-start; gap:22px; font-size:10px }
+ .variant-c .home-content { display:block }
+ .variant-c .home-sidebar { padding:0 }
+ .variant-c .paper-row { grid-template-columns:55px minmax(0,1fr); gap:9px }
+ .variant-c .project-info h3 { font-size:21px }
+}

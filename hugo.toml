@@ -1,10 +1,28 @@
-baseURL = 'https://www.bigscity.net/'
-locale = 'en-US'
-title = 'Beihang Interest Group on SmartCity (BIGSCity)'
-disableKinds = ['taxonomy', 'term', 'RSS']
-enableRobotsTXT = true
-[security]
-# HTML content is trusted local source, required for lossless legacy migration.
-allowContent = ['! ^text/org$']
+baseURL = 'http://localhost:1313/'
+title = 'Managerial AI Research Lab'
+locale = 'zh-CN'
+disableKinds = ['taxonomy', 'term', 'RSS', 'sitemap']
+publishDir = 'dist'
+buildFuture = false
+
+[params]
+email = 'jywang@buaa.edu.cn'
+
 [markup.goldmark.renderer]
-unsafe = true
+unsafe = false
+
+[outputs]
+home = ['HTML', 'Search']
+
+[outputFormats.Search]
+mediaType = 'application/json'
+baseName = 'search'
+isPlainText = true
+
+[[module.mounts]]
+source = 'data/publications_database.json'
+target = 'data/publications_database.json'
+
+[[module.mounts]]
+source = 'data/publication_labels.json'
+target = 'data/publication_labels.json'

@@ -1,0 +1,1 @@
+<ul class="updates-list">{{ with site.GetPage "/updates" }}{{ range .Params.entries }}<li><span class="update-year">{{ .year }}</span><div><a href="{{ .url }}"{{ if strings.HasPrefix .url "https:" }} target="_blank" rel="noopener"{{ end }}>{{ .title }}</a>{{ with .detail }}<p>{{ . }}</p>{{ end }}</div></li>{{ end }}{{ end }}</ul>

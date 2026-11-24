@@ -1,0 +1,13 @@
+{{ $classTags := slice }}{{ $themes := slice "城市计算" "组合优化" "世界模型" "具身智能" "基础方法" }}{{ $lastYear := now.Year }}
+{{ range .papers }}{{ if gt .year $lastYear }}{{ $lastYear = .year }}{{ end }}{{ range .class_tags }}{{ $classTags = $classTags | append . }}{{ end }}{{ range .themes }}{{ $themes = $themes | append . }}{{ end }}{{ end }}
+<div class="paper-browser" data-paper-browser>
+  <div class="paper-filter-rows">
+    <div class="paper-filter-row" role="group" aria-label="按 TAG 筛选"><span class="filter-name">TAG</span><div class="filter-options"><button data-facet="tag" data-value="all" aria-pressed="true" class="selected">全部</button>{{ range sort (uniq $classTags) }}<button data-facet="tag" data-value="{{ . }}" aria-pressed="false">{{ . }}</button>{{ end }}</div></div>
+    <div class="paper-filter-row" role="group" aria-label="按年份筛选"><span class="filter-name">年份</span><div class="filter-options"><button data-facet="year" data-value="all" aria-pressed="true" class="selected">全部</button>{{ range seq $lastYear -1 2021 }}<button data-facet="year" data-value="{{ . }}" aria-pressed="false">{{ . }}</button>{{ end }}</div></div>
+    <div class="paper-filter-row" role="group" aria-label="按主题筛选"><span class="filter-name">主题</span><div class="filter-options"><button data-facet="theme" data-value="all" aria-pressed="true" class="selected">全部</button>{{ range uniq $themes }}<button data-facet="theme" data-value="{{ . }}" aria-pressed="false">{{ . }}</button>{{ end }}</div></div>
+  </div>
+  <div class="paper-browser-toolbar"><label class="search-label"><span aria-hidden="true">⌕</span><input type="search" aria-label="搜索论文" placeholder="题目 / 作者 / 会议"></label><button class="author-filter" data-clear-author hidden></button><label class="paper-sort">排序<select data-order aria-label="时间排序"><option value="desc">时间：从新到旧</option><option value="asc">时间：从旧到新</option></select></label></div>
+  <div class="filter-secondary"><span data-result-count aria-live="polite">{{ len .papers }} 篇论文</span><button data-reset>清除筛选</button></div>
+  <div class="papers-list">{{ range .papers }}{{ partial "paper-row.html" . }}{{ end }}</div>
+  <div class="empty-state" hidden><h3>无匹配结果</h3><button class="text-link" data-reset-empty>清除筛选 →</button></div>
+</div>

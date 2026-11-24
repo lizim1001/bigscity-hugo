@@ -1,16 +1,5 @@
-# BIGSCity Hugo 项目：AI 工作入口
+# MAIRL Hugo 站点
 
-这是保留 Jimdo 原站外观的 Hugo 静态网站，不是通用 Hugo 主题项目。
+从 README.md 开始。日常修改集中在 content/、data/publications_database.json、data/publication_labels.json、layouts/ 和 static/。用 Hugo 构建，校验论文定位链接和站内引用。
 
-开始任务前按顺序阅读：
-1. `docs/01-项目速览.md`
-2. `docs/02-AI内容维护指南.md`
-3. 用户涉及的模板、目标页面及相关资源。无需先遍历全部旧页面。
-
-操作原则：保留原版外观；尊重已有未提交修改；修改源文件而非 `public/`；旧 HTML 的 `url`、`legacy_key` 不随意变动；同一目录不新增与现有页面冲突的 index 文件；不擅自部署、推送或替换生产站点。
-
-当前 `tools/nav.py` 只添加顶级导航，不支持下拉菜单。普通栏目不自动列出子页面；只有现有 `/publications/` 首页有特定的新论文自动追加逻辑。不得声称没有实现的功能已经可用。
-
-文档样例在 `docs/examples/`，不是发布内容。只在用户请求时复制到 `content/`，并替换占位信息。文档与实际代码有差异时以代码为准，并报告差异。
-
-完成后交代：创建/修改哪些文件、页面地址、导航/列表入口、验证结果与未完成事项。构建失败不得声称成功。完整维护指南和提示词见 `docs/README.md`。
+docs/ 下的旧版 BIGSCity 迁移说明、README 备份及相关工具供查阅仓库历史。新版页面使用 Hugo 模板和 MAIRL 论文数据。生产部署工作流由维护者手动触发。

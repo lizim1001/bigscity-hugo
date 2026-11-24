@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {"title": "AI 应用", "labels": {
+      "AI for Health Management": "AI + 健康管理",
+      "AI for Finance": "AI + 金融",
+      "AI for Urban Management": "AI + 城市管理",
+      "AI for Operational Research": "AI + 运筹优化",
+      "AI for 异常检测": "AI + 异常检测",
+      "AI for Education": "AI + 教育"
+    }},
+    {"title": "城市数据", "labels": {
+      "Urban Data-Traffic Prediction": "交通预测",
+      "Urban Data-Trajectory": "轨迹分析",
+      "Urban Data-Representation Learning": "表征学习"
+    }},
+    {"title": "基础与方法", "labels": {
+      "人工智能理论": "人工智能理论",
+      "AI Foundational Technology": "人工智能基础技术",
+      "Time Series": "时间序列",
+      "Survey & Tutorials": "综述与教程"
+    }}
+  ],
+  "secondary": {
+    "AI Diagnosis": "人工智能辅助诊断",
+    "COVID-19": "新冠疫情",
+    "Public Health": "公共卫生",
+    "Approximation Theory": "逼近理论",
+    "AI统计检验": "人工智能统计检验",
+    "AI量化交易": "人工智能量化交易",
+    "Mechanism-Driven": "机理驱动",
+    "Ride-on-demand Services": "按需出行服务",
+    "Agent as Solver": "智能体求解",
+    "LLM for Modeling": "大语言模型建模",
+    "Neuralized A* Search": "神经网络增强的 A* 搜索",
+    "AGV": "自动导引车",
+    "Pickup-Delivery Problems": "取送货问题",
+    "Subway": "地铁",
+    "UAV": "无人机",
+    "Deep Wavelet": "深度小波",
+    "LLM for 异常检测": "大语言模型异常检测",
+    "时序异常检查": "时序异常检测",
+    "LLM对齐": "大语言模型对齐",
+    "LLM微调": "大语言模型微调",
+    "LLM测评": "大语言模型评测",
+    "LLM知识增强": "大语言模型知识增强",
+    "POI表征": "兴趣点表征",
+    "AI Tutorials": "人工智能教程",
+    "Medical AI": "医疗人工智能"
+  }
+}

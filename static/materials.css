@@ -1,0 +1,58 @@
+/* Requested materials share the existing MAIRL blue palette and type system. */
+.gallery{
+ --glass-surface:linear-gradient(135deg,#b4d1ff15,#7b96d508),#16223ac2;
+ --glass-solid:#1b2945;--glass-border:#d4e5ff3b;--glass-highlight:#d9eaff33;--glass-muted:#c0cce2;
+ --glass-shadow:0 26px 75px #02081c66;--glass-scrim:#070d203d;--glass-blur:28px;
+ --material-radius:24px;
+ --featured-author:#7de3db;--featured-author-hover:#bbfff8;
+ --paper-focus:#9aefea;
+ --field-shadow:#101323b3;--field-bottom:linear-gradient(transparent,var(--theme-bg));
+}
+html[data-theme=light] .gallery{
+ --glass-surface:linear-gradient(135deg,#ffffff70,#d8e8ff1f),#e2ecf8c7;
+ --glass-solid:#e5edf8;--glass-border:#ffffffb3;--glass-highlight:#ffffffb3;--glass-muted:#405677;
+ --glass-shadow:0 26px 70px #243d6a26;--glass-scrim:#354b731f;
+ --featured-author:#006970;--featured-author-hover:#004a55;--paper-focus:#286d8c;
+ --field-shadow:#eaf0f7b3;
+}
+
+/* Every paper information surface uses the same readable frosted glass. */
+.gallery :is(.paper-detail-dialog,.paper-lightbox){
+ background:var(--glass-surface);border:1px solid var(--glass-border);border-radius:var(--material-radius);
+ -webkit-backdrop-filter:blur(var(--glass-blur)) saturate(125%);backdrop-filter:blur(var(--glass-blur)) saturate(125%);
+ box-shadow:inset 0 1px 0 var(--glass-highlight),var(--glass-shadow);color:var(--ink);
+}
+.gallery :is(.paper-detail-dialog,.paper-lightbox)::backdrop{background:var(--glass-scrim);backdrop-filter:blur(3px)}
+.gallery .paper-detail-heading,.gallery .paper-lightbox header{border-color:var(--glass-border);background:transparent}
+.gallery .paper-detail-heading h2{color:var(--ink)}
+.gallery .detail-badges{margin:0 0 26px}
+.gallery .paper-detail-dialog :is(.paper-metadata dt,.paper-detail-body h3,.detail-authors),.gallery .paper-detail-dialog .detail-authors a:not(.author-featured){color:var(--glass-muted)}
+.gallery .paper-detail-body{background:transparent}
+.gallery .paper-lightbox{overflow:hidden}
+.gallery .paper-lightbox-body{background:transparent}
+
+.gallery .publication-app :is(button,input,a):focus-visible{outline:2px solid var(--paper-focus);outline-offset:5px}
+.gallery a.author-featured{color:var(--featured-author)!important;font-weight:700;text-decoration:underline;text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:4px}
+.gallery a.author-featured:hover{color:var(--featured-author-hover)!important;text-decoration-thickness:2px}
+
+/* One viewport-sized field spans hero and chapters; works begin after it. */
+.gallery .starfield-region{position:relative;isolation:isolate;overflow:clip}
+.gallery .starfield-space{position:sticky;top:0;height:100svh;margin-bottom:-100svh;z-index:0;pointer-events:none;overflow:hidden}
+.gallery .starfield-space #stars{display:block;width:100%;height:100%;opacity:1}
+.gallery .starfield-content{position:relative;z-index:1}
+.gallery .starfield-content .starfield-hero{background:transparent}
+.gallery .field-shade{position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--bg) 50%,transparent),color-mix(in srgb,var(--bg) 25%,transparent) 46%,transparent 75%),linear-gradient(180deg,color-mix(in srgb,var(--bg) 70%,transparent),transparent 23%,transparent 78%,color-mix(in srgb,var(--bg) 70%,transparent))}
+.gallery .starfield-region>.starfield-content :is(.statement,.chapter-steps){text-shadow:0 2px 14px var(--field-shadow)}
+.gallery .starfield-region:after{content:"";position:absolute;bottom:0;left:0;right:0;height:90px;z-index:2;pointer-events:none;background:var(--field-bottom)}
+.gallery .starfield-region .chapter-visual .canvas-shell{background:var(--aurora-panel)}
+
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ .gallery :is(.paper-detail-dialog,.paper-lightbox){background:var(--glass-solid)}
+}
+@media(prefers-reduced-transparency:reduce){
+ .gallery :is(.paper-detail-dialog,.paper-lightbox){background:var(--glass-solid);-webkit-backdrop-filter:none;backdrop-filter:none}
+}
+@media(max-width:700px){
+ .gallery .paper-row .paper-venue strong{font-size:11px;padding:7px 13px}
+ .gallery .starfield-region:after{height:60px}
+}

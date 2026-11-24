@@ -1,0 +1,2 @@
+{{- $labels := dict "cities" "城市智能" "models" "世界建模" "embodied" "具身智能" "optimization" "组合优化" "foundations" "基础与交叉" -}}
+{{- .Params.topic_label | default (index $labels (.Params.topic | default "foundations")) -}}
