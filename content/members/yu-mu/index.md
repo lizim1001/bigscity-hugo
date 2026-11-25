@@ -1,4 +1,5 @@
 ---
+roster_order: 32
 title: Yu Mu
 member_id: yu-mu
 role: 校友

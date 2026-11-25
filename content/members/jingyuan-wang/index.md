@@ -1,4 +1,5 @@
 ---
+roster_order: 1
 title: 王静远
 name_en: Jingyuan Wang
 member_id: jingyuan-wang

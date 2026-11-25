@@ -1,4 +1,5 @@
 ---
+roster_order: 8
 title: Ning Wu
 member_id: ning-wu
 role: 成员

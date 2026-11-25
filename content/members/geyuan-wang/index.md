@@ -1,4 +1,5 @@
 ---
+roster_order: 22
 title: Geyuan Wang
 member_id: geyuan-wang
 role: 成员

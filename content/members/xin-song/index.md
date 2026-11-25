@@ -1,4 +1,5 @@
 ---
+roster_order: 26
 title: Xin Song
 member_id: xin-song
 role: 校友

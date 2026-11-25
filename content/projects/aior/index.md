@@ -3,6 +3,7 @@ title: AI + 运筹优化
 key: aior
 order: 4
 category: AI 驱动的组合优化
+cover_alt: 青绿色人物侧影与决策树、候选路径和任务排程图叠合（AI 生成场景示意）
 category_en: AI FOR OPERATIONS RESEARCH
 description: 结合机器学习与运筹优化，研究路径规划、任务调度和复杂约束下的资源分配。
 tags:

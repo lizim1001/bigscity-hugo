@@ -3,6 +3,7 @@ title: AI + 企业管理
 key: owm
 order: 2
 category: 本体世界模型
+cover_alt: 自动化工厂中的产线、搬运车与生产调度屏（AI 生成场景示意）
 category_en: AI FOR ENTERPRISE MANAGEMENT
 description: 关注企业知识、业务流程和经营数据，探索人工智能如何支持分析与管理决策。
 tags:

@@ -1,7 +1,7 @@
 /* First edition's chapter layout, third edition's palette. */
 .chapter-experience{padding:45px 0 70px;gap:70px;scroll-margin-top:110px}
 .chapter-visual{top:120px}
-.chapter-visual .canvas-shell{background:#1b2037;border-radius:20px}
+
 .chapter-visual .kicker{margin-bottom:20px;color:#a7aac3}
 .chapter-head{align-items:center;gap:20px}
 .chapter-head>[data-chapter-title]{color:#f0f0fa;font-size:16px}
@@ -17,7 +17,34 @@
 .chapter-steps h3{font-weight:400;letter-spacing:-.045em;margin:22px 0 28px}
 .chapter-steps p{color:#a7aac3}
 .chapter-steps .text-link{color:#f0f0fa;margin-top:16px}
-@media(min-width:1600px){.chapter-visual .canvas-shell{height:58vh;max-height:700px}}
-@media(max-width:1000px){.chapter-experience{gap:30px}.chapter-visual .canvas-shell{height:420px}}
-@media(max-width:640px){.chapter-experience{padding-top:30px;display:block}.chapter-visual{position:relative;top:auto}.chapter-visual .canvas-shell{height:300px}.chapter-steps article{min-height:400px;padding:35px 0;opacity:1}.chapter-steps h3{margin:15px 0}.chapter-visual .kicker{font-size:9px}.chapter-nav a{width:30px;height:30px}.chapter-nav a:after{top:13px}}
+
+@media(max-width:1000px){.chapter-experience{gap:30px}}
+@media(max-width:640px){.chapter-experience{padding-top:30px;display:block}.chapter-visual{position:relative;top:auto}.chapter-steps article{min-height:400px;padding:35px 0;opacity:1}.chapter-steps h3{margin:15px 0}.chapter-visual .kicker{font-size:9px}.chapter-nav a{width:30px;height:30px}.chapter-nav a:after{top:13px}}
 @media(prefers-reduced-motion:reduce){.chapter-steps article{opacity:1}}
+
+.chapter-visual { min-width: 0; }
+.chapter-visual .chapter-cover {
+  display: block;
+  width: min(100%, max(6rem, calc(150svh - 295px)));
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+@media (max-width: 800px) {
+  .chapter-experience { display: block; }
+  .chapter-visual {
+    position: sticky;
+    top: 80px;
+    z-index: 2;
+    padding-block: 8px;
+    background: var(--bg);
+  }
+  .chapter-visual .chapter-cover { width: min(100%, 45svh); }
+  .chapter-head { margin: 6px 0 0; }
+  .chapter-steps article {
+    scroll-margin-top: calc(30svh + 48px);
+    min-height: 52svh;
+    padding-block: 28px;
+  }
+}

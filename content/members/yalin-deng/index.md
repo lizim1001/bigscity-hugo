@@ -1,4 +1,5 @@
 ---
+roster_order: 37
 title: Yalin Deng
 member_id: yalin-deng
 role: 校友

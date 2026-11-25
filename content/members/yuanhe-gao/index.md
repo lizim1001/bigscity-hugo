@@ -1,4 +1,5 @@
 ---
+roster_order: 25
 title: Yuanhe Gao
 member_id: yuanhe-gao
 role: 校友

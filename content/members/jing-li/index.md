@@ -1,4 +1,5 @@
 ---
+roster_order: 30
 title: Jing Li
 member_id: jing-li
 role: 校友

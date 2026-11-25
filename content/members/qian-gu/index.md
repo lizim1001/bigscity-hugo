@@ -1,4 +1,5 @@
 ---
+roster_order: 28
 title: Qian Gu
 member_id: qian-gu
 role: 校友

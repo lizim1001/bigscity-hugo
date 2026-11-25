@@ -1,0 +1,46 @@
+html[data-theme="light"] { background:#F2F2F7; --theme-on-accent:#FFFFFF; }
+
+html[data-theme="light"] .gallery {
+  --theme-bg:#F2F2F7; --theme-panel:#FFFFFF; --theme-ink:#1D1D1F; --theme-muted:#515154;
+  --theme-accent:#0064C8; --theme-line:#D1D1D6; --theme-header:#FFFFFF; --theme-chip:#FFFFFF;
+  --theme-selection:#E7F1FF; --theme-hover:#E7F1FF; --theme-secondary:#0064C8;
+  --theme-secondary-bg:#E7F1FF; --theme-author:#515154; --theme-author-member:#1D1D1F;
+  --theme-author-hover:#0064C8; --theme-hero-heading:#1D1D1F; --theme-hero-intro:#515154;
+  --theme-hero-link:#0064C8; --theme-hero-meta:#515154; --theme-title-from:#0064C8; --theme-title-to:#0064C8;
+  --aurora-blue:#E7F1FF; --aurora-indigo:#FFFFFF; --aurora-cyan:#FFFFFF;
+  --star-1:#0064C8; --star-2:#515154; --star-3:#1D1D1F;
+  --field-shadow:#F2F2F7; --featured-author:#0064C8; --featured-author-hover:#1D1D1F; --paper-focus:#0064C8;
+  --glass-surface:color-mix(in srgb,#FFFFFF 95%,transparent); --glass-solid:#FFFFFF;
+  --glass-muted:#515154; --glass-border:#D1D1D6; --glass-highlight:#D1D1D6;
+  --scene-ink:#1D1D1F; --scene-accent:#0064C8; --scene-grid:#D1D1D6;
+  --paper-tag-active:#E7F1FF; --paper-tag-stroke:#D1D1D6;
+}
+
+html[data-theme="dark"] { background:#000000; --theme-on-accent:#002647; }
+
+html[data-theme="dark"] .gallery {
+  --theme-bg:#000000; --theme-panel:#1C1C1E; --theme-ink:#F5F5F7; --theme-muted:#AEAEB2;
+  --theme-accent:#5CB8FF; --theme-line:#38383A; --theme-header:#1C1C1E; --theme-chip:#1C1C1E;
+  --theme-selection:#17314D; --theme-hover:#17314D; --theme-secondary:#5CB8FF;
+  --theme-secondary-bg:#17314D; --theme-author:#AEAEB2; --theme-author-member:#F5F5F7;
+  --theme-author-hover:#5CB8FF; --theme-hero-heading:#F5F5F7; --theme-hero-intro:#AEAEB2;
+  --theme-hero-link:#5CB8FF; --theme-hero-meta:#AEAEB2; --theme-title-from:#5CB8FF; --theme-title-to:#5CB8FF;
+  --aurora-blue:#17314D; --aurora-indigo:#1C1C1E; --aurora-cyan:#1C1C1E;
+  --star-1:#5CB8FF; --star-2:#AEAEB2; --star-3:#F5F5F7;
+  --field-shadow:#000000; --featured-author:#5CB8FF; --featured-author-hover:#F5F5F7; --paper-focus:#5CB8FF;
+  --glass-surface:color-mix(in srgb,#1C1C1E 95%,transparent); --glass-solid:#1C1C1E;
+  --glass-muted:#AEAEB2; --glass-border:#38383A; --glass-highlight:#38383A;
+  --scene-ink:#F5F5F7; --scene-accent:#5CB8FF; --scene-grid:#38383A;
+  --paper-tag-active:#17314D; --paper-tag-stroke:#38383A;
+}
+
+html[data-theme] .gallery :is(
+  .starfield-hero .primary,
+  .publication-app .view-switch button[aria-pressed=true],
+  .publication-app .primary-filters button[aria-pressed=true]
+) {
+  background: var(--accent) !important;
+  color: var(--theme-on-accent) !important;
+  border-color: var(--accent);
+}
+

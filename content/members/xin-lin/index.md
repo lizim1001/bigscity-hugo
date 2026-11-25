@@ -1,4 +1,5 @@
 ---
+roster_order: 17
 title: Xin Lin
 member_id: xin-lin
 role: 成员

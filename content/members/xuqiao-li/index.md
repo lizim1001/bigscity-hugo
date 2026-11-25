@@ -1,4 +1,5 @@
 ---
+roster_order: 31
 title: Xuqiao Li
 member_id: xuqiao-li
 role: 校友

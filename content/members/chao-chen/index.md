@@ -1,4 +1,5 @@
 ---
+roster_order: 34
 title: Chao Chen
 member_id: chao-chen
 role: 校友

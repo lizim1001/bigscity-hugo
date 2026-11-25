@@ -1,4 +1,5 @@
 ---
+roster_order: 33
 title: Xu He
 member_id: xu-he
 role: 校友

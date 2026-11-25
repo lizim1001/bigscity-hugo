@@ -1,4 +1,5 @@
 ---
+roster_order: 7
 title: Xiaoyang Wang
 member_id: xiaoyang-wang
 role: 成员

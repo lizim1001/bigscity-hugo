@@ -1,1 +1,30 @@
-{{ define "main" }}{{ $catalog := partial "catalog.html" . }}<section class="page-title wrap"><p class="institution">MAIRL / PEOPLE</p><h1>成员 <span>Members</span></h1></section><section class="wrap members-lead"><div class="director-feature">{{ range where $catalog.members "role" "主任" }}{{ partial "member-card.html" . }}{{ end }}</div></section><section class="wrap member-directory" id="members"><div class="section-heading"><h2>成员</h2><a href="#alumni">校友 ↓</a></div><div class="member-directory-grid">{{ range where $catalog.members "group" "members" }}{{ partial "member-card.html" . }}{{ end }}</div></section><section class="wrap member-directory" id="alumni"><div class="section-heading"><h2>校友 <span>Alumni</span></h2><a href="#members">成员 ↑</a></div><div class="member-directory-grid">{{ range where $catalog.members "group" "alumni" }}{{ partial "member-card.html" . }}{{ end }}</div></section>{{ end }}
+{{ define "main" }}
+{{ $catalog := partial "catalog.html" . }}
+{{ $counts := newScratch }}
+{{ range hugo.Data.publications_database }}
+  {{ range uniq .member_ids }}{{ $counts.Add . 1 }}{{ end }}
+{{ end }}
+{{ $ranked := slice }}
+{{ $roster := where site.RegularPages "Section" "members" }}
+{{ range $roster }}
+  {{ if ne .Params.member_id "jingyuan-wang" }}
+    {{ $count := $counts.Get .Params.member_id | default 0 }}
+    {{ $order := .Params.roster_order | default 999999 }}
+    {{ $key := printf "%09d-%06d-%s" (sub 999999999 $count) (int $order) (.Params.name_en | default .Title) }}
+    {{ $member := merge (index $catalog.memberMap .Params.member_id) (dict "paper_count" $count) }}
+    {{ $ranked = $ranked | append (dict "key" $key "member" $member) }}
+  {{ end }}
+{{ end }}
+<section class="page-title wrap"><p class="institution">MAIRL / PEOPLE</p><h1>成员 <span>Members</span></h1></section>
+{{ with index $catalog.memberMap "jingyuan-wang" }}
+<section class="wrap members-lead" aria-label="实验室主任">
+  <div class="director-feature">{{ partial "member-card.html" . }}</div>
+</section>
+{{ end }}
+<section class="wrap member-directory" id="members">
+  <div class="section-heading"><h2>成员与校友 <span>按论文数量排序</span></h2></div>
+  <div class="member-directory-grid">
+    {{ range first 29 (sort $ranked "key") }}{{ partial "member-card.html" .member }}{{ end }}
+  </div>
+</section>
+{{ end }}

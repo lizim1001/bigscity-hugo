@@ -19,20 +19,6 @@ $$('[data-search-open]').forEach(b=>b.addEventListener('click',startSearch));
 addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();startSearch()}});
 function search(){const q=$('.global-search').value.trim().toLowerCase();const tokens=q.split(/\s+/).filter(Boolean);const result=index.filter(p=>tokens.every(t=>(p.title+' '+p.text+' '+p.type).toLowerCase().includes(t))).slice(0,35);$('.search-status').textContent=q?`找到 ${result.length} 个结果${result.length===35?'（最多展示 35 项）':''}`:'输入项目、作者、论文题目或关键词';const box=$('.search-results');box.replaceChildren();for(const p of (q?result:result.slice(0,6))){const a=document.createElement('a');a.href=p.url;const small=document.createElement('small');small.textContent=p.type;const h=document.createElement('h3');h.textContent=p.title;const para=document.createElement('p');para.textContent=p.text.slice(0,100);a.append(small,h,para);box.append(a)}}
 $('.global-search')?.addEventListener('input',search);
-// A portable, browser-local reading list. No account or server is required.
-const readingKey='mairl.showcase.reading-list.v1';let savedPapers=[];
-try{const stored=JSON.parse(localStorage.getItem(readingKey)||'[]');if(Array.isArray(stored))savedPapers=stored.filter(p=>p&&typeof p.id==='string'&&typeof p.title==='string')}catch{}
-const readingDialog=document.createElement('dialog');readingDialog.className='lab-dialog';readingDialog.setAttribute('aria-label','论文阅读清单');
-readingDialog.innerHTML='<div class="dialog-head"><h2>论文阅读清单</h2><button class="dialog-close" aria-label="关闭阅读清单">×</button></div><p class="lab-subtitle">保存在当前浏览器。换设备时可导出备份再导入。</p><div class="control-row"><button class="small-btn" data-reading-export>导出 JSON 备份</button><button class="small-btn" data-reading-import>导入备份</button></div><input type="file" accept="application/json,.json" data-reading-file hidden><div class="reading-items"></div>';
-document.body.append(readingDialog);$('.dialog-close',readingDialog).onclick=()=>readingDialog.close();readingDialog.addEventListener('click',e=>{if(e.target===readingDialog)readingDialog.close()});
-const readingButton=document.createElement('button');readingButton.className='search-trigger';readingButton.textContent='阅读清单';readingButton.onclick=()=>{renderReading();readingDialog.showModal()};$('#main-nav')?.append(readingButton);
-function persistReading(){try{localStorage.setItem(readingKey,JSON.stringify(savedPapers))}catch{toast('当前浏览器无法持久保存，请导出备份')}syncReadingButtons();dispatchEvent(new Event('mairl-reading-change'))}
-function syncReadingButtons(){$$('[data-save-paper]').forEach(b=>{const saved=savedPapers.some(p=>p.id===b.dataset.savePaper);b.setAttribute('aria-pressed',String(saved));b.textContent=saved?'已收藏':'收藏论文'})}
-function renderReading(){const box=$('.reading-items',readingDialog);box.replaceChildren();if(!savedPapers.length){const p=document.createElement('p');p.textContent='尚未收藏。到论文页选择“收藏论文”。';box.append(p)}for(const paper of savedPapers){const row=document.createElement('article');row.className='news-item';const a=document.createElement('a');a.href=prefix+'/publications/#'+encodeURIComponent(paper.id);const h=document.createElement('h3');h.textContent=paper.title;a.append(h);const remove=document.createElement('button');remove.className='small-btn';remove.textContent='移出清单';remove.onclick=()=>{savedPapers=savedPapers.filter(p=>p.id!==paper.id);persistReading();renderReading()};row.append(a,remove);box.append(row)}}
-$$('.paper-row').forEach(row=>{const b=document.createElement('button');b.className='small-btn';b.dataset.savePaper=row.id;b.onclick=()=>{const exists=savedPapers.some(p=>p.id===row.id);savedPapers=exists?savedPapers.filter(p=>p.id!==row.id):[...savedPapers,{id:row.id,title:$('h3',row).textContent.trim()}];persistReading();toast(exists?'已移出阅读清单':'已加入阅读清单')};$('.paper-actions',row)?.append(b)});syncReadingButtons();
-$('[data-reading-export]',readingDialog).onclick=()=>{const blob=new Blob([JSON.stringify({format:'mairl-reading-list-v1',papers:savedPapers},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='MAIRL-reading-list.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('已导出阅读清单')};
-$('[data-reading-import]',readingDialog).onclick=()=>$('[data-reading-file]',readingDialog).click();
-$('[data-reading-file]',readingDialog).onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>1024*1024)throw Error();const data=JSON.parse(await file.text());if(data.format!=='mairl-reading-list-v1'||!Array.isArray(data.papers))throw Error();const valid=data.papers.filter(p=>/^paper-[a-z0-9-]+$/.test(p.id)&&typeof p.title==='string'&&p.title.length<1000).map(p=>({id:p.id,title:p.title}));if(valid.length!==data.papers.length)throw Error();savedPapers=[...new Map([...savedPapers,...valid].map(p=>[p.id,p])).values()];persistReading();renderReading();toast('阅读清单已导入')}catch{toast('无法导入，请选择有效的 MAIRL 阅读清单备份')}e.target.value=''};
 $$('.compare').forEach(box=>$('input',box).addEventListener('input',e=>{const value=e.target.value;box.style.setProperty('--split',value+'%');$('.after',box).style.clipPath=`inset(0 ${100-value}% 0 0)`}));
 $$('[data-marquee-toggle]').forEach(b=>b.addEventListener('click',()=>{const box=b.closest('.marquee');const paused=box.classList.toggle('paused');b.textContent=paused?'继续播放':'暂停滚动';b.setAttribute('aria-pressed',String(paused))}));
 $('[data-material-press]')?.addEventListener('click',()=>toast('按压反馈 · 局部材质实验'));
@@ -80,9 +66,41 @@ for(let j=0;j<30;j++){let pts=[];for(let i=0;i<50;i++){const x=(i-25)/18,z=(j-15
 }
 let last=performance.now(),lastCity=0;
 function frame(now){const dt=Math.min(50,now-last);last=now;if(playing){simTime=(simTime+dt*.0003)%24;if(now-lastCity>100){updateCity();lastCity=now}}scenes.forEach(s=>{if(s.visible){if(!reduce&&!s.paused&&!s.drag&&s.mode!=='map'&&s.mode!=='route')s.angle+=dt*.000055;renderScene(s)}});requestAnimationFrame(frame)}requestAnimationFrame(frame);
-const chapters=$$('.chapter-steps article');if(chapters.length){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const n=Number(e.target.dataset.chapter);chapters.forEach(a=>a.classList.toggle('active',a===e.target));$$('.chapter-nav a').forEach((a,i)=>a.classList.toggle('active',i===n));const sc=scenes.find(s=>s.canvas.hasAttribute('data-chapter-scene'));if(sc)sc.chapter=n;const title=$('[data-chapter-title]');if(title)title.textContent=e.target.dataset.title}})},{rootMargin:'-30% 0px -35% 0px',threshold:0});chapters.forEach(c=>observer.observe(c))}
+const chapters = $$('.chapter-steps article');
+if (chapters.length) {
+  const cover = $('[data-chapter-cover]');
+  const title = $('[data-chapter-title]');
+  const links = $$('.chapter-nav a');
+  let activeChapter;
+  let framePending = false;
+  function syncChapter() {
+    framePending = false;
+    const marker = window.innerHeight * (window.matchMedia('(max-width: 800px)').matches ? 0.72 : 0.55);
+    const chapter = chapters.find(item => item.getBoundingClientRect().bottom > marker) || chapters[chapters.length - 1];
+    if (chapter === activeChapter) return;
+    activeChapter = chapter;
+    cover.src = chapter.dataset.coverSrc;
+    cover.alt = chapter.dataset.coverAlt;
+    title.textContent = chapter.dataset.title;
+    chapters.forEach(item => item.classList.toggle('active', item === chapter));
+    for (const link of links) {
+      const active = link.hash === '#' + chapter.id;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'step');
+      else link.removeAttribute('aria-current');
+    }
+  }
+  function scheduleChapterSync() {
+    if (framePending) return;
+    framePending = true;
+    requestAnimationFrame(syncChapter);
+  }
+  window.addEventListener('scroll', scheduleChapterSync, { passive: true });
+  window.addEventListener('resize', scheduleChapterSync);
+  window.addEventListener('load', scheduleChapterSync);
+  syncChapter();
+}
 
 // A real procedural WebGL shader, isolated in the design playground.
 const shader=$('canvas[data-shader]');if(shader){const gl=shader.getContext('webgl',{antialias:false});if(gl){const compile=(type,source)=>{const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);return s};const p=gl.createProgram();gl.attachShader(p,compile(gl.VERTEX_SHADER,'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}'));gl.attachShader(p,compile(gl.FRAGMENT_SHADER,'precision mediump float;uniform float t;uniform vec2 r;uniform vec2 m;void main(){vec2 u=gl_FragCoord.xy/r;float w=sin(u.x*9.+t)*cos(u.y*7.-t*.7);float d=length(u-m);vec3 a=vec3(.18,.33,.36),b=vec3(.66,.63,.83);gl_FragColor=vec4(mix(a,b,.5+.25*w+.2*sin(d*18.-t)),1.);}'));gl.linkProgram(p);gl.useProgram(p);const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);const a=gl.getAttribLocation(p,'p');gl.enableVertexAttribArray(a);gl.vertexAttribPointer(a,2,gl.FLOAT,false,0,0);let mx=.5,my=.5;shader.addEventListener('pointermove',e=>{const r=shader.getBoundingClientRect();mx=(e.clientX-r.left)/r.width;my=1-(e.clientY-r.top)/r.height});let visible=true;new IntersectionObserver(e=>visible=e[0].isIntersecting).observe(shader);function draw(t){if(visible){const r=shader.getBoundingClientRect();shader.width=r.width;shader.height=r.height;gl.viewport(0,0,r.width,r.height);gl.uniform1f(gl.getUniformLocation(p,'t'),reduce?0:t*.0003);gl.uniform2f(gl.getUniformLocation(p,'r'),r.width,r.height);gl.uniform2f(gl.getUniformLocation(p,'m'),mx,my);gl.drawArrays(gl.TRIANGLES,0,6)}requestAnimationFrame(draw)}requestAnimationFrame(draw)}else{shader.replaceWith(Object.assign(document.createElement('p'),{textContent:'当前设备未启用 WebGL，保留静态背景。'}))}}
 
-addEventListener('mairl-reading-change',()=>{try{savedPapers=JSON.parse(localStorage.getItem(readingKey)||'[]');if(!Array.isArray(savedPapers))savedPapers=[];}catch{savedPapers=[];}syncReadingButtons();if(readingDialog.open)renderReading();});

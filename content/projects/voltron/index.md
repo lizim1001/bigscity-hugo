@@ -3,6 +3,7 @@ title: 服务具身智能
 key: voltron
 order: 3
 category: 具身智能
+cover_alt: 人形服务机器人在超市水果架旁双手拿取苹果（AI 生成场景示意）
 category_en: EMBODIED INTELLIGENCE FOR SERVICES
 description: 面向服务场景，研究具身智能体如何感知环境、理解任务、规划行动并响应反馈。
 tags:

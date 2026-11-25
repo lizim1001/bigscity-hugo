@@ -1,4 +1,5 @@
 ---
+roster_order: 12
 title: Kai Feng
 member_id: kai-feng
 role: 成员

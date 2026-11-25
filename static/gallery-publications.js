@@ -4,41 +4,16 @@
  const papers=JSON.parse(document.querySelector('#publication-data').textContent);
  const results=root.querySelector('.publication-results'),filters=root.querySelector('.primary-filters');
  const search=root.querySelector('#paper-search');
- // Installed page shares the existing portable reading list; retain unknown entries.
- const key='mairl.showcase.reading-list.v1';
- const normalizeTitle=text=>String(text||'').toLowerCase().replace(/[^a-z0-9]/g,'');
- const paperById=new Map(),paperByAlias=new Map(),paperByTitle=new Map(),memberNames=new Map();
+ const paperById=new Map(),paperByAlias=new Map(),memberNames=new Map();
  for(const p of papers){
   paperById.set(p.id,p);
   for(const alias of p.aliases||[])if(!paperByAlias.has(alias))paperByAlias.set(alias,p);
-  const title=normalizeTitle(p.title);if(!paperByTitle.has(title))paperByTitle.set(title,p);
   for(const a of p.author_entries||[])if(a.member_id&&!memberNames.has(a.member_id))memberNames.set(a.member_id,a.member_name);
  }
- const resolveRecord=record=>paperById.get(record.id)||paperByAlias.get(record.id)||paperByTitle.get(normalizeTitle(record.title));
- function storedReading(){try{const value=JSON.parse(localStorage.getItem(key)||'[]');return Array.isArray(value)?value.filter(x=>x&&typeof x.id==='string'&&typeof x.title==='string'):[];}catch{return [];}}
- function readUnifiedReading(){return [...new Set(storedReading().map(resolveRecord).filter(Boolean).map(p=>p.id))];}
- function persistUnifiedReading(){
-  const unknown=storedReading().filter(record=>!resolveRecord(record));
-  const records=[...unknown,...saved.map(id=>paperById.get(id)).filter(Boolean).map(p=>({id:p.id,title:p.title}))];
-  try{localStorage.setItem(key,JSON.stringify(records));dispatchEvent(new Event('mairl-reading-change'));}
-  catch{notify('当前浏览器无法持久保存收藏');}
- }
- let saved=readUnifiedReading();
- try{
-  if(!localStorage.getItem('mairl.showcase.publications.migrated.v1')){
-   const old=JSON.parse(localStorage.getItem('mairl.showcase.publications.saved.v1')||'[]');
-   const previous=Array.isArray(old)?old.map(id=>resolveRecord({id})).filter(Boolean).map(p=>p.id):[];
-   saved=[...new Set([...saved,...previous])];
-   if(previous.length)persistUnifiedReading();
-   localStorage.setItem('mairl.showcase.publications.migrated.v1','1');
-  }
- }catch{}
  const names=[...new Set(papers.flatMap(p=>p.groups.map(g=>g.primary)))];if(papers.some(p=>!p.groups.length))names.push('未标注分类');
  const labelConfig=JSON.parse(document.querySelector('#publication-labels').textContent);
  const primaryLabels=new Map(labelConfig.rows.flatMap(row=>Object.entries(row.labels)));
  const categoryRows=labelConfig.rows.map(row=>({title:row.title,keys:Object.keys(row.labels).filter(key=>names.includes(key))}));
- const other=names.filter(key=>!primaryLabels.has(key));
- if(other.length)categoryRows.push({title:'其他',keys:other});
  const primaryLabel=key=>primaryLabels.get(key)||key;
  const secondaryLabels=labels=>[...new Set(labels.flatMap(label=>label.split(/[;；]/)).map(label=>label.trim()).filter(Boolean).map(label=>Object.hasOwn(labelConfig.secondary,label)?labelConfig.secondary[label]:label))];
  const paperTags=p=>groups(p).flatMap(g=>[primaryLabel(g.primary),...secondaryLabels(g.secondary)]);
@@ -49,7 +24,7 @@
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const safe=url=>/^https?:\/\//.test(url);
  function notify(message){const el=root.querySelector('.publication-toast');el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2500);}
- function loadState(){const p=new URL(location.href).searchParams;state={page:Math.max(1,Math.floor(Number(p.get('page')))||1),category:names.includes(p.get('category'))?p.get('category'):'all',year:[...years.map(String),'unknown'].includes(p.get('year'))?p.get('year'):'all',q:p.get('q')||'',view:p.get('view')==='year'?'year':'category',author:p.get('author')||'',member:p.get('member')||''};if(state.view==='year')state.category='all';else state.year='all';}
+ function loadState(){const p=new URL(location.href).searchParams;state={page:Math.max(1,Math.floor(Number(p.get('page')))||1),category:primaryLabels.has(p.get('category'))&&names.includes(p.get('category'))?p.get('category'):'all',year:[...years.map(String),'unknown'].includes(p.get('year'))?p.get('year'):'all',q:p.get('q')||'',view:p.get('view')==='year'?'year':'category',author:p.get('author')||'',member:p.get('member')||''};if(state.view==='year')state.category='all';else state.year='all';}
  function writeState(){const url=new URL(location.href);for(const name of ['page','category','year','q','view','author','member','saved'])url.searchParams.delete(name);for(const name of ['page','category','year','q','view','author','member'])if(state[name]!==defaults()[name])url.searchParams.set(name,state[name]);history.replaceState(null,'',url);}
  const groups=p=>p.groups.length?p.groups:[{primary:'未标注分类',secondary:[]}];
  const secondaryByPrimary=new Map(names.map(name=>[name,secondaryLabels(papers.flatMap(p=>groups(p).filter(g=>g.primary===name).flatMap(g=>g.secondary)))]));
@@ -99,7 +74,7 @@
   const id=p.id;
   const links=[...p.links.pdf.map(u=>['PDF',u]),...p.links.code.map(u=>['代码/资料',u]),...p.links.posts.map((u,i)=>[p.links.posts.length>1?'推文 '+(i+1):'推文解读',u])].filter(x=>safe(x[1]));
   const labels=groups(p).map(g=>`<span class="taxonomy-pair"><span class="paper-chip chip-primary">${esc(primaryLabel(g.primary))}</span>${secondaryLabels(g.secondary).map(name=>`<span class="paper-chip chip-secondary">${esc(name)}</span>`).join('')}</span>`).join('');
-  return `<article class="publication-row spotlight-surface" id="${id}"><div><h3>${esc(p.title)}</h3><p class="authors">${authorMarkup(p)}</p><div class="paper-highlights" aria-label="论文分类及会议">${labels}<span class="paper-chip chip-venue venue-short" title="${esc(p.venue_full)}">${esc(p.venue)}</span></div><div class="paper-actions-v2">${links.map(([label,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${label} </a>`).join('')}<button data-cite="${p.id}">复制引用</button><button data-bookmark="${p.id}" aria-pressed="${saved.includes(p.id)}">${saved.includes(p.id)?'已收藏':'收藏'}</button></div><button type="button" class="paper-detail-trigger" data-paper-detail="${p.id}" aria-haspopup="dialog">详细信息</button></div></article>`;
+  return `<article class="publication-row spotlight-surface" id="${id}"><div><h3>${esc(p.title)}</h3><p class="authors">${authorMarkup(p)}</p><div class="paper-highlights" aria-label="论文分类及会议">${labels}<span class="paper-chip chip-venue venue-short" title="${esc(p.venue_full)}">${esc(p.venue)}</span></div><div class="paper-actions-v2">${links.map(([label,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${label} </a>`).join('')}<button data-cite="${p.id}">复制引用</button></div><button type="button" class="paper-detail-trigger" data-paper-detail="${p.id}" aria-haspopup="dialog">详细信息</button></div></article>`;
 
  }
  function render(update=true){
@@ -162,7 +137,6 @@
    <select aria-label="选择论文页码">${Array.from({length:totalPages},(_,i)=>`<option value="${i+1}" ${state.page===i+1?'selected':''}>第 ${i+1} / ${totalPages} 页</option>`).join('')}</select>
    ${pageLink('下一页',state.page+1,state.page<totalPages)}`;
   root.querySelector('.publication-empty').hidden=selected.length>0;
-  root.querySelectorAll('.paper-detail-dialog [data-bookmark]').forEach(b=>{const active=saved.includes(b.dataset.bookmark);b.setAttribute('aria-pressed',String(active));b.textContent=active?'已收藏':'收藏';});
   if(update)writeState();
   if(innerWidth<=700){
    const selected=filters.querySelector('[aria-pressed="true"]');
@@ -175,7 +149,7 @@
   detailOpener=opener;detailDialog.dataset.paperId=p.id;
   detailDialog.querySelector('#paper-detail-title').textContent=p.title;
   const resources=[...p.links.pdf.map(url=>['论文 PDF',url]),...p.links.code.map(url=>['代码 / 资料',url]),...p.links.posts.map((url,i)=>[p.links.posts.length>1?'推文解读 '+(i+1):'推文解读',url])].filter(([,url])=>safe(url));
-  detailDialog.querySelector('.paper-detail-body').innerHTML=`<p class="detail-authors">${authorMarkup(p)}</p><div class="detail-badges"><span class="paper-chip chip-venue" title="${esc(p.venue_full)}">${esc(p.venue)}</span></div><dl class="paper-metadata"><div><dt>会议 / 期刊</dt><dd>${esc(p.venue_full||'待补充')}</dd></div>${p.year?`<div><dt>年份</dt><dd>${p.year}</dd></div>`:''}${p.rank?`<div><dt>分级</dt><dd>${esc(p.rank)}</dd></div>`:''}</dl><section class="detail-taxonomy"><h3>研究方向</h3>${groups(p).map(g=>`<div class="taxonomy-pair"><span class="paper-chip chip-primary">${esc(primaryLabel(g.primary))}</span>${secondaryLabels(g.secondary).map(x=>`<span class="paper-chip chip-secondary">${esc(x)}</span>`).join('')}</div>`).join('')}</section>${resources.length?`<section class="detail-resources"><h3>论文与资料</h3>${resources.map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join('')}</section>`:''}<div class="paper-actions-v2 detail-paper-actions"><button data-cite="${p.id}">复制引用</button><button data-bookmark="${p.id}" aria-pressed="${saved.includes(p.id)}">${saved.includes(p.id)?'已收藏':'收藏'}</button></div>`;
+  detailDialog.querySelector('.paper-detail-body').innerHTML=`<p class="detail-authors">${authorMarkup(p)}</p><div class="detail-badges"><span class="paper-chip chip-venue" title="${esc(p.venue_full)}">${esc(p.venue)}</span></div><dl class="paper-metadata"><div><dt>会议 / 期刊</dt><dd>${esc(p.venue_full||'待补充')}</dd></div>${p.year?`<div><dt>年份</dt><dd>${p.year}</dd></div>`:''}${p.rank?`<div><dt>分级</dt><dd>${esc(p.rank)}</dd></div>`:''}</dl><section class="detail-taxonomy"><h3>研究方向</h3>${groups(p).map(g=>`<div class="taxonomy-pair"><span class="paper-chip chip-primary">${esc(primaryLabel(g.primary))}</span>${secondaryLabels(g.secondary).map(x=>`<span class="paper-chip chip-secondary">${esc(x)}</span>`).join('')}</div>`).join('')}</section>${resources.length?`<section class="detail-resources"><h3>论文与资料</h3>${resources.map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join('')}</section>`:''}<div class="paper-actions-v2 detail-paper-actions"><button data-cite="${p.id}">复制引用</button></div>`;
   detailDialog.showModal();
  }
  detailDialog.querySelector('[data-paper-detail-close]').addEventListener('click',()=>detailDialog.close());
@@ -189,14 +163,12 @@ root.querySelector('#empty-reset').addEventListener('click',reset);
  root.addEventListener('click',e=>{
   const trigger=e.target.closest('[data-paper-detail]');if(trigger){const p=paperById.get(trigger.dataset.paperDetail);if(p)openPaperDetail(p,trigger);}
   const cite=e.target.closest('[data-cite]');if(cite){const p=paperById.get(cite.dataset.cite);copy(`${p.authors}. ${p.title}. ${p.venue_full}`);}
-  const b=e.target.closest('[data-bookmark]');if(b){const id=b.dataset.bookmark;saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];persistUnifiedReading();render();}
  });
  root.querySelector('[data-author-clear]').addEventListener('click',()=>{clearPaperAnchor();state.page=1;state.author='';state.member='';render();});
  root.querySelector('[data-close]').addEventListener('click',()=>root.querySelector('.citation-dialog').close());
  document.querySelector('[data-publication-search]')?.addEventListener('click',()=>search.focus());
 
  addEventListener('popstate',()=>{anchorId=location.hash.slice(1);loadState();render(false);if(location.hash)document.getElementById(location.hash.slice(1))?.scrollIntoView();});
- addEventListener('mairl-reading-change',()=>{saved=readUnifiedReading();render(false);});
  root.querySelector('.publication-tools').hidden=false;loadState();render(false);
  if(location.hash){requestAnimationFrame(()=>document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView());}
 })();

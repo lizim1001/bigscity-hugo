@@ -1,4 +1,5 @@
 ---
+roster_order: 11
 title: Yufan Wu
 member_id: yufan-wu
 role: 成员

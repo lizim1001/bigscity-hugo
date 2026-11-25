@@ -1,4 +1,5 @@
 ---
+roster_order: 24
 title: Fei Gao
 member_id: fei-gao
 role: 校友

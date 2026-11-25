@@ -1,4 +1,5 @@
 ---
+roster_order: 35
 title: Shu Li
 member_id: shu-li
 role: 校友

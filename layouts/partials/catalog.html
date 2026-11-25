@@ -7,6 +7,11 @@
   {{- $members = $members | append $member -}}
   {{- $memberMap = merge $memberMap (dict $p.member_id $member) -}}
 {{- end -}}
+{{- $databaseByTitle := dict -}}
+{{- range hugo.Data.publications_database -}}
+  {{- $titleKey := replaceRE `[^\p{L}\p{N}]` "" (lower .title) -}}
+  {{- $databaseByTitle = merge $databaseByTitle (dict $titleKey .) -}}
+{{- end -}}
 {{- $papers := slice -}}
 {{- $topicLabels := dict "cities" "城市计算" "optimization" "组合优化" "models" "世界模型" "embodied" "具身智能" "foundations" "基础方法" -}}
 {{- range sort (where site.RegularPages "Section" "publications") "Params.year" "desc" -}}
@@ -46,8 +51,17 @@
       {{- with .url -}}{{- $url = . -}}{{- end -}}
       {{- $authors = $authors | append (dict "name" .name "url" $url) -}}
     {{- end -}}
-    {{- $paper := dict "id" $id "title" .Title "authors" $p.authors "author_entries" $authors "venue" $p.venue "year" $p.year "topic" $p.topic "project" ($p.project | default "") "pdf" ($p.paper_url | default "") "code" ($p.code_url | default "") "coverage" ($p.coverage | default slice) "tags" $tags "class_tags" $classTags "themes" (uniq $themes) "member_ids" ($p.member_ids | default slice) "url" (printf "/publications/#paper-%s" $id) -}}
+    {{- $paperMembers := $p.member_ids | default slice -}}
+    {{- $titleKey := replaceRE `[^\p{L}\p{N}]` "" (lower .Title) -}}
+    {{- with index $databaseByTitle $titleKey -}}
+      {{- $paperMembers = .member_ids -}}
+      {{- $authors = slice -}}
+      {{- range .author_entries -}}
+        {{- $authors = $authors | append (dict "name" .label "url" .url) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $paper := dict "id" $id "title" .Title "authors" $p.authors "author_entries" $authors "venue" $p.venue "year" $p.year "topic" $p.topic "project" ($p.project | default "") "pdf" ($p.paper_url | default "") "code" ($p.code_url | default "") "coverage" ($p.coverage | default slice) "tags" $tags "class_tags" $classTags "themes" (uniq $themes) "member_ids" $paperMembers "url" (printf "/publications/#paper-%s" $id) -}}
     {{- $papers = $papers | append $paper -}}
   {{- end -}}
 {{- end -}}
-{{- return (dict "papers" $papers "members" $members) -}}
+{{- return (dict "papers" $papers "members" $members "memberMap" $memberMap) -}}

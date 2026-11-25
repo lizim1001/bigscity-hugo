@@ -1,4 +1,4 @@
-# MAIRL · Managerial AI Research Lab
+# MAIRL · Managerial AI Research Lab（Apple 配色版）
 
 ## 用 Hugo 本地预览
 
@@ -10,13 +10,13 @@ hugo server
 
 浏览器访问 <http://localhost:1313/>。Hugo 会监听模板、数据和内容改动。按 `Ctrl+C` 停止服务。
 
-如果终端找不到 Hugo，在其他 Mac 上，可用 Homebrew 安装后运行 `hugo server`：
+本机已在项目内准备了 Hugo 0.170.1。如果 VS Code 提示找不到 `hugo`，可直接运行 `./.local/bin/hugo server`。在其他 Mac 上，可用 Homebrew 安装后运行 `hugo server`：
 
 ```bash
 brew install hugo
 ```
 
-在同一个目录执行 `hugo` 可生成静态部署文件，默认输出到 `public/`。生产环境的域名和输出目录见 `config/production/hugo.toml`。
+需要生成静态部署文件时，在同一个目录执行 `hugo`。生产环境输出到 `public/`。
 
 ## 网站内容
 
@@ -24,7 +24,7 @@ brew install hugo
 - `content/projects/` 和 `content/members/` 分别保存开源项目与成员资料。
 - `data/publications_database.json` 是论文库的数据源。论文列表、成员页的关联论文和全站搜索都读取这份数据。
 - `data/publication_labels.json` 保存论文分类的显示名称。
-- `layouts/` 是 Hugo 模板，`static/showcase.css` 是展示站的配色和组件样式。
+- `layouts/` 是 Hugo 模板，`static/showcase.css` 提供基础组件样式，`static/apple-theme.css` 提供 Apple 明暗配色。
 - `designs/` 中的版本用于查阅设计历史。日常预览和构建从项目根目录启动。
 
 ## 成员：照片、简介和链接

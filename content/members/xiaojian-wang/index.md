@@ -1,4 +1,5 @@
 ---
+roster_order: 36
 title: Xiaojian Wang
 member_id: xiaojian-wang
 role: 校友

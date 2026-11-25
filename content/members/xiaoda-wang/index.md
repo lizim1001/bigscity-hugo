@@ -1,4 +1,5 @@
 ---
+roster_order: 2
 title: Xiaoda Wang
 member_id: xiaoda-wang
 role: 成员

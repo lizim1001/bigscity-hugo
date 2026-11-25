@@ -40,3 +40,21 @@
 .story .research-resources{padding-block:130px}.gallery .research-resources{background:transparent}
 :is(.resource-links,.exhibition-index) a:focus-visible,.exhibition-copy summary:focus-visible{outline:2px solid var(--accent);outline-offset:6px;border-radius:2px}
 @media(max-width:800px){.research-resources{grid-template-columns:1fr;gap:35px;padding-block:65px}.story .research-resources{padding-block:75px}.resource-intro>p:not(.kicker){max-width:520px}.exhibition-entry{grid-template-columns:28px 1fr;gap:18px;padding-block:30px}.exhibition-copy{grid-column:2}.exhibition-title h3{font-size:40px}.exhibition-copy>p{margin-top:0}.exhibition-index{padding-block:50px}.exhibition-shortcuts{gap:20px}.exhibition-shortcuts>span{flex-basis:100%}.gallery .opening h1{font-size:clamp(36px,7.8vw,80px);overflow-wrap:normal}}
+
+.project-grid .project-art img {
+  mix-blend-mode: normal;
+}
+.project-grid .project-number,
+.project-grid .project-art-label {
+  color: #f4f6fa;
+  background: rgb(14 26 40 / 88%);
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+.project-article .project-cover {
+  display: block;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  background: #121c29;
+}

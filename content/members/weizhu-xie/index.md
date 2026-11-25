@@ -1,4 +1,5 @@
 ---
+roster_order: 27
 title: Weizhu Xie
 member_id: weizhu-xie
 role: 校友

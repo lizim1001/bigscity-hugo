@@ -13,7 +13,27 @@
   <footer class="hero-footer"><p>{{ range $i, $project := $projects }}{{ if $i }} <i>·</i> {{ end }}{{ .Title }}{{ end }}</p><div class="preview-controls"></div></footer>
 </section>
 <section class="wrap statement reveal"><p class="kicker">REPRESENTATION / REASONING / ACTION</p><div><h2>让世界的结构，<br>成为可以探索的知识。</h2><p>{{ range $i, $project := $projects }}{{ if $i }}、{{ end }}{{ .Title }}{{ end }}。</p></div></section>
-<section class="wrap chapter-experience" id="research-exhibits"><div class="chapter-visual"><div class="canvas-shell spotlight-surface"><canvas class="scene" data-scene="city" data-chapter-scene tabindex="0" role="img" aria-label="随开源项目切换的概念场景，方向键调整视角"></canvas><span class="scene-note">概念示意 · 滚动切换开源项目</span></div><div class="chapter-head"><span data-chapter-title>{{ with index $projects 0 }}{{ .Title }}{{ end }}</span><nav class="chapter-nav" aria-label="开源项目章节">{{ range $projects }}<a href="#chapter-{{ .Params.order }}" aria-label="{{ .Title }}"></a>{{ end }}</nav></div></div><div class="chapter-steps">{{ range $projects }}<article id="chapter-{{ .Params.order }}" data-chapter="{{ sub .Params.order 1 }}" data-title="{{ .Title }}"><p class="chapter-label">{{ printf "%02d" (int .Params.order) }} / {{ .Params.category_en }}</p><h3>{{ .Title }}</h3><p>{{ .Params.description }}</p><a class="text-link" href="{{ .RelPermalink }}">查看项目</a></article>{{ end }}</div></section></div></div>
+<section class="wrap chapter-experience" id="research-exhibits">
+  <div class="chapter-visual">
+    {{ with index $projects 0 }}
+    <img class="chapter-cover" data-chapter-cover src="/art/{{ .Params.key }}-cover.webp" alt="{{ .Params.cover_alt }}" width="1536" height="1024" loading="lazy">
+    {{ end }}
+    <div class="chapter-head">
+      <span data-chapter-title>{{ with index $projects 0 }}{{ .Title }}{{ end }}</span>
+      <nav class="chapter-nav" aria-label="开源项目章节">
+        {{ range $i, $project := $projects }}<a href="#chapter-{{ .Params.order }}" aria-label="{{ .Title }}"{{ if eq $i 0 }} class="active" aria-current="step"{{ end }}></a>{{ end }}
+      </nav>
+    </div>
+  </div>
+  <div class="chapter-steps">
+    {{ range $projects }}
+    <article id="chapter-{{ .Params.order }}" data-title="{{ .Title }}" data-cover-src="/art/{{ .Params.key }}-cover.webp" data-cover-alt="{{ .Params.cover_alt }}">
+      <p class="chapter-label">{{ printf "%02d" (int .Params.order) }} / {{ .Params.category_en }}</p>
+      <h3>{{ .Title }}</h3><p>{{ .Params.description }}</p><a class="text-link" href="{{ .RelPermalink }}">查看项目</a>
+    </article>
+    {{ end }}
+  </div>
+</section></div></div>
 <section class="paper-gallery" id="paper-gallery" aria-labelledby="paper-gallery-title"><div class="paper-gallery-heading"><h2 class="paper-gallery-title" id="paper-gallery-title">论文</h2><a href="/publications/">浏览全部论文 </a></div><div class="paper-wall">
 <article class="paper-print spotlight-surface" data-paper-key="BIGCity"><span class="paper-tape" aria-hidden="true"></span><div class="paper-photo"><a href="/paper-figures/bigcity.png" data-figure data-caption="BIGCity · 官方项目架构图" aria-label="放大 BIGCity 图片"><img src="/paper-figures/bigcity.png" alt="BIGCity · 官方项目架构图" width="868" height="1078" loading="lazy" decoding="async"><span class="enlarge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></span></a></div><div class="paper-caption"><p class="paper-venue">ICDE25<span>BIGCity</span></p><h3 class="paper-card-title"><a href="https://arxiv.org/pdf/2412.00953" target="_blank" rel="noopener">BIGCity: A Universal Spatiotemporal Model for Unified Trajectory and Traffic State Data Analysis</a></h3><div class="paper-foot"><span>官方项目架构图</span><a href="https://arxiv.org/pdf/2412.00953" target="_blank" rel="noopener">阅读论文</a></div></div></article>
 <article class="paper-print spotlight-surface" data-paper-key="VecCity"><span class="paper-tape" aria-hidden="true"></span><div class="paper-photo"><a href="/paper-figures/veccity.jpg" data-figure data-caption="VecCity · 官方项目流程图" aria-label="放大 VecCity 图片"><img src="/paper-figures/veccity.jpg" alt="VecCity · 官方项目流程图" width="2079" height="1536" loading="lazy" decoding="async"><span class="enlarge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></span></a></div><div class="paper-caption"><p class="paper-venue">VLDB25<span>VecCity</span></p><h3 class="paper-card-title"><a href="https://arxiv.org/pdf/2411.00874" target="_blank" rel="noopener">VecCity: A Taxonomy-Guided Library for Map Entity Representation Learning</a></h3><div class="paper-foot"><span>官方项目流程图</span><a href="https://arxiv.org/pdf/2411.00874" target="_blank" rel="noopener">阅读论文</a></div></div></article>

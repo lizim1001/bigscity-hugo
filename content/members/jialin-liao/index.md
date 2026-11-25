@@ -1,4 +1,5 @@
 ---
+roster_order: 3
 title: Jialin Liao
 member_id: jialin-liao
 role: 成员

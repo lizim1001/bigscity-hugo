@@ -3,6 +3,7 @@ title: AI + 城市管理
 key: citys
 order: 1
 category: 城市体系
+cover_alt: 暮色中的滨水天际线，细蓝色数据线沿水面向远处汇聚（AI 生成场景示意）
 category_en: AI FOR URBAN MANAGEMENT
 description: 用城市数据与时空模型分析交通、出行和城市运行，为城市管理提供决策依据。
 tags:

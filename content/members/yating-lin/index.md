@@ -1,4 +1,5 @@
 ---
+roster_order: 29
 title: Yating Lin
 member_id: yating-lin
 role: 校友
