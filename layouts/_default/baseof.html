@@ -5,17 +5,26 @@
 <script defer src="/site.js"></script>
 <script defer src="/motion.js"></script>
 <link rel="stylesheet" href="/css/experience.css">
-<script defer src="/experience.js?v=4"></script>
+<script defer src="/experience.js?v=5"></script>
+{{ $papersCSS := "css/gallery-publications.css?v=6" }}
+{{ $papersJS := "gallery-publications.js?v=10" }}
 {{ if .IsHome }}
+{{ $photos := slice }}
+{{ range where site.RegularPages "Section" "members" }}
+  {{ with .Params.photo }}{{ $photos = $photos | append (. | strings.TrimPrefix "/" | absURL) }}{{ end }}
+{{ end }}
+{{ $other := slice ($papersCSS | absURL) ($papersJS | absURL) }}
+{{ with .OutputFormats.Get "Search" }}{{ $other = $other | append .Permalink }}{{ end }}
+<script id="homepage-resources" type="application/json">{{ dict "photos" (uniq $photos) "other" $other | jsonify | safeJS }}</script>
 <link rel="stylesheet" href="/css/gallery-papers.css?v=2">
-<script defer src="/gallery-papers.js?v=1"></script>
-<link rel="stylesheet" href="/css/gallery-chapters.css?v=3">
+<script defer src="/gallery-papers.js?v=2"></script>
+<link rel="stylesheet" href="/css/gallery-chapters.css?v=4">
 <link rel="stylesheet" href="/css/gallery-hero.css?v=4">
 <script defer src="/gallery-hero.js?v=3"></script>
 {{ end }}
 {{ if eq .Section "publications" }}
-<link rel="stylesheet" href="/css/gallery-publications.css?v=6">
-<script defer src="/gallery-publications.js?v=10"></script>
+<link rel="stylesheet" href="{{ $papersCSS | absURL }}">
+<script defer src="{{ $papersJS | absURL }}"></script>
 {{ end }}
 <link rel="stylesheet" href="/css/gallery-news.css?v=1">
 <link rel="stylesheet" href="/css/gallery-theme.css?v=2">

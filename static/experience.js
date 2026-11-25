@@ -79,8 +79,9 @@ if (chapters.length) {
     const chapter = chapters.find(item => item.getBoundingClientRect().bottom > marker) || chapters[chapters.length - 1];
     if (chapter === activeChapter) return;
     activeChapter = chapter;
-    cover.src = chapter.dataset.coverSrc;
-    cover.alt = chapter.dataset.coverAlt;
+    const chapterImage = chapter.querySelector('.chapter-inline-cover');
+    cover.src = chapterImage.src;
+    cover.alt = chapterImage.alt;
     title.textContent = chapter.dataset.title;
     chapters.forEach(item => item.classList.toggle('active', item === chapter));
     for (const link of links) {
