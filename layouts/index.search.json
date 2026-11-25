@@ -1,9 +1,10 @@
 {{- $entries := slice -}}
+{{- $publicationsURL := (site.GetPage "/publications").Permalink -}}
 {{- range where site.RegularPages "Section" "ne" "publications" -}}
-  {{- $entries = $entries | append (dict "title" .Title "type" .Section "text" (printf "%s %s" (.Params.description | default "") (.Plain | plainify)) "url" .RelPermalink) -}}
+  {{- $entries = $entries | append (dict "title" .Title "type" .Section "text" (printf "%s %s" (.Params.description | default "") (.Plain | plainify)) "url" .Permalink) -}}
 {{- end -}}
 {{- range hugo.Data.publications_database -}}
   {{- $text := printf "%s %s %s" .authors .venue_full .tags_raw -}}
-  {{- $entries = $entries | append (dict "title" .title "type" "publications" "text" $text "url" (printf "/publications/#%s" .id)) -}}
+  {{- $entries = $entries | append (dict "title" .title "type" "publications" "text" $text "url" (printf "%s#%s" $publicationsURL .id)) -}}
 {{- end -}}
 {{- $entries | jsonify | safeJS -}}
