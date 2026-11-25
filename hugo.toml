@@ -26,3 +26,7 @@ target = 'data/publications_database.json'
 [[module.mounts]]
 source = 'data/publication_labels.json'
 target = 'data/publication_labels.json'
+
+[[module.mounts]]
+source = 'static/paper-figures'
+target = 'assets/paper-figures'

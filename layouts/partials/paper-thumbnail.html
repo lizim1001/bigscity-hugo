@@ -1,0 +1,8 @@
+{{- $figure := resources.Get (printf "paper-figures/%s" .file) -}}
+{{- $small := $figure.Resize "400x webp q76" -}}
+{{- $large := $figure.Resize (printf "%dx webp q78" (math.Min 800 $figure.Width | int)) -}}
+<img src="{{ $small.Permalink }}"
+     srcset="{{ $small.Permalink }} {{ $small.Width }}w, {{ $large.Permalink }} {{ $large.Width }}w"
+     sizes="(max-width: 600px) 88vw, (max-width: 1000px) 43vw, 29vw"
+     width="{{ $figure.Width }}" height="{{ $figure.Height }}"
+     alt="{{ .alt }}" loading="lazy" decoding="async">
