@@ -1,6 +1,8 @@
 name: Build and deploy Hugo site
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -19,9 +21,16 @@ jobs:
       - uses: actions/checkout@v4
       - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.166.0"
+          hugo-version: "0.170.1"
           extended: true
-      - run: hugo --minify
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v6
+      - name: Build with Hugo
+        env:
+          HUGO_CANONIFYURLS: "true"
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: hugo --environment production --minify --baseURL "${PAGES_BASE_URL%/}/"
       - uses: actions/upload-pages-artifact@v5
         with:
           path: public
@@ -34,4 +43,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

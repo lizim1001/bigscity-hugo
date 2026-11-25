@@ -59,7 +59,8 @@
  const personMatch=p=>(!state.member||(p.member_ids||[]).includes(state.member))&&(!state.author||(p.author_entries||[]).some(a=>[a.name,...(a.aliases||[])].some(name=>authorKey(name)===authorKey(state.author))));
  const featuredAuthorKeys=new Set(['王静远','王静远老师','王静远教授','jingyuanwang','wangjingyuan']);
  const featuredAuthor=a=>a.member_id?a.member_id==='jingyuan-wang':[a.name,a.label].some(value=>featuredAuthorKeys.has(String(value||'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'')));
- function authorMarkup(p){return (p.author_entries||[]).map(a=>`<a class="publication-author${a.member_id?' linked-member':''}${featuredAuthor(a)?' author-featured':''}" href="${esc(a.url)}" ${a.member_id?`data-member-id="${esc(a.member_id)}"`:''} title="${esc(a.member_name||a.name)} · ${a.url.includes('/members/')?'成员介绍':'相关论文'}">${esc(a.label)}</a>`).join('<span class="author-comma">, </span>')||esc(p.authors);}
+ const sitePrefix=document.documentElement.dataset.prefix||'';
+ function authorMarkup(p){return (p.author_entries||[]).map(a=>`<a class="publication-author${a.member_id?' linked-member':''}${featuredAuthor(a)?' author-featured':''}" href="${esc(a.url.startsWith('/')&&!a.url.startsWith('//')?sitePrefix+a.url:a.url)}" ${a.member_id?`data-member-id="${esc(a.member_id)}"`:''} title="${esc(a.member_name||a.name)} · ${a.url.includes('/members/')?'成员介绍':'相关论文'}">${esc(a.label)}</a>`).join('<span class="author-comma">, </span>')||esc(p.authors);}
 
  const pager=document.createElement('nav');
  pager.className='paper-pagination';
