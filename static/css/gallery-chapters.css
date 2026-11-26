@@ -28,7 +28,7 @@
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   gap: clamp(28px, 5vw, 120px);
 }
-.chapter-visual { min-width: 0; top: clamp(80px, 10vh, 120px); }
+.chapter-visual { min-width: 0; top: var(--chapter-sticky-top, clamp(88px, 10vh, 120px)); }
 .chapter-cover, .chapter-inline-cover {
   display: block;
   width: 100%;

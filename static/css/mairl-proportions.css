@@ -1,0 +1,196 @@
+:root {
+  --type-font: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "SF Pro Text", "PingFang SC", "Noto Sans SC", sans-serif;
+  --type-hero: clamp(36px, 4.4vw, 56px);
+  --type-heading: clamp(28px, 3vw, 40px);
+  --type-card: clamp(21px, 1.8vw, 24px);
+  --type-lead: clamp(17px, 1.3vw, 19px);
+  --type-body: 17px;
+  --type-meta: 13px;
+}
+
+.gallery,
+.gallery :where(*) {
+  font-family: var(--type-font) !important;
+}
+
+body.gallery {
+  font-size: var(--type-body);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.gallery .starfield-hero .eyebrow {
+  max-width: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+
+.gallery .starfield-hero h1 {
+  font-size: var(--type-hero);
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: -.02em;
+  text-wrap: initial;
+}
+
+.gallery .starfield-hero .intro {
+  max-width: 580px;
+  font-size: var(--type-lead);
+  font-weight: 400;
+  line-height: 1.62;
+}
+
+.gallery .starfield-hero .hero-footer p {
+  font-size: 14px;
+}
+
+.gallery .starfield-hero .primary {
+  font-size: 15px;
+}
+
+.gallery .statement h2,
+.gallery .page-title h1,
+.gallery .paper-gallery-heading .paper-gallery-title {
+  font-size: var(--type-heading);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+}
+
+.gallery .chapter-experience.wrap,
+.gallery .chapter-steps article {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gallery .chapter-steps h3 {
+  font-size: clamp(34px, 3vw, 38px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+}
+
+.gallery .chapter-steps .chapter-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gallery .chapter-steps p:not(.chapter-label) {
+  font-size: var(--type-body);
+  line-height: 1.6;
+}
+
+.gallery .director-feature {
+  --director-photo-width: clamp(156px, 13vw, 184px);
+}
+
+.gallery .director-feature .member-card {
+  grid-template-columns: var(--director-photo-width) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 52px);
+}
+
+.gallery .director-feature .member-photo-link {
+  width: var(--director-photo-width);
+}
+
+.gallery .director-feature .member-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 25 / 32;
+  object-fit: cover;
+}
+
+.gallery .project-grid {
+  width: min(88%, 860px);
+  margin-inline: auto;
+}
+
+.gallery .project-card .project-art {
+  max-height: 260px;
+  aspect-ratio: 16 / 10;
+}
+
+.gallery .project-copy {
+  padding-top: 20px;
+}
+
+.gallery .project-copy h3 {
+  font-size: var(--type-card);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.gallery .project-copy .project-description {
+  font-size: var(--type-body);
+  line-height: 1.6;
+}
+
+.gallery .project-focus,
+.gallery .project-art-label,
+.gallery .project-number {
+  font-size: var(--type-meta);
+}
+
+.gallery .project-detail-link {
+  font-size: 15px;
+}
+
+.gallery .paper-photo img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.gallery .paper-caption {
+  padding: 16px 9px 8px;
+}
+
+.gallery .paper-caption .paper-card-title,
+.gallery .publication-row h3 {
+  font-size: var(--type-lead);
+  font-weight: 600;
+  line-height: 1.38;
+  letter-spacing: 0;
+}
+
+.gallery .paper-venue,
+.gallery .paper-venue span {
+  font-size: var(--type-meta);
+  font-weight: 600;
+}
+
+.gallery .paper-foot,
+.gallery .paper-foot a {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .gallery .director-feature {
+    --director-photo-width: 132px;
+  }
+
+  .gallery .director-feature .member-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gallery .director-feature .member-photo-link {
+    margin-bottom: 0;
+  }
+
+  :root {
+    --type-body: 16px;
+  }
+
+  .gallery .chapter-steps h3 {
+    font-size: var(--type-heading);
+  }
+}
+
+@media (max-width: 640px), (max-width: 900px) and (orientation: portrait) {
+  .gallery .chapter-steps article {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

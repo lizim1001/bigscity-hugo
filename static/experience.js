@@ -69,10 +69,33 @@ function frame(now){const dt=Math.min(50,now-last);last=now;if(playing){simTime=
 const chapters = $$('.chapter-steps article');
 if (chapters.length) {
   const cover = $('[data-chapter-cover]');
+  const visual = cover.closest('.chapter-visual');
+  const header = $('.site-header');
   const title = $('[data-chapter-title]');
   const links = $$('.chapter-nav a');
   let activeChapter;
   let framePending = false;
+
+  function centerChapterCover() {
+    const coverHeight = cover.offsetHeight;
+    if (!coverHeight) return;
+
+    const viewportHeight = document.documentElement.clientHeight;
+    const headerHeight = header?.offsetHeight ?? 0;
+    const gap = 16;
+    const centerTop = (headerHeight + viewportHeight - coverHeight) / 2;
+    const maxTop = viewportHeight - visual.offsetHeight - gap;
+    const top = Math.max(headerHeight + gap, Math.min(centerTop, maxTop));
+    visual.style.setProperty('--chapter-sticky-top', `${top}px`);
+  }
+
+  const visualSize = new ResizeObserver(centerChapterCover);
+  visualSize.observe(visual);
+  visualSize.observe(cover);
+  if (header) visualSize.observe(header);
+  window.addEventListener('resize', centerChapterCover);
+  centerChapterCover();
+
   function syncChapter() {
     framePending = false;
     const marker = window.innerHeight * (window.matchMedia('(max-width: 800px)').matches ? 0.72 : 0.55);
