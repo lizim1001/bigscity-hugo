@@ -10,7 +10,13 @@
     <p class="intro">{{ .Params.intro }}</p>
     <div class="actions"><a class="primary" href="#research-exhibits">立即探索</a></div>
   </section>
-  <footer class="hero-footer"><p>{{ range $i, $project := $projects }}{{ if $i }} <i>·</i> {{ end }}{{ .Title }}{{ end }}</p><div class="preview-controls"></div></footer>
+  <footer class="hero-footer">
+    <ul class="hero-directions" role="list" aria-label="研究方向">
+      {{ range $projects }}
+      <li>{{ .Title }}</li>
+      {{ end }}
+    </ul>
+  </footer>
 </section>
 <section class="wrap statement reveal"><p class="kicker">REPRESENTATION / REASONING / ACTION</p><div><h2>让世界的结构，<br>成为可以探索的知识。</h2><p>{{ range $i, $project := $projects }}{{ if $i }}、{{ end }}{{ .Title }}{{ end }}。</p></div></section>
 <section class="wrap chapter-experience" id="research-exhibits">
